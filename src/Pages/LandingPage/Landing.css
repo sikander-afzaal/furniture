@@ -1,0 +1,84 @@
+.wrapper-land{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    background-image: url("../../Assets/landingBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 8rem;
+    flex-direction: column;
+}
+.top-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.top-landing h1{
+    font-weight: normal;
+    font-size: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.top-landing p {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.country-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+}
+.country-div p {
+color: white;
+font-size: 1rem;
+font-weight: 300;
+}
+.country-div .css-b62m3t-container{
+    width: 100%;
+}
+.shop-landing{
+    width: 100%;
+    border: 2px solid white;
+    color: white;
+    padding:15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+.shop-landing:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width:1628px) {
+    .landing{
+        width: 380px;
+    }
+}
+@media screen and (max-width:406px) {
+    .landing{
+        width: 90%;
+    }
+}
