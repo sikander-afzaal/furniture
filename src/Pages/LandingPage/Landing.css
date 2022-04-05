@@ -5,9 +5,7 @@
     width: 100%;
     max-height: 100vh;
     min-height: 100vh;
-    background-image: url("../../Assets/landingBg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+background-image: linear-gradient(to right, #141e30, #243b55);
 }
 .landing{
     display: flex;
