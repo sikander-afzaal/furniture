@@ -18,10 +18,11 @@
   max-width: 100%;
   object-fit: contain;
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+  height: 100vh;
 }
 .splide__pagination {
-  bottom: 15% !important;
+  bottom: 10% !important;
   right: 75% !important;
 }
 .splide__pagination__page.is-active {
@@ -87,8 +88,44 @@
   .homepage-section1 {
     overflow-y: visible;
   }
-  .bg-home {
-    object-fit: cover;
-    height: 100vh;
+
+  .splide__pagination {
+    bottom: 7% !important;
+    right: 60% !important;
+    width: max-content !important;
+  }
+}
+@media screen and (max-width: 658px) {
+  .text-div-home h2 {
+    font-size: 1.3rem;
+  }
+  .text-div-home h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 532px) {
+  .text-div-home h2 {
+    font-size: 1.1rem;
+  }
+  .text-div-home h1 {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 448px) {
+  .text-div-home h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .text-div-home h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .text-div-home h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .text-div-home h1 {
+    font-size: 1.5rem;
   }
 }
