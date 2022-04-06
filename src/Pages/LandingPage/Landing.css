@@ -52,6 +52,9 @@
 .country-div .css-b62m3t-container {
   width: 100%;
 }
+.country-div .css-1s2u09g-control{
+  min-height: 50px;
+}
 .shop-landing {
   width: 100%;
   border: 2px solid white;
