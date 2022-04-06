@@ -51,3 +51,30 @@
     background-color: white;
     color: black;
 }
+@media screen and (max-width:1210px) {
+    .choice-btn{
+        width: 70%;
+    }
+}
+@media screen and (max-width:980px) {
+   .choice{
+       flex-direction: column;
+   }
+    .choice-btn {
+        width:60%;
+    }
+   .video{
+       height: 100%;
+       object-fit: cover;
+   }
+   .section-choice{
+        flex: none;
+        width: 100%;
+        position: relative;
+        height: 50vh;
+   }
+}@media screen and (max-width:532px) {
+    .choice-btn {
+        width: 80%;
+    }
+}
