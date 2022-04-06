@@ -2,11 +2,14 @@ import React, { useState, useMemo } from "react";
 import "./Landing.css";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+import { Link } from "react-router-dom";
 function Landing() {
   const [value, setValue] = useState("");
+  const [disable, setDisable] = useState(true);
   const options = useMemo(() => countryList().getData(), []);
   const changeHandler = (value) => {
     setValue(value);
+    setDisable(false);
   };
   return (
     <div className="wrapper-land">
@@ -21,7 +24,12 @@ function Landing() {
         <div className="country-div">
           <p>Please, select a location to continue</p>
           <Select options={options} value={value} onChange={changeHandler} />
-          <button className="shop-landing">SHOP</button>
+          <Link
+            to={`${disable ? "/" : "/Choice"}`}
+            className={`shop-landing ${disable ? "" : "active"}`}
+          >
+            SHOP
+          </Link>
         </div>
       </div>
     </div>
