@@ -1,0 +1,94 @@
+.homepage-section1 {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+.furniture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bg-home {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.splide__pagination {
+  bottom: 15% !important;
+  right: 75% !important;
+}
+.splide__pagination__page.is-active {
+  background: #6e8a71 !important;
+  width: 30px !important;
+  border-radius: 10px !important;
+}
+.splide__pagination__page {
+  background: #5b6255 !important;
+  margin: 6px !important;
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+}
+.abs-div-home {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
+}
+.text-div-home {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1.2rem 0rem;
+}
+.text-div-home h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.text-div-home h1 {
+  font-size: 3.1rem;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+.explore {
+  padding: 25px 0px;
+  width: 280px;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.explore:hover {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+}
+@media screen and (max-width: 1284px) {
+  .homepage-section1 {
+    overflow-y: visible;
+  }
+  .bg-home {
+    object-fit: cover;
+    height: 100vh;
+  }
+}
