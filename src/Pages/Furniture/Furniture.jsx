@@ -25,6 +25,11 @@ import imgPop1 from "../../Assets/popular/img1.png";
 import imgPop2 from "../../Assets/popular/img2.png";
 import imgPop3 from "../../Assets/popular/img3.png";
 import mainPop from "../../Assets/popular/main.png";
+//acc
+import imgacc1 from "../../Assets/accessories/img1.png";
+import imgacc2 from "../../Assets/accessories/img2.png";
+import imgacc3 from "../../Assets/accessories/img3.png";
+import imgacc4 from "../../Assets/accessories/img4.png";
 function Furniture() {
   return (
     <div className="furniture">
@@ -244,6 +249,63 @@ function Furniture() {
               Add to Cart <FontAwesomeIcon icon={faCartPlus} />
             </button>
           </div>
+        </div>
+      </div>
+      <div className="homepage-section6">
+        <h1>Browse the collection of accessories</h1>
+        <div className="bottom-acc">
+          <Splide
+            options={{
+              rewind: true,
+              pagination: false,
+              arrows: true,
+              width: "100%",
+              gap: "0rem",
+              autoplay: true,
+              perPage: 5,
+              perMove: 1,
+              type: "loop",
+              breakpoints: {
+                1600: {
+                  perPage: 4,
+                },
+                1200: {
+                  perPage: 3,
+                },
+                938: {
+                  perPage: 2,
+                },
+                638: {
+                  perPage: 1,
+                },
+              },
+            }}
+          >
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc1} alt="" className="acc-img" />
+                <p>SOFA ARM</p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc2} alt="" className="acc-img" />
+                <p>table top</p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc3} alt="" className="acc-img" />
+                <p>MIRROR</p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc4} alt="" className="acc-img" />
+                <p>SOFA ARM</p>
+              </div>
+            </SplideSlide>
+          </Splide>
         </div>
       </div>
     </div>
