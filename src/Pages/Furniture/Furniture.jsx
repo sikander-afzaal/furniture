@@ -1,6 +1,7 @@
 import React from "react";
 import "./Furniture.css";
 import Header from "../../Layout/Header/Header.jsx";
+import Footer from "../../Layout/Footer/Footer.jsx";
 import bg1 from "../../Assets/homepage/homepage-bg1.png";
 import bg2 from "../../Assets/homepage/homepage-bg2.png";
 import bg3 from "../../Assets/homepage/homepage-bg3.png";
@@ -393,6 +394,7 @@ function Furniture() {
           </Splide>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
