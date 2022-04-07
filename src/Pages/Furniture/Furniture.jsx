@@ -8,6 +8,7 @@ import sofa from "../../Assets/sofa.png";
 import armchair from "../../Assets/armchair.png";
 import stool from "../../Assets/stool.png";
 import section2Left from "../../Assets/section2-left.png";
+import section3 from "../../Assets/section3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -132,6 +133,27 @@ function Furniture() {
               <img src={stool} alt="" />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="homepage-section3">
+        <div className="left-section3">
+          <h1>
+            Explore other interiors <br /> in our newsletter
+          </h1>
+          <div className="bottom-left-section3">
+            <input type="email" className="email" placeholder="Email Address" />
+            <div className="check-div">
+              <input type="checkbox" />
+              <p>
+                I Acknowledge That I Have Read The{" "}
+                <span>Personal Data Charter</span>{" "}
+              </p>
+            </div>
+            <button className="explore">SUBSCRIBE</button>
+          </div>
+        </div>
+        <div className="right-section3">
+          <img src={section3} alt="" />
         </div>
       </div>
     </div>
