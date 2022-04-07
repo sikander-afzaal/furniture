@@ -13,6 +13,9 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import img1 from "../../Assets/collection/s1.png";
+import img2 from "../../Assets/collection/s2.png";
+import img3 from "../../Assets/collection/s3.png";
 function Furniture() {
   return (
     <div className="furniture">
@@ -155,6 +158,36 @@ function Furniture() {
         <div className="right-section3">
           <img src={section3} alt="" />
         </div>
+      </div>
+      <div className="homepage-section4">
+        <Splide
+          options={{
+            rewind: true,
+            pagination: false,
+            arrows: true,
+            width: "100%",
+            gap: "0rem",
+            autoplay: true,
+            perPage: 3,
+            type: "loop",
+          }}
+        >
+          <SplideSlide>
+            <div className="img-wrapper-collection">
+              <img src={img1} alt="" className="collection-img" />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="img-wrapper-collection">
+              <img src={img2} alt="" className="collection-img" />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="img-wrapper-collection">
+              <img src={img3} alt="" className="collection-img" />
+            </div>
+          </SplideSlide>
+        </Splide>
       </div>
     </div>
   );
