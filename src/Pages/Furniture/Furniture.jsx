@@ -20,6 +20,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import img1 from "../../Assets/collection/s1.png";
 import img2 from "../../Assets/collection/s2.png";
 import img3 from "../../Assets/collection/s3.png";
+import section7 from "../../Assets/section7.png";
 //popular
 import imgPop1 from "../../Assets/popular/img1.png";
 import imgPop2 from "../../Assets/popular/img2.png";
@@ -303,6 +304,90 @@ function Furniture() {
               <div className="acc-wrapper">
                 <img src={imgacc4} alt="" className="acc-img" />
                 <p>SOFA ARM</p>
+              </div>
+            </SplideSlide>
+          </Splide>
+        </div>
+      </div>
+      <div className="homepage-section7">
+        <div className="bottom-acc section7-bottom-acc">
+          <Splide
+            options={{
+              rewind: true,
+              pagination: false,
+              arrows: true,
+              width: "100%",
+              gap: "0rem",
+              autoplay: true,
+              perPage: 1,
+              perMove: 1,
+              type: "loop",
+            }}
+          >
+            <SplideSlide>
+              <div className="section7-wrapper">
+                <div className="text-div-section7">
+                  <h1>
+                    We Cares About Your <br /> Dreams
+                  </h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <img src={section7} alt="" className="section7-img" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="section7-wrapper">
+                <div className="text-div-section7">
+                  <h1>
+                    We Cares About Your <br /> Dreams
+                  </h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <img src={section7} alt="" className="section7-img" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="section7-wrapper">
+                <div className="text-div-section7">
+                  <h1>
+                    We Cares About Your <br /> Dreams
+                  </h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <img src={section7} alt="" className="section7-img" />
               </div>
             </SplideSlide>
           </Splide>
