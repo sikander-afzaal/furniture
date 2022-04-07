@@ -11,11 +11,20 @@ import section2Left from "../../Assets/section2-left.png";
 import section3 from "../../Assets/section3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faStar,
+  faCartPlus,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import img1 from "../../Assets/collection/s1.png";
 import img2 from "../../Assets/collection/s2.png";
 import img3 from "../../Assets/collection/s3.png";
+//popular
+import imgPop1 from "../../Assets/popular/img1.png";
+import imgPop2 from "../../Assets/popular/img2.png";
+import imgPop3 from "../../Assets/popular/img3.png";
+import mainPop from "../../Assets/popular/main.png";
 function Furniture() {
   return (
     <div className="furniture">
@@ -169,25 +178,73 @@ function Furniture() {
             gap: "0rem",
             autoplay: true,
             perPage: 3,
+            perMove: 1,
             type: "loop",
+            breakpoints: {
+              1318: {
+                perPage: 2,
+              },
+              800: {
+                perPage: 1,
+              },
+            },
           }}
         >
           <SplideSlide>
             <div className="img-wrapper-collection">
-              <img src={img1} alt="" className="collection-img" />
+              <img data-num={0} src={img1} alt="" className="collection-img" />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-collection">
-              <img src={img2} alt="" className="collection-img" />
+              <img data-num={1} src={img2} alt="" className="collection-img" />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-collection">
-              <img src={img3} alt="" className="collection-img" />
+              <img data-num={2} src={img3} alt="" className="collection-img" />
             </div>
           </SplideSlide>
         </Splide>
+      </div>
+      <div className="homepage-section5">
+        <div className="heading-section5">
+          <span className="line"></span>
+          <h1>Popular This Week</h1>
+        </div>
+        <div className="bottom-section5">
+          <div className="left-section5">
+            <div className="col-images">
+              <img src={imgPop1} alt="" />
+              <img src={imgPop2} alt="" />
+              <img src={imgPop3} alt="" />
+            </div>
+            <img src={mainPop} alt="" className="main-section5" />
+          </div>
+          <div className="right-section5">
+            <h2>Bunk Bed Stainless Steel</h2>
+            <div className="combine">
+              <div className="star-div">
+                <FontAwesomeIcon icon={faStar} className="yellow" />
+                <FontAwesomeIcon icon={faStar} className="yellow" />
+                <FontAwesomeIcon icon={faStar} className="yellow" />
+                <FontAwesomeIcon icon={faStar} className="yellow" />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h3>$299</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.{" "}
+              </p>
+            </div>
+
+            <button className="explore">
+              Add to Cart <FontAwesomeIcon icon={faCartPlus} />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

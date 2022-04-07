@@ -326,6 +326,7 @@
 }
 .collection-img {
   max-width: 100%;
+  transition: all 0.3s ease-in-out;
   object-fit: contain;
 }
 .splide__arrow {
@@ -338,7 +339,107 @@
   width: 2em !important ;
   height: 2em !important;
 }
+.scaled {
+  width: 470px;
+}
 /* end section 4 --------------------- */
+/* section 5 --------------------- */
+.homepage-section5 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 1500px;
+  max-width: 1500px;
+  padding: 2rem 0rem;
+  gap: 2.5rem;
+}
+.heading-section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+.heading-section5 h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.line {
+  background-color: black;
+  width: 80px;
+  height: 4px;
+}
+.bottom-section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+  height: max-content;
+}
+.left-section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+.col-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 32px;
+}
+.right-section5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  gap: 3rem;
+}
+.combine {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.right-section5 h2 {
+  align-self: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.star-div svg {
+  color: #cdcfd1;
+  font-size: 1.5rem;
+}
+.yellow {
+  color: #fbea53 !important;
+}
+.combine h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.combine p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.right-section5 .explore {
+  align-self: flex-end;
+  border: 2px solid transparent;
+}
+.right-section5 .explore:hover {
+  border-color: black;
+}
+/* end section 5 --------------------- */
 /* responsive part -------------------- */
 @media screen and (max-width: 1530px) {
   .homepage-section2 {
@@ -351,6 +452,18 @@
   .homepage-section3 {
     width: 1200px;
     padding-inline: 2rem;
+  }
+  .homepage-section5 {
+    width: 95%;
+  }
+  .right-section5 {
+    gap: 2rem;
+  }
+  .right-section5 h2 {
+    font-size: 2.2rem;
+  }
+  .combine p {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1284px) {
@@ -399,6 +512,22 @@
     order: 2;
   }
 }
+@media screen and (max-width: 1178px) {
+  .homepage-section5 {
+    align-items: center;
+  }
+  .bottom-section5 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-section5 h2 {
+    font-size: 3rem;
+  }
+  .right-section5 {
+    width: 750px;
+  }
+}
 @media screen and (max-width: 865px) {
   .homepage-section2 {
     flex-direction: column;
@@ -426,6 +555,51 @@
     justify-content: center;
     padding: 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .homepage-section5 {
+    align-items: center;
+    width: 95%;
+  }
+  .bottom-section5 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .right-section5 h2 {
+    font-size: 3rem;
+  }
+  .right-section5 {
+    width: 95%;
+    text-align: center;
+  }
+  .combine {
+    align-items: center;
+  }
+  .right-section5 .explore {
+    align-self: center;
+  }
+  .left-section5 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .col-images {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .col-images img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .main-section5 {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 706px) {
@@ -489,6 +663,15 @@
   .left-section3 h1 {
     font-size: 2rem;
   }
+  .homepage-section5 h1 {
+    font-size: 2.2rem;
+  }
+  .line {
+    width: 50px;
+  }
+  .col-images img {
+    max-width: 30%;
+  }
 }
 
 @media screen and (max-width: 448px) {
@@ -524,5 +707,8 @@
   }
   .text-div-home h1 {
     font-size: 1.5rem;
+  }
+  .homepage-section5 h1 {
+    font-size: 2rem;
   }
 }
