@@ -58,31 +58,85 @@ function Header() {
           icon={open ? faXmark : faBars}
         />
         <div className={`abs-menu ${open ? "active-menu" : ""}`}>
-          <Link to="/furniture" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="/furniture"
+            className="nav-links"
+          >
             Home
           </Link>
-          <Link to="#" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="#"
+            className="nav-links"
+          >
             Products
           </Link>
-          <Link to="#" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="#"
+            className="nav-links"
+          >
             Team
           </Link>
-          <Link to="#" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="#"
+            className="nav-links"
+          >
             Contact
           </Link>
-          <Link to="/furniture/LivingRoom" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="/furniture/LivingRoom"
+            className="nav-links"
+          >
             Living
           </Link>
-          <Link to="#" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="#"
+            className="nav-links"
+          >
             Dining
           </Link>
-          <Link to="#" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="#"
+            className="nav-links"
+          >
             Bedroom
           </Link>
-          <Link to="#" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="#"
+            className="nav-links"
+          >
             Workspace
           </Link>
-          <Link to="#" className="nav-links">
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+            }}
+            to="#"
+            className="nav-links"
+          >
             Out Door
           </Link>
         </div>
