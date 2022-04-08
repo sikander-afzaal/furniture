@@ -109,16 +109,115 @@
 }
 
 /* section3 end -------------------------- */
+/* section4  -------------------------- */
+.living-section4 {
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.living-section4 img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.abs-living-section4 {
+  position: absolute;
+  left: 10%;
+  top: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.input-div-living {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 584px;
+}
+.abs-living-section4 h1 {
+  color: white;
+  font-size: 3rem;
+}
+.input-div-living h3 {
+  color: white;
+  font-size: 1.3rem;
+}
+.abs-living-section4 input {
+  background-color: #dbe5db;
+  height: 50px;
+  font-size: 1.1rem;
+  border: none;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+}
+.abs-living-section4 input:focus {
+  outline: none;
+}
+.row-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.email-input {
+  width: 100%;
+}
+.row-input input {
+  flex: 0.5;
+}
+.input-div-living .explore {
+  align-self: flex-end;
+  width: 50%;
+  padding: 20px 0px;
+}
+.padding-top {
+  padding: 3rem 0rem;
+}
+/* section4 end -------------------------- */
 /* responsive part ---------------------- */
 @media screen and (max-width: 1476px) {
   .cards-grid {
     width: 100%;
+  }
+  .living-section4 {
+    min-height: 100vh;
   }
 }
 @media screen and (max-width: 1316px) {
   .cards-grid {
     grid-template-columns: 1fr 1fr 1fr;
     width: 90%;
+  }
+}
+@media screen and (max-width: 1306px) {
+  .living-section4 {
+    min-height: 100%;
+    background-image: url("../../../Assets/Living\ Room/register-bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .living-section4 img {
+    display: none;
+  }
+  .abs-living-section4 {
+    position: static;
+    align-items: center;
+  }
+  .input-div-living {
+    align-items: center;
+  }
+  .input-div-living .explore {
+    align-self: center;
   }
 }
 @media screen and (max-width: 1284px) {
@@ -138,6 +237,12 @@
   .cards-grid {
     grid-template-columns: 1fr 1fr;
     width: 90%;
+  }
+}
+@media screen and (max-width: 784px) {
+  .abs-living-section4 h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 726px) {
@@ -168,6 +273,15 @@
   .living-section1 .text-div-home h2 {
     font-size: 1.1rem;
   }
+  .input-div-living {
+    width: 400px;
+  }
+  .row-input input {
+    width: 100%;
+  }
+  .abs-living-section4 h1 {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 512px) {
   .living-section1 .text-div-home h2 {
@@ -181,5 +295,8 @@
 @media screen and (max-width: 404px) {
   .living-section1 .text-div-home h1 {
     font-size: 1.5rem;
+  }
+  .input-div-living {
+    width: 360px;
   }
 }
