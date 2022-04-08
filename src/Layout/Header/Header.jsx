@@ -31,7 +31,7 @@ function Header() {
           <Link to="/furniture/LivingRoom" className="nav-links">
             Living
           </Link>
-          <Link to="#" className="nav-links">
+          <Link to="/furniture/DiningRoom" className="nav-links">
             Dining
           </Link>
           <Link to="#" className="nav-links">
@@ -107,7 +107,7 @@ function Header() {
             onClick={() => {
               setOpen((prev) => !prev);
             }}
-            to="#"
+            to="/furniture/DiningRoom"
             className="nav-links"
           >
             Dining

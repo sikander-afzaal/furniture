@@ -1,0 +1,80 @@
+.dining-room {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.dining-section1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.dining-section1 img {
+  width: 100%;
+  object-fit: contain;
+  max-width: 100%;
+}
+.dining-abs-div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 600px;
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 33%;
+  left: 10%;
+  padding: 31px 40px;
+  color: white;
+  gap: 26px;
+}
+.dining-abs-div .heading-section5 .line {
+  background-color: white;
+}
+.dining-abs-div p {
+  width: 90%;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 1560px) {
+  .dining-abs-div {
+    position: static;
+    top: 40%;
+  }
+  .dining-section1 {
+    background-image: url("../../../Assets/Dining\ Room/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15%;
+  }
+  .dining-section1 img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1082px) {
+  .dining-section1 {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 634px) {
+  .dining-abs-div {
+    width: 100%;
+    padding: 31px 20px;
+  }
+}
+@media screen and (max-width: 442px) {
+  .dining-abs-div {
+    width: 100%;
+    padding: 0px 15px;
+    text-align: center;
+  }
+}

@@ -4,6 +4,7 @@ import Header from "../../Layout/Header/Header.jsx";
 import Footer from "../../Layout/Footer/Footer.jsx";
 import Home from "./Home/Home.jsx";
 import LivingRoom from "./LivingRoom/LivingRoom.jsx";
+import DiningRoom from "./DiningRoom/DiningRoom.jsx";
 import { Route, Routes } from "react-router-dom";
 function Furniture() {
   return (
@@ -12,6 +13,7 @@ function Furniture() {
       <Routes>
         <Route path="" element={<Home />}></Route>
         <Route path="LivingRoom" element={<LivingRoom />}></Route>
+        <Route path="DiningRoom" element={<DiningRoom />}></Route>
       </Routes>
       <Footer />
     </div>
