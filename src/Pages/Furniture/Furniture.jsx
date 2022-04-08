@@ -4,12 +4,7 @@ import Header from "../../Layout/Header/Header.jsx";
 import Footer from "../../Layout/Footer/Footer.jsx";
 import Home from "./Home/Home.jsx";
 import LivingRoom from "./LivingRoom/LivingRoom.jsx";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Outlet,
-} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 function Furniture() {
   return (
     <div className="furniture">
