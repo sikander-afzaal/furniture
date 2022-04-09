@@ -6,6 +6,7 @@ import Home from "./Home/Home.jsx";
 import LivingRoom from "./LivingRoom/LivingRoom.jsx";
 import DiningRoom from "./DiningRoom/DiningRoom.jsx";
 import { Route, Routes } from "react-router-dom";
+import BedRoom from "./BedRoom/BedRoom";
 function Furniture() {
   return (
     <div className="furniture">
@@ -14,6 +15,7 @@ function Furniture() {
         <Route path="" element={<Home />}></Route>
         <Route path="LivingRoom" element={<LivingRoom />}></Route>
         <Route path="DiningRoom" element={<DiningRoom />}></Route>
+        <Route path="BedRoom" element={<BedRoom />}></Route>
       </Routes>
       <Footer />
     </div>
