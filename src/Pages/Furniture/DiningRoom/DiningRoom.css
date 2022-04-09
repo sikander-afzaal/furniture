@@ -60,6 +60,15 @@
   gap: 20px;
   max-width: 700px;
 }
+.text-part .explore {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid transparent;
+}
+.text-part .explore:hover {
+  border-color: black;
+}
 .text-part p {
   width: 70%;
   font-size: 1.3rem;
@@ -82,7 +91,22 @@
   object-fit: contain;
 }
 /* section2 end--------------------------------- */
-
+.living-section4 {
+  position: relative;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.abs-living-section4 {
+  z-index: 4;
+}
 @media screen and (max-width: 1560px) {
   .dining-abs-div {
     position: static;

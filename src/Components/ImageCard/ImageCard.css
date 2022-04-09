@@ -1,0 +1,16 @@
+.main-card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 0px;
+}
+.abs {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card-wrapper2 {
+  height: auto;
+}

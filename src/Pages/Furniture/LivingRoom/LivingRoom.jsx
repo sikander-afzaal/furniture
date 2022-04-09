@@ -113,7 +113,7 @@ function LivingRoom() {
           <Card img={popular4} desc={"Wishbone Chair"} />
         </div>
       </div>
-      <div className="living-section4">
+      <div className="living-section4 overlay">
         <img src={registerBg} alt="" />
         <div className="abs-living-section4">
           <h1>SUMMER CONFORT COLLECTION</h1>
