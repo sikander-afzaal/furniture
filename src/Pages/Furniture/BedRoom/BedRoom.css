@@ -75,6 +75,68 @@
   height: 12px !important;
   width: 12px !important;
 }
+/* bedroom summer section --------------------------- */
+.bedroom-section2 {
+  background-color: #f0f0ef;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 6rem;
+  gap: 4rem;
+}
+.summer-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.summerbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 333px;
+  padding: 20px;
+  width: 433px;
+  gap: 20px;
+}
+
+.left-sumbox {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.left-sumbox h1 {
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+.left-sumbox p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.left-sumbox .explore {
+  padding: 15px;
+  width: 165px;
+}
+.right-sumbox {
+  flex: 0.7;
+}
+.right-sumbox img {
+  max-width: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1560px) {
+  .bedroom-bg {
+    background-image: url("../../../Assets/BedRoom/bg.png");
+  }
+}
+
 @media screen and (max-width: 1536px) {
   .bedroom-section1 {
     grid-template-rows: 1fr 1fr;
@@ -103,6 +165,19 @@
   .btn-div .explore {
     padding: 15px 0px;
     width: 240px;
+  }
+}
+@media screen and (max-width: 1414px) {
+  .bedroom-section2 {
+    padding: 4rem 2rem;
+  }
+  .summer-div {
+    max-width: 1280px;
+    flex-wrap: wrap;
+  }
+  .summerbox {
+    width: 400px;
+    margin-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 1274px) {
@@ -177,5 +252,15 @@
   }
   .left-bedroom-section1 p {
     width: 90%;
+  }
+
+  .bedroom-section2 .heading-section5 h1 {
+    font-size: 2.5rem;
+  }
+  .summerbox {
+    width: 100%;
+  }
+  .bedroom-section2 {
+    padding: 4rem 1rem;
   }
 }

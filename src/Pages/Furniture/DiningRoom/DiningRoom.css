@@ -93,6 +93,7 @@
 /* section2 end--------------------------------- */
 .living-section4 {
   position: relative;
+  z-index: 0;
 }
 .overlay::after {
   content: "";
@@ -113,7 +114,6 @@
     top: 40%;
   }
   .dining-section1 {
-    background-image: url("../../../Assets/Dining\ Room/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -121,6 +121,9 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 15%;
+  }
+  .dining-bg {
+    background-image: url("../../../Assets/Dining\ Room/bg.png");
   }
   .dining-section1 img {
     display: none;

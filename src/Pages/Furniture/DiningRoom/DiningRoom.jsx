@@ -76,7 +76,7 @@ function DiningRoom() {
           <ImageCard show={false} img={pop8} />
         </div>
       </div>
-      <div className="living-section4 overlay">
+      <div className="living-section4 overlay dining-bg">
         <img src={bg} alt="" />
         <div className="abs-living-section4">
           <h1>SUMMER CONFORT COLLECTION</h1>
