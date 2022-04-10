@@ -1,5 +1,11 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <div className="footer">
@@ -29,9 +35,15 @@ function Footer() {
         <a href="#">About Us</a>
         <a href="#">About Us</a>
         <div className="box-div">
-          <div className="box"></div>
-          <div className="box"></div>
-          <div className="box"></div>
+          <a href="#">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="#">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="#">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
         </div>
       </div>
     </div>

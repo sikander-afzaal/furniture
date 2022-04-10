@@ -17,12 +17,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
-.box {
-  width: 30px;
-  height: 30px;
-  background-color: #000000;
+.box-div svg {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #000000;
 }
 .col-footer a {
   text-decoration: none;
