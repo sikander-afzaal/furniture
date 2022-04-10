@@ -27,11 +27,11 @@ function Header() {
             Contact
           </Link>
         </div>
-        <div className="central-header">
+        <Link to="/furniture" className="central-header">
           <h1>
             <strong>BC</strong>LUXURY.
           </h1>
-        </div>
+        </Link>
         <div className="right-header">
           <Link
             onClick={toTop}
@@ -59,11 +59,11 @@ function Header() {
         </div>
       </div>
       <div className="navbar-mobile">
-        <div className="central-header">
+        <Link to="/furniture" className="central-header">
           <h1>
             <strong>BC</strong>LUXURY.
           </h1>
-        </div>
+        </Link>
         <FontAwesomeIcon
           onClick={() => {
             setOpen((prev) => !prev);

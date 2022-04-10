@@ -5,6 +5,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.card-wrapper:hover .main-card img {
+  transform: scale(1.1);
+}
 .main-card {
   width: 310px;
   background-color: white;
@@ -38,6 +41,7 @@
   object-fit: contain;
   justify-self: center;
   align-self: center;
+  transition: all 0.4s ease-in-out;
 }
 .card-desc {
   color: rgba(0, 0, 0, 0.5);
@@ -54,4 +58,9 @@
   font-size: 1.3rem;
   border: none;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.card-btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #f0f0ef;
 }

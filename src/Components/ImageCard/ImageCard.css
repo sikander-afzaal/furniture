@@ -11,6 +11,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.main-card2 {
+  overflow: hidden;
+}
 .card-wrapper2 {
   height: auto;
+  overflow: hidden !important;
 }

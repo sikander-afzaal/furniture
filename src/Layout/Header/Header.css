@@ -20,12 +20,17 @@
 .left-header {
   margin-right: 3rem;
 }
+.central-header {
+  text-decoration: none;
+}
 .central-header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   font-weight: 300;
+  color: black;
+  text-decoration: none;
   font-size: 3rem;
 }
 .right-header {
