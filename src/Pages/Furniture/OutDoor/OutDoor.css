@@ -1,0 +1,19 @@
+/* .wrapper-outdoor {
+  width: 100%;
+  background-image: url("../../../Assets/OutDoor/outdoor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 130px;
+}
+.work-section1 {
+  margin-top: 130px;
+}
+.workspace {
+  margin-top: 0px !important;
+}
+@media screen and (max-width: 1130px) {
+  .wrapper-outdoor {
+    padding-top: 00px;
+  }
+} */

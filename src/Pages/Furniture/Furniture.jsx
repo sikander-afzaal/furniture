@@ -8,6 +8,7 @@ import DiningRoom from "./DiningRoom/DiningRoom.jsx";
 import { Route, Routes } from "react-router-dom";
 import BedRoom from "./BedRoom/BedRoom";
 import WorkSpace from "./Workspace/WorkSpace";
+import OutDoor from "./OutDoor/OutDoor";
 function Furniture() {
   return (
     <div className="furniture">
@@ -18,6 +19,7 @@ function Furniture() {
         <Route path="DiningRoom" element={<DiningRoom />}></Route>
         <Route path="BedRoom" element={<BedRoom />}></Route>
         <Route path="WorkSpace" element={<WorkSpace />}></Route>
+        <Route path="OutDoor" element={<OutDoor />}></Route>
       </Routes>
       <Footer />
     </div>
