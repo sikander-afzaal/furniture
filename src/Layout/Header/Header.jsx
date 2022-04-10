@@ -5,20 +5,25 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 function Header() {
   const [open, setOpen] = useState(false);
+  const toTop = () => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 200);
+  };
   return (
     <div className="header">
       <div className="navbar-desktop">
         <div className="left-header">
-          <Link to="/furniture" className="nav-links">
+          <Link onClick={toTop} to="/furniture" className="nav-links">
             Home
           </Link>
-          <Link to="#" className="nav-links">
+          <Link onClick={toTop} to="#" className="nav-links">
             Products
           </Link>
-          <Link to="#" className="nav-links">
+          <Link onClick={toTop} to="#" className="nav-links">
             Team
           </Link>
-          <Link to="#" className="nav-links">
+          <Link onClick={toTop} to="#" className="nav-links">
             Contact
           </Link>
         </div>
@@ -28,19 +33,27 @@ function Header() {
           </h1>
         </div>
         <div className="right-header">
-          <Link to="/furniture/LivingRoom" className="nav-links">
+          <Link
+            onClick={toTop}
+            to="/furniture/LivingRoom"
+            className="nav-links"
+          >
             Living
           </Link>
-          <Link to="/furniture/DiningRoom" className="nav-links">
+          <Link
+            onClick={toTop}
+            to="/furniture/DiningRoom"
+            className="nav-links"
+          >
             Dining
           </Link>
-          <Link to="/furniture/BedRoom" className="nav-links">
+          <Link onClick={toTop} to="/furniture/BedRoom" className="nav-links">
             Bedroom
           </Link>
-          <Link to="/furniture/WorkSpace" className="nav-links">
+          <Link onClick={toTop} to="/furniture/WorkSpace" className="nav-links">
             Workspace
           </Link>
-          <Link to="/furniture/OutDoor" className="nav-links">
+          <Link onClick={toTop} to="/furniture/OutDoor" className="nav-links">
             Out Door
           </Link>
         </div>
@@ -61,6 +74,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="/furniture"
             className="nav-links"
@@ -70,6 +86,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="#"
             className="nav-links"
@@ -79,6 +98,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="#"
             className="nav-links"
@@ -88,6 +110,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="#"
             className="nav-links"
@@ -97,6 +122,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="/furniture/LivingRoom"
             className="nav-links"
@@ -106,6 +134,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="/furniture/DiningRoom"
             className="nav-links"
@@ -115,6 +146,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="/furniture/BedRoom"
             className="nav-links"
@@ -124,6 +158,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="/furniture/WorkSpace"
             className="nav-links"
@@ -133,6 +170,9 @@ function Header() {
           <Link
             onClick={() => {
               setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
             }}
             to="/furniture/OutDoor"
             className="nav-links"
