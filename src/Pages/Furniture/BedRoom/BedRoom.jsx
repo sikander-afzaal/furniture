@@ -6,11 +6,7 @@ import slide1 from "../../../Assets/BedRoom/slide1.png";
 import slide2 from "../../../Assets/BedRoom/slide2.png";
 import slide3 from "../../../Assets/BedRoom/slide3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLongArrowRight,
-  faStar,
-  faCartPlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import new1 from "../../../Assets/BedRoom/new/new1.png";
 import ImageCard from "../../../Components/ImageCard/ImageCard";
 import pop1 from "../../../Assets/BedRoom/popular/pop1.png";
