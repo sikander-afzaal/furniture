@@ -64,7 +64,7 @@
 .navbar-mobile svg {
   display: none;
 }
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1420px) {
   .left-header {
     margin-right: 1.5rem;
   }
@@ -77,6 +77,15 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .left-header,
+  .right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 }
 @media screen and (max-width: 1192px) {
@@ -107,7 +116,7 @@
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 805px) {
   .navbar-mobile svg {
     display: block;
   }

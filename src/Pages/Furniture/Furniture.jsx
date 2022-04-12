@@ -5,10 +5,11 @@ import Footer from "../../Layout/Footer/Footer.jsx";
 import Home from "./Home/Home.jsx";
 import LivingRoom from "./LivingRoom/LivingRoom.jsx";
 import DiningRoom from "./DiningRoom/DiningRoom.jsx";
-import { Route, Routes } from "react-router-dom";
 import BedRoom from "./BedRoom/BedRoom";
 import WorkSpace from "./Workspace/WorkSpace";
 import OutDoor from "./OutDoor/OutDoor";
+import Product from "./Product/Product";
+import { Route, Routes } from "react-router-dom";
 function Furniture() {
   return (
     <div className="furniture">
@@ -20,6 +21,7 @@ function Furniture() {
         <Route path="BedRoom" element={<BedRoom />}></Route>
         <Route path="WorkSpace" element={<WorkSpace />}></Route>
         <Route path="OutDoor" element={<OutDoor />}></Route>
+        <Route path="Product" element={<Product />}></Route>
       </Routes>
       <Footer />
     </div>

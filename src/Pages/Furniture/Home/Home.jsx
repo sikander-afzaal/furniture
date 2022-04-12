@@ -151,28 +151,63 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="homepage-section3">
-        <div className="left-section3">
-          <h1>
-            Explore other interiors <br /> in our newsletter
-          </h1>
-          <div className="bottom-left-section3">
-            <input type="email" className="email" placeholder="Email Address" />
-            <div className="check-div">
-              <input type="checkbox" />
-              <p>
-                I Acknowledge That I Have Read The{" "}
-                <span>Personal Data Charter</span>{" "}
-              </p>
-            </div>
-            <button className="explore">SUBSCRIBE</button>
-          </div>
-        </div>
-        <div className="right-section3">
-          <img src={section3} alt="" />
+      <div className="homepage-section6">
+        <h1>Browse the collection of accessories</h1>
+        <div className="bottom-acc">
+          <Splide
+            options={{
+              rewind: true,
+              pagination: false,
+              arrows: true,
+              width: "100%",
+              gap: "0rem",
+              autoplay: true,
+              perPage: 5,
+              perMove: 1,
+              type: "loop",
+              breakpoints: {
+                1600: {
+                  perPage: 4,
+                },
+                1200: {
+                  perPage: 3,
+                },
+                938: {
+                  perPage: 2,
+                },
+                638: {
+                  perPage: 1,
+                },
+              },
+            }}
+          >
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc1} alt="" className="acc-img" />
+                <p>SOFA ARM</p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc2} alt="" className="acc-img" />
+                <p>table top</p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc3} alt="" className="acc-img" />
+                <p>MIRROR</p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="acc-wrapper">
+                <img src={imgacc4} alt="" className="acc-img" />
+                <p>SOFA ARM</p>
+              </div>
+            </SplideSlide>
+          </Splide>
         </div>
       </div>
-
       <div className="homepage-section4">
         <Splide
           options={{
@@ -252,62 +287,25 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <div className="homepage-section6">
-        <h1>Browse the collection of accessories</h1>
-        <div className="bottom-acc">
-          <Splide
-            options={{
-              rewind: true,
-              pagination: false,
-              arrows: true,
-              width: "100%",
-              gap: "0rem",
-              autoplay: true,
-              perPage: 5,
-              perMove: 1,
-              type: "loop",
-              breakpoints: {
-                1600: {
-                  perPage: 4,
-                },
-                1200: {
-                  perPage: 3,
-                },
-                938: {
-                  perPage: 2,
-                },
-                638: {
-                  perPage: 1,
-                },
-              },
-            }}
-          >
-            <SplideSlide>
-              <div className="acc-wrapper">
-                <img src={imgacc1} alt="" className="acc-img" />
-                <p>SOFA ARM</p>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="acc-wrapper">
-                <img src={imgacc2} alt="" className="acc-img" />
-                <p>table top</p>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="acc-wrapper">
-                <img src={imgacc3} alt="" className="acc-img" />
-                <p>MIRROR</p>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="acc-wrapper">
-                <img src={imgacc4} alt="" className="acc-img" />
-                <p>SOFA ARM</p>
-              </div>
-            </SplideSlide>
-          </Splide>
+      <div className="homepage-section3">
+        <div className="left-section3">
+          <h1>
+            Explore other interiors <br /> in our newsletter
+          </h1>
+          <div className="bottom-left-section3">
+            <input type="email" className="email" placeholder="Email Address" />
+            <div className="check-div">
+              <input type="checkbox" />
+              <p>
+                I Acknowledge That I Have Read The{" "}
+                <span>Personal Data Charter</span>{" "}
+              </p>
+            </div>
+            <button className="explore">SUBSCRIBE</button>
+          </div>
+        </div>
+        <div className="right-section3">
+          <img src={section3} alt="" />
         </div>
       </div>
 

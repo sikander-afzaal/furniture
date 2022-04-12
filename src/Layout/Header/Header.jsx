@@ -18,7 +18,7 @@ function Header() {
             Home
           </Link>
           <Link onClick={toTop} to="#" className="nav-links">
-            Products
+            Brands
           </Link>
           <Link onClick={toTop} to="#" className="nav-links">
             Team
@@ -55,6 +55,9 @@ function Header() {
           </Link>
           <Link onClick={toTop} to="/furniture/OutDoor" className="nav-links">
             Out Door
+          </Link>
+          <Link onClick={toTop} to="/Choice" className="nav-links">
+            Clothing
           </Link>
         </div>
       </div>
@@ -178,6 +181,18 @@ function Header() {
             className="nav-links"
           >
             Out Door
+          </Link>
+          <Link
+            onClick={() => {
+              setOpen((prev) => !prev);
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 200);
+            }}
+            to="/Choice"
+            className="nav-links"
+          >
+            Clothing
           </Link>
         </div>
       </div>

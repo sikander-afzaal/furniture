@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 function Card({ img, desc }) {
   return (
@@ -8,7 +9,9 @@ function Card({ img, desc }) {
         <img src={img} alt="" />
         <p className="card-desc">{desc}</p>
       </div>
-      <button className="card-btn">GET PRICE</button>
+      <Link to={"/furniture/Product"} className="card-btn">
+        GET PRICE
+      </Link>
     </div>
   );
 }
