@@ -9,6 +9,11 @@
 .card-wrapper:hover .main-card img {
   transform: scale(1.1);
 }
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main-card {
   width: 310px;
   background-color: white;

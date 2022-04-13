@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Product.css";
 import main from "../../../Assets/Product/main.png";
 import main2 from "../../../Assets/Product/main2.png";
@@ -23,9 +23,44 @@ function Product() {
   useEffect(() => {
     slider1.current.sync(slider2.current.splide);
   }, [slider1, slider2]);
-
+  const [gallery, openGallery] = useState(false);
   return (
     <div className="product">
+      <div className={`gallery ${gallery ? "gal-flex" : ""}`}>
+        <FontAwesomeIcon
+          onClick={() => openGallery(false)}
+          className="cross"
+          icon={faXmark}
+        />
+        <Splide
+          className="gallery-slider"
+          options={{
+            pagination: false,
+            arrows: true,
+            isNavigation: false,
+            width: "100%",
+            perPage: 1,
+            type: "loop",
+          }}
+        >
+          {" "}
+          <SplideSlide>
+            <div className="img-wrapper-product-gal">
+              <img src={main3} alt="" />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="img-wrapper-product-gal">
+              <img src={main} alt="" />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="img-wrapper-product-gal">
+              <img src={main2} alt="" />
+            </div>
+          </SplideSlide>
+        </Splide>
+      </div>
       <div className="prod-section1">
         <Splide
           className="thumbnail"
@@ -75,6 +110,7 @@ function Product() {
               },
             },
           }}
+          onClick={() => openGallery(true)}
         >
           <SplideSlide>
             <div className="img-wrapper-product-main">

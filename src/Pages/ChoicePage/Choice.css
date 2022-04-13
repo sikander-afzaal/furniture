@@ -27,9 +27,21 @@
   object-fit: contain;
   width: 100%;
 }
+.choice-abs-div {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
 .choice-btn {
   width: 380px;
-  position: absolute;
   border: 2px solid white;
   color: white;
   padding: 15px 0px;
@@ -42,15 +54,15 @@
   transition: all 0.4s ease-in-out;
   text-decoration: none;
   cursor: pointer;
-  top: 50%;
-  z-index: 4;
-  left: 50%;
   text-decoration: none;
-  transform: translate(-50%, -50%);
 }
 .choice-btn:hover {
   background-color: white;
   color: black;
+}
+.choice-abs-div h1 {
+  font-size: 2.5rem;
+  color: white;
 }
 @media screen and (max-width: 1210px) {
   .choice-btn {

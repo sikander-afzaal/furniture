@@ -11,7 +11,9 @@ function Card({ img, desc }) {
     <div className="card-wrapper">
       <div className="main-card">
         <p className="new-item">New Item</p>
-        <img src={img} alt="" />
+        <Link className="flex" onClick={toTop} to={"/furniture/Product"}>
+          <img src={img} alt="" />
+        </Link>
         <p className="card-desc">{desc}</p>
       </div>
       <Link onClick={toTop} to={"/furniture/Product"} className="card-btn">

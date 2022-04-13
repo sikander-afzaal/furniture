@@ -47,6 +47,78 @@
   transition: all 0.3s ease-in-out;
   border-bottom: 2px solid transparent;
 }
+.nav-link-div {
+  position: relative;
+}
+.dropdown-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 30px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: -90px;
+  bottom: 0;
+  top: 27px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(28px);
+  width: 250px;
+  height: max-content;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.dropdown-nav a {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* dropdown hover ----------------------------- */
+.living-link:hover + .living-link-drop {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.living-link-drop:hover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.dining-link:hover + .dining-link-drop {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.dining-link-drop:hover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.bedroom-link:hover + .bedroom-link-drop {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.bedroom-link-drop:hover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.workspace-link:hover + .workspace-link-drop {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.workspace-link-drop:hover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
 .nav-links:hover {
   border-color: black;
 }
@@ -106,6 +178,9 @@
   }
   .header {
     height: 80px;
+  }
+  .dropdown-nav {
+    display: none;
   }
   .navbar-mobile {
     flex-direction: row;

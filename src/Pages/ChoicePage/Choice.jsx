@@ -8,15 +8,21 @@ function Choice() {
     <div className="choice">
       <div className="section-choice">
         <video className="video" src={cloth} autoPlay muted loop></video>
-        <Link to={"/cloth"} className="choice-btn">
-          SHOP
-        </Link>
+        <div className="choice-abs-div">
+          <h1>CLOTHING</h1>
+          <Link to={"/cloth"} className="choice-btn">
+            SHOP
+          </Link>
+        </div>
       </div>
       <div className="section-choice">
         <video className="video" src={furn} autoPlay muted loop></video>
-        <Link to={"/furniture"} className="choice-btn">
-          SHOP
-        </Link>
+        <div className="choice-abs-div">
+          <h1>FURNITURE</h1>
+          <Link to={"/furniture"} className="choice-btn">
+            SHOP
+          </Link>
+        </div>
       </div>
     </div>
   );
