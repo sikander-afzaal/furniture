@@ -26,6 +26,11 @@ import pop14 from "../../../Assets/BedRoom/popular/pop14.png";
 import pop15 from "../../../Assets/BedRoom/popular/pop15.png";
 import pop16 from "../../../Assets/BedRoom/popular/pop16.png";
 import bg from "../../../Assets/BedRoom/bg.png";
+import circleImg1 from "../../../Assets/Living Room/circle-img1.png";
+import circleImg2 from "../../../Assets/Living Room/circle-img2.png";
+import circleImg3 from "../../../Assets/Living Room/circle-img3.png";
+import circleImg4 from "../../../Assets/Living Room/circle-img4.png";
+import circleImg5 from "../../../Assets/Living Room/circle-img5.png";
 //summer collection -----------------------------
 import sum1 from "../../../Assets/BedRoom/summer/1.png";
 import sum2 from "../../../Assets/BedRoom/summer/2.png";
@@ -82,6 +87,28 @@ function BedRoom() {
               </div>
             </SplideSlide>
           </Splide>
+        </div>
+      </div>
+      <div className="living-section2">
+        <div className="wrapper-circle">
+          <img src={circleImg1} alt="" />
+          <p>sECTIONALS</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg2} alt="" />
+          <p>CHAISES</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg3} alt="" />
+          <p>BENCHES</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg4} alt="" />
+          <p>OTTOMANS</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg5} alt="" />
+          <p>STOOLS</p>
         </div>
       </div>
       <div className="dining-section2">

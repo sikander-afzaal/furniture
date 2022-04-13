@@ -14,6 +14,9 @@ function Header() {
     <div className="header">
       <div className="navbar-desktop">
         <div className="left-header">
+          {/* <Link onClick={toTop} to="/furniture" className="nav-links hidden">
+            Clothing
+          </Link> */}
           <Link onClick={toTop} to="/furniture" className="nav-links">
             Home
           </Link>

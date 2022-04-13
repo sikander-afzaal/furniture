@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
 function Card({ img, desc }) {
+  const toTop = () => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 200);
+  };
   return (
     <div className="card-wrapper">
       <div className="main-card">
@@ -9,7 +14,7 @@ function Card({ img, desc }) {
         <img src={img} alt="" />
         <p className="card-desc">{desc}</p>
       </div>
-      <Link to={"/furniture/Product"} className="card-btn">
+      <Link onClick={toTop} to={"/furniture/Product"} className="card-btn">
         GET PRICE
       </Link>
     </div>

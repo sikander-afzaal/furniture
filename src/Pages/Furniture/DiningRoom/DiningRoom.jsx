@@ -9,6 +9,11 @@ import {
 import bg from "../../../Assets/Dining Room/bg.png";
 import new1 from "../../../Assets/Dining Room/new/1.png";
 import new2 from "../../../Assets/Dining Room/new/2.png";
+import circleImg1 from "../../../Assets/Living Room/circle-img1.png";
+import circleImg2 from "../../../Assets/Living Room/circle-img2.png";
+import circleImg3 from "../../../Assets/Living Room/circle-img3.png";
+import circleImg4 from "../../../Assets/Living Room/circle-img4.png";
+import circleImg5 from "../../../Assets/Living Room/circle-img5.png";
 //popular images --------------------------
 import ImageCard from "../../../Components/ImageCard/ImageCard";
 import pop1 from "../../../Assets/Dining Room/popular/1.png";
@@ -27,7 +32,7 @@ import main from "../../../Assets/Dining Room/week/main.png";
 function DiningRoom() {
   return (
     <div className="dining-room">
-      <div className="dining-section1">
+      <div className="dining-section1 dining-bg">
         <img src={bg} alt="" />
         <div className="dining-abs-div">
           <div className="heading-section5">
@@ -38,6 +43,28 @@ function DiningRoom() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
+        </div>
+      </div>
+      <div className="living-section2">
+        <div className="wrapper-circle">
+          <img src={circleImg1} alt="" />
+          <p>sECTIONALS</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg2} alt="" />
+          <p>CHAISES</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg3} alt="" />
+          <p>BENCHES</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg4} alt="" />
+          <p>OTTOMANS</p>
+        </div>
+        <div className="wrapper-circle">
+          <img src={circleImg5} alt="" />
+          <p>STOOLS</p>
         </div>
       </div>
       <div className="dining-section2">
