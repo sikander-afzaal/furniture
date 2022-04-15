@@ -10,7 +10,7 @@ function Choice() {
         <video className="video" src={cloth} autoPlay muted loop></video>
         <div className="choice-abs-div">
           <h1>CLOTHING</h1>
-          <Link to={"/cloth"} className="choice-btn">
+          <Link to={"/clothing"} className="choice-btn">
             SHOP
           </Link>
         </div>

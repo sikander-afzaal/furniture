@@ -3,7 +3,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-function Header() {
+function Header({ cloth }) {
   const [open, setOpen] = useState(false);
   const toTop = () => {
     setTimeout(() => {
@@ -17,7 +17,11 @@ function Header() {
           {/* <Link onClick={toTop} to="/furniture" className="nav-links hidden">
             Clothing
           </Link> */}
-          <Link onClick={toTop} to="/furniture" className="nav-links">
+          <Link
+            onClick={toTop}
+            to={`${cloth ? "/clothing" : "/furniture"}`}
+            className="nav-links"
+          >
             Home
           </Link>
           <Link onClick={toTop} to="#" className="nav-links">
@@ -30,7 +34,10 @@ function Header() {
             Contact
           </Link>
         </div>
-        <Link to="/furniture" className="central-header">
+        <Link
+          to={`${cloth ? "/clothing" : "/furniture"}`}
+          className="central-header"
+        >
           <h1>
             <strong>BC</strong>LUXURY.
           </h1>
@@ -39,10 +46,10 @@ function Header() {
           <div className="nav-link-div">
             <Link
               onClick={toTop}
-              to="/furniture/LivingRoom"
+              to={`${cloth ? "/clothing/Mens" : "/furniture/LivingRoom"}`}
               className="nav-links living-link"
             >
-              Living
+              {cloth ? "Mens" : "Living"}
             </Link>
             <div className="dropdown-nav living-link-drop">
               <a href="#">Sectionals</a>
@@ -55,10 +62,10 @@ function Header() {
           <div className="nav-link-div">
             <Link
               onClick={toTop}
-              to="/furniture/DiningRoom"
+              to={`${cloth ? "/clothing/Womens" : "/furniture/DiningRoom"}`}
               className="nav-links dining-link"
             >
-              Dining
+              {cloth ? "Womens" : "Dining"}
             </Link>
             <div className="dropdown-nav dining-link-drop">
               <a href="#">Dining Table</a>
@@ -70,10 +77,10 @@ function Header() {
           <div className="nav-link-div">
             <Link
               onClick={toTop}
-              to="/furniture/BedRoom"
+              to={`${cloth ? "/clothing/Kids" : "/furniture/BedRoom"}`}
               className="nav-links bedroom-link"
             >
-              Bedroom
+              {cloth ? "Kids" : "Bedroom"}
             </Link>
             <div className="dropdown-nav bedroom-link-drop">
               <a href="#">Beds</a>
@@ -86,10 +93,10 @@ function Header() {
           <div className="nav-link-div">
             <Link
               onClick={toTop}
-              to="/furniture/WorkSpace"
+              to={`${cloth ? "/clothing/Jewelry" : "/furniture/WorkSpace"}`}
               className="nav-links workspace-link"
             >
-              Workspace
+              {cloth ? "Jewelry" : "Workspace"}
             </Link>
             <div className="dropdown-nav workspace-link-drop">
               <a href="#">Desks</a>
@@ -98,11 +105,19 @@ function Header() {
             </div>
           </div>
 
-          <Link onClick={toTop} to="/furniture/OutDoor" className="nav-links">
-            Out Door
+          <Link
+            onClick={toTop}
+            to={`${cloth ? "/clothing/Accessories" : "/furniture/OutDoor"}`}
+            className="nav-links"
+          >
+            {cloth ? "Accessories" : "OutDoor"}
           </Link>
-          <Link onClick={toTop} to="/Choice" className="nav-links">
-            Clothing
+          <Link
+            onClick={toTop}
+            to={`${cloth ? "/furniture" : "/clothing"}`}
+            className="nav-links"
+          >
+            {cloth ? "Furniture" : "Clothing"}
           </Link>
         </div>
       </div>
