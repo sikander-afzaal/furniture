@@ -14,9 +14,6 @@ function Header({ cloth }) {
     <div className="header">
       <div className="navbar-desktop">
         <div className="left-header">
-          {/* <Link onClick={toTop} to="/furniture" className="nav-links hidden">
-            Clothing
-          </Link> */}
           <Link
             onClick={toTop}
             to={`${cloth ? "/clothing" : "/furniture"}`}
@@ -122,7 +119,10 @@ function Header({ cloth }) {
         </div>
       </div>
       <div className="navbar-mobile">
-        <Link to="/furniture" className="central-header">
+        <Link
+          to={`${cloth ? "/clothing" : "/furniture"}`}
+          className="central-header"
+        >
           <h1>
             <strong>BC</strong>LUXURY.
           </h1>
@@ -141,7 +141,7 @@ function Header({ cloth }) {
                 window.scrollTo(0, 0);
               }, 200);
             }}
-            to="/furniture"
+            to={`${cloth ? "/clothing" : "/furniture"}`}
             className="nav-links"
           >
             Home
@@ -190,10 +190,10 @@ function Header({ cloth }) {
                   window.scrollTo(0, 0);
                 }, 200);
               }}
-              to="/furniture/LivingRoom"
+              to={`${cloth ? "/clothing/Mens" : "/furniture/LivingRoom"}`}
               className="nav-links living-link"
             >
-              Living
+              {cloth ? "Mens" : "Living"}
             </Link>
             <div className="dropdown-nav living-link-drop">
               <a href="#">Sectionals</a>
@@ -211,10 +211,10 @@ function Header({ cloth }) {
                   window.scrollTo(0, 0);
                 }, 200);
               }}
-              to="/furniture/DiningRoom"
+              to={`${cloth ? "/clothing/Womens" : "/furniture/DiningRoom"}`}
               className="nav-links dining-link"
             >
-              Dining
+              {cloth ? "Womens" : "Dining"}
             </Link>
             <div className="dropdown-nav dining-link-drop">
               <a href="#">Dining Table</a>
@@ -231,10 +231,10 @@ function Header({ cloth }) {
                   window.scrollTo(0, 0);
                 }, 200);
               }}
-              to="/furniture/BedRoom"
+              to={`${cloth ? "/clothing/Kids" : "/furniture/BedRoom"}`}
               className="nav-links bedroom-link"
             >
-              Bedroom
+              {cloth ? "Kids" : "Bedroom"}
             </Link>
             <div className="dropdown-nav bedroom-link-drop">
               <a href="#">Beds</a>
@@ -252,10 +252,10 @@ function Header({ cloth }) {
                   window.scrollTo(0, 0);
                 }, 200);
               }}
-              to="/furniture/WorkSpace"
+              to={`${cloth ? "/clothing/Jewelry" : "/furniture/WorkSpace"}`}
               className="nav-links workspace-link"
             >
-              Workspace
+              {cloth ? "Jewelry" : "Workspace"}
             </Link>
             <div className="dropdown-nav workspace-link-drop">
               <a href="#">Desks</a>
@@ -270,10 +270,10 @@ function Header({ cloth }) {
                 window.scrollTo(0, 0);
               }, 200);
             }}
-            to="/furniture/OutDoor"
+            to={`${cloth ? "/clothing/Accessories" : "/furniture/OutDoor"}`}
             className="nav-links"
           >
-            Out Door
+            {cloth ? "Accessories" : "Out Door"}
           </Link>
           <Link
             onClick={() => {
@@ -282,10 +282,10 @@ function Header({ cloth }) {
                 window.scrollTo(0, 0);
               }, 200);
             }}
-            to="/Choice"
+            to={`${cloth ? "/furniture" : "/clothing"}`}
             className="nav-links"
           >
-            Clothing
+            {cloth ? "Furniture" : "Clothing"}
           </Link>
         </div>
       </div>
