@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import bg1 from "../../../Assets-clothing/homepage/homepage-bg1.jpg";
 import bg2 from "../../../Assets-clothing/homepage/homepage-bg2.jpg";
-import section3 from "../../../Assets-furniture/section3.png";
+import section3 from "../../../Assets-clothing/section3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
