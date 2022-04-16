@@ -1,34 +1,34 @@
 import React from "react";
 import "./OutDoor.css";
-import slide1 from "../../../Assets/OutDoor/slider/slide1.png";
-import slide2 from "../../../Assets/OutDoor/slider/slide2.png";
+import slide1 from "../../../Assets-furniture/OutDoor/slider/slide1.png";
+import slide2 from "../../../Assets-furniture/OutDoor/slider/slide2.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
-import new1 from "../../../Assets/OutDoor/new/new1.png";
-import new2 from "../../../Assets/OutDoor/new/new2.png";
+import new1 from "../../../Assets-furniture/OutDoor/new/new1.png";
+import new2 from "../../../Assets-furniture/OutDoor/new/new2.png";
 // popular ----------------------------------
-import pop1 from "../../../Assets/OutDoor/popular/pop1.png";
-import pop2 from "../../../Assets/OutDoor/popular/pop2.png";
-import pop3 from "../../../Assets/OutDoor/popular/pop3.png";
-import pop4 from "../../../Assets/OutDoor/popular/pop4.png";
+import pop1 from "../../../Assets-furniture/OutDoor/popular/pop1.png";
+import pop2 from "../../../Assets-furniture/OutDoor/popular/pop2.png";
+import pop3 from "../../../Assets-furniture/OutDoor/popular/pop3.png";
+import pop4 from "../../../Assets-furniture/OutDoor/popular/pop4.png";
 // choose images ---------------------------------------
-import choose from "../../../Assets/OutDoor/choose/choose-img.png";
-import icon1 from "../../../Assets/WorkSpace/choose/icon1.svg";
-import icon2 from "../../../Assets/WorkSpace/choose/icon2.svg";
-import icon3 from "../../../Assets/WorkSpace/choose/icon3.svg";
+import choose from "../../../Assets-furniture/OutDoor/choose/choose-img.png";
+import icon1 from "../../../Assets-furniture/WorkSpace/choose/icon1.svg";
+import icon2 from "../../../Assets-furniture/WorkSpace/choose/icon2.svg";
+import icon3 from "../../../Assets-furniture/WorkSpace/choose/icon3.svg";
 //collection ------------------------------------------------
 import ImageCard from "../../../Components/ImageCard/ImageCard";
-import coll1 from "../../../Assets/OutDoor/collection/1.png";
-import coll2 from "../../../Assets/OutDoor/collection/2.png";
-import coll3 from "../../../Assets/OutDoor/collection/3.png";
-import coll4 from "../../../Assets/OutDoor/collection/4.png";
-import coll5 from "../../../Assets/OutDoor/collection/5.png";
-import coll6 from "../../../Assets/OutDoor/collection/6.png";
-import coll7 from "../../../Assets/OutDoor/collection/7.png";
-import coll8 from "../../../Assets/OutDoor/collection/8.png";
-function WorkSpace() {
+import coll1 from "../../../Assets-furniture/OutDoor/collection/1.png";
+import coll2 from "../../../Assets-furniture/OutDoor/collection/2.png";
+import coll3 from "../../../Assets-furniture/OutDoor/collection/3.png";
+import coll4 from "../../../Assets-furniture/OutDoor/collection/4.png";
+import coll5 from "../../../Assets-furniture/OutDoor/collection/5.png";
+import coll6 from "../../../Assets-furniture/OutDoor/collection/6.png";
+import coll7 from "../../../Assets-furniture/OutDoor/collection/7.png";
+import coll8 from "../../../Assets-furniture/OutDoor/collection/8.png";
+function OutDoor() {
   return (
     <div className="workspace">
       {/* <div className="wrapper-outdoor"> */}
@@ -45,6 +45,7 @@ function WorkSpace() {
             autoplay: true,
             perPage: 1,
             perMove: 1,
+            lazyLoad: "sequential",
             type: "loop",
             breakpoints: {
               1130: {
@@ -57,12 +58,12 @@ function WorkSpace() {
           <SplideTrack>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img src={slide1} alt="" />
+                <img data-splide-lazy={slide1} src={slide1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img src={slide2} alt="" />
+                <img data-splide-lazy={slide2} src={slide2} alt="" />
               </div>
             </SplideSlide>
           </SplideTrack>
@@ -106,6 +107,7 @@ function WorkSpace() {
             perPage: 4,
             perMove: 1,
             type: "loop",
+            lazyLoad: "sequential",
             breakpoints: {
               1437: {
                 perPage: 3,
@@ -122,27 +124,27 @@ function WorkSpace() {
           <SplideTrack>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img src={pop1} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img src={pop2} alt="" />
+                <img data-splide-lazy={pop2} src={pop2} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img src={pop3} alt="" />
+                <img data-splide-lazy={pop3} src={pop3} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img src={pop4} alt="" />
+                <img data-splide-lazy={pop4} src={pop4} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img src={pop1} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
           </SplideTrack>
@@ -247,4 +249,4 @@ function WorkSpace() {
   );
 }
 
-export default WorkSpace;
+export default OutDoor;

@@ -6,29 +6,29 @@ import {
   faStar,
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import bg from "../../../Assets/Dining Room/bg.png";
-import new1 from "../../../Assets/Dining Room/new/1.png";
-import new2 from "../../../Assets/Dining Room/new/2.png";
-import circleImg1 from "../../../Assets/Living Room/circle-img1.png";
-import circleImg2 from "../../../Assets/Living Room/circle-img2.png";
-import circleImg3 from "../../../Assets/Living Room/circle-img3.png";
-import circleImg4 from "../../../Assets/Living Room/circle-img4.png";
-import circleImg5 from "../../../Assets/Living Room/circle-img5.png";
+import bg from "../../../Assets-furniture/Dining Room/bg.png";
+import new1 from "../../../Assets-furniture/Dining Room/new/1.png";
+import new2 from "../../../Assets-furniture/Dining Room/new/2.png";
+import circleImg1 from "../../../Assets-furniture/Living Room/circle-img1.png";
+import circleImg2 from "../../../Assets-furniture/Living Room/circle-img2.png";
+import circleImg3 from "../../../Assets-furniture/Living Room/circle-img3.png";
+import circleImg4 from "../../../Assets-furniture/Living Room/circle-img4.png";
+import circleImg5 from "../../../Assets-furniture/Living Room/circle-img5.png";
 //popular images --------------------------
 import ImageCard from "../../../Components/ImageCard/ImageCard";
-import pop1 from "../../../Assets/Dining Room/popular/1.png";
-import pop2 from "../../../Assets/Dining Room/popular/2.png";
-import pop3 from "../../../Assets/Dining Room/popular/3.png";
-import pop4 from "../../../Assets/Dining Room/popular/4.png";
-import pop5 from "../../../Assets/Dining Room/popular/5.png";
-import pop6 from "../../../Assets/Dining Room/popular/6.png";
-import pop7 from "../../../Assets/Dining Room/popular/7.png";
-import pop8 from "../../../Assets/Dining Room/popular/8.png";
+import pop1 from "../../../Assets-furniture/Dining Room/popular/1.png";
+import pop2 from "../../../Assets-furniture/Dining Room/popular/2.png";
+import pop3 from "../../../Assets-furniture/Dining Room/popular/3.png";
+import pop4 from "../../../Assets-furniture/Dining Room/popular/4.png";
+import pop5 from "../../../Assets-furniture/Dining Room/popular/5.png";
+import pop6 from "../../../Assets-furniture/Dining Room/popular/6.png";
+import pop7 from "../../../Assets-furniture/Dining Room/popular/7.png";
+import pop8 from "../../../Assets-furniture/Dining Room/popular/8.png";
 // week -----------------------------------
-import week1 from "../../../Assets/Dining Room/week/1.png";
-import week2 from "../../../Assets/Dining Room/week/2.png";
-import week3 from "../../../Assets/Dining Room/week/3.png";
-import main from "../../../Assets/Dining Room/week/main.png";
+import week1 from "../../../Assets-furniture/Dining Room/week/1.png";
+import week2 from "../../../Assets-furniture/Dining Room/week/2.png";
+import week3 from "../../../Assets-furniture/Dining Room/week/3.png";
+import main from "../../../Assets-furniture/Dining Room/week/main.png";
 function DiningRoom() {
   return (
     <div className="dining-room">

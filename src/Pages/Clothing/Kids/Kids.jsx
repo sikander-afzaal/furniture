@@ -1,41 +1,41 @@
 import React from "react";
+import "./Kids.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import "./BedRoom.css";
-import slide1 from "../../../Assets/BedRoom/slide1.png";
-import slide2 from "../../../Assets/BedRoom/slide2.png";
-import slide3 from "../../../Assets/BedRoom/slide3.png";
+import slide1 from "../../../Assets-furniture/BedRoom/slide1.png";
+import slide2 from "../../../Assets-furniture/BedRoom/slide2.png";
+import slide3 from "../../../Assets-furniture/BedRoom/slide3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
-import new1 from "../../../Assets/BedRoom/new/new1.png";
+import new1 from "../../../Assets-furniture/BedRoom/new/new1.png";
 import ImageCard from "../../../Components/ImageCard/ImageCard";
-import pop1 from "../../../Assets/BedRoom/popular/pop1.png";
-import pop2 from "../../../Assets/BedRoom/popular/pop2.png";
-import pop3 from "../../../Assets/BedRoom/popular/pop3.png";
-import pop4 from "../../../Assets/BedRoom/popular/pop4.png";
-import pop5 from "../../../Assets/BedRoom/popular/pop5.png";
-import pop6 from "../../../Assets/BedRoom/popular/pop6.png";
-import pop7 from "../../../Assets/BedRoom/popular/pop7.png";
-import pop8 from "../../../Assets/BedRoom/popular/pop8.png";
-import pop9 from "../../../Assets/BedRoom/popular/pop9.png";
-import pop10 from "../../../Assets/BedRoom/popular/pop10.png";
-import pop11 from "../../../Assets/BedRoom/popular/pop11.png";
-import pop12 from "../../../Assets/BedRoom/popular/pop12.png";
-import pop13 from "../../../Assets/BedRoom/popular/pop13.png";
-import pop14 from "../../../Assets/BedRoom/popular/pop14.png";
-import pop15 from "../../../Assets/BedRoom/popular/pop15.png";
-import pop16 from "../../../Assets/BedRoom/popular/pop16.png";
-import bg from "../../../Assets/BedRoom/bg.png";
-import circleImg1 from "../../../Assets/Living Room/circle-img1.png";
-import circleImg2 from "../../../Assets/Living Room/circle-img2.png";
-import circleImg3 from "../../../Assets/Living Room/circle-img3.png";
-import circleImg4 from "../../../Assets/Living Room/circle-img4.png";
-import circleImg5 from "../../../Assets/Living Room/circle-img5.png";
+import pop1 from "../../../Assets-furniture/BedRoom/popular/pop1.png";
+import pop2 from "../../../Assets-furniture/BedRoom/popular/pop2.png";
+import pop3 from "../../../Assets-furniture/BedRoom/popular/pop3.png";
+import pop4 from "../../../Assets-furniture/BedRoom/popular/pop4.png";
+import pop5 from "../../../Assets-furniture/BedRoom/popular/pop5.png";
+import pop6 from "../../../Assets-furniture/BedRoom/popular/pop6.png";
+import pop7 from "../../../Assets-furniture/BedRoom/popular/pop7.png";
+import pop8 from "../../../Assets-furniture/BedRoom/popular/pop8.png";
+import pop9 from "../../../Assets-furniture/BedRoom/popular/pop9.png";
+import pop10 from "../../../Assets-furniture/BedRoom/popular/pop10.png";
+import pop11 from "../../../Assets-furniture/BedRoom/popular/pop11.png";
+import pop12 from "../../../Assets-furniture/BedRoom/popular/pop12.png";
+import pop13 from "../../../Assets-furniture/BedRoom/popular/pop13.png";
+import pop14 from "../../../Assets-furniture/BedRoom/popular/pop14.png";
+import pop15 from "../../../Assets-furniture/BedRoom/popular/pop15.png";
+import pop16 from "../../../Assets-furniture/BedRoom/popular/pop16.png";
+import bg from "../../../Assets-furniture/BedRoom/bg.png";
+import circleImg1 from "../../../Assets-furniture/Living Room/circle-img1.png";
+import circleImg2 from "../../../Assets-furniture/Living Room/circle-img2.png";
+import circleImg3 from "../../../Assets-furniture/Living Room/circle-img3.png";
+import circleImg4 from "../../../Assets-furniture/Living Room/circle-img4.png";
+import circleImg5 from "../../../Assets-furniture/Living Room/circle-img5.png";
 //summer collection -----------------------------
-import sum1 from "../../../Assets/BedRoom/summer/1.png";
-import sum2 from "../../../Assets/BedRoom/summer/2.png";
-import sum3 from "../../../Assets/BedRoom/summer/3.png";
-function BedRoom() {
+import sum1 from "../../../Assets-furniture/BedRoom/summer/1.png";
+import sum2 from "../../../Assets-furniture/BedRoom/summer/2.png";
+import sum3 from "../../../Assets-furniture/BedRoom/summer/3.png";
+function Kids() {
   return (
     <div className="bedroom">
       <div className="bedroom-section1">
@@ -63,6 +63,7 @@ function BedRoom() {
               width: "100%",
               gap: "2rem",
               autoplay: true,
+              lazyLoad: "sequential",
               perPage: 2,
               breakpoints: {
                 1144: {
@@ -73,17 +74,17 @@ function BedRoom() {
           >
             <SplideSlide>
               <div className="img-wrapper-bed">
-                <img src={slide1} alt="" />
+                <img data-splide-lazy={slide1} src={slide1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="img-wrapper-bed">
-                <img src={slide2} alt="" />
+                <img data-splide-lazy={slide2} src={slide2} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="img-wrapper-bed">
-                <img src={slide3} alt="" />
+                <img data-splide-lazy={slide3} src={slide3} alt="" />
               </div>
             </SplideSlide>
           </Splide>
@@ -230,4 +231,4 @@ function BedRoom() {
   );
 }
 
-export default BedRoom;
+export default Kids;

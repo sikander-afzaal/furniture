@@ -1,13 +1,13 @@
 import React from "react";
 import "./Home.css";
-import bg1 from "../../../Assets/homepage/homepage-bg1.png";
-import bg2 from "../../../Assets/homepage/homepage-bg2.png";
-import bg3 from "../../../Assets/homepage/homepage-bg3.png";
-import sofa from "../../../Assets/sofa.png";
-import armchair from "../../../Assets/armchair.png";
-import stool from "../../../Assets/stool.png";
-import section2Left from "../../../Assets/section2-left.png";
-import section3 from "../../../Assets/section3.png";
+import bg1 from "../../../Assets-furniture/homepage/homepage-bg1.png";
+import bg2 from "../../../Assets-furniture/homepage/homepage-bg2.png";
+import bg3 from "../../../Assets-furniture/homepage/homepage-bg3.png";
+import sofa from "../../../Assets-furniture/sofa.png";
+import armchair from "../../../Assets-furniture/armchair.png";
+import stool from "../../../Assets-furniture/stool.png";
+import section2Left from "../../../Assets-furniture/section2-left.png";
+import section3 from "../../../Assets-furniture/section3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import {
@@ -16,20 +16,20 @@ import {
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import img1 from "../../../Assets/collection/s1.png";
-import img2 from "../../../Assets/collection/s2.png";
-import img3 from "../../../Assets/collection/s3.png";
-import section7 from "../../../Assets/section7.png";
+import img1 from "../../../Assets-furniture/collection/s1.png";
+import img2 from "../../../Assets-furniture/collection/s2.png";
+import img3 from "../../../Assets-furniture/collection/s3.png";
+import section7 from "../../../Assets-furniture/section7.png";
 //popular
-import imgPop1 from "../../../Assets/popular/img1.png";
-import imgPop2 from "../../../Assets/popular/img2.png";
-import imgPop3 from "../../../Assets/popular/img3.png";
-import mainPop from "../../../Assets/popular/main.png";
+import imgPop1 from "../../../Assets-furniture/popular/img1.png";
+import imgPop2 from "../../../Assets-furniture/popular/img2.png";
+import imgPop3 from "../../../Assets-furniture/popular/img3.png";
+import mainPop from "../../../Assets-furniture/popular/main.png";
 //acc
-import imgacc1 from "../../../Assets/accessories/img1.png";
-import imgacc2 from "../../../Assets/accessories/img2.png";
-import imgacc3 from "../../../Assets/accessories/img3.png";
-import imgacc4 from "../../../Assets/accessories/img4.png";
+import imgacc1 from "../../../Assets-furniture/accessories/img1.png";
+import imgacc2 from "../../../Assets-furniture/accessories/img2.png";
+import imgacc3 from "../../../Assets-furniture/accessories/img3.png";
+import imgacc4 from "../../../Assets-furniture/accessories/img4.png";
 function Home() {
   return (
     <div className="furniture">
@@ -42,26 +42,48 @@ function Home() {
             width: "100%",
             gap: "0rem",
             autoplay: true,
+            lazyLoad: "sequential",
+            type: "loop",
           }}
         >
           <SplideSlide>
             <div className="img-wrapper-home">
-              <img src={bg1} alt="" className="bg-home" />
+              <img
+                data-splide-lazy={bg1}
+                src={bg1}
+                alt=""
+                className="bg-home"
+              />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-home">
-              <img src={bg2} alt="" className="bg-home" />
+              <img
+                data-splide-lazy={bg2}
+                src={bg2}
+                alt=""
+                className="bg-home"
+              />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-home">
-              <img src={bg3} alt="" className="bg-home" />
+              <img
+                data-splide-lazy={bg3}
+                src={bg3}
+                alt=""
+                className="bg-home"
+              />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-home">
-              <img src={bg1} alt="" className="bg-home" />
+              <img
+                data-splide-lazy={bg1}
+                src={bg1}
+                alt=""
+                className="bg-home"
+              />
             </div>
           </SplideSlide>
         </Splide>
@@ -165,6 +187,7 @@ function Home() {
               perPage: 5,
               perMove: 1,
               type: "loop",
+              lazyLoad: "sequential",
               breakpoints: {
                 1600: {
                   perPage: 4,
@@ -183,25 +206,45 @@ function Home() {
           >
             <SplideSlide>
               <div className="acc-wrapper">
-                <img src={imgacc1} alt="" className="acc-img" />
+                <img
+                  data-splide-lazy={imgacc1}
+                  src={imgacc1}
+                  alt=""
+                  className="acc-img"
+                />
                 <p>SOFA ARM</p>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="acc-wrapper">
-                <img src={imgacc2} alt="" className="acc-img" />
+                <img
+                  data-splide-lazy={imgacc2}
+                  src={imgacc2}
+                  alt=""
+                  className="acc-img"
+                />
                 <p>table top</p>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="acc-wrapper">
-                <img src={imgacc3} alt="" className="acc-img" />
+                <img
+                  data-splide-lazy={imgacc3}
+                  src={imgacc3}
+                  alt=""
+                  className="acc-img"
+                />
                 <p>MIRROR</p>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="acc-wrapper">
-                <img src={imgacc4} alt="" className="acc-img" />
+                <img
+                  data-splide-lazy={imgacc4}
+                  src={imgacc4}
+                  alt=""
+                  className="acc-img"
+                />
                 <p>SOFA ARM</p>
               </div>
             </SplideSlide>
@@ -220,6 +263,7 @@ function Home() {
             perPage: 3,
             perMove: 1,
             type: "loop",
+            lazyLoad: "sequential",
             breakpoints: {
               1318: {
                 perPage: 2,
@@ -232,17 +276,35 @@ function Home() {
         >
           <SplideSlide>
             <div className="img-wrapper-collection">
-              <img data-num={0} src={img1} alt="" className="collection-img" />
+              <img
+                data-splide-lazy={img1}
+                data-num={0}
+                src={img1}
+                alt=""
+                className="collection-img"
+              />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-collection">
-              <img data-num={1} src={img2} alt="" className="collection-img" />
+              <img
+                data-splide-lazy={img2}
+                data-num={1}
+                src={img2}
+                alt=""
+                className="collection-img"
+              />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-collection">
-              <img data-num={2} src={img3} alt="" className="collection-img" />
+              <img
+                data-splide-lazy={img3}
+                data-num={2}
+                src={img3}
+                alt=""
+                className="collection-img"
+              />
             </div>
           </SplideSlide>
         </Splide>
@@ -322,6 +384,7 @@ function Home() {
               perPage: 1,
               perMove: 1,
               type: "loop",
+              lazyLoad: "sequential",
             }}
           >
             <SplideSlide>
@@ -343,7 +406,12 @@ function Home() {
                     like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
-                <img src={section7} alt="" className="section7-img" />
+                <img
+                  data-splide-lazy={section7}
+                  src={section7}
+                  alt=""
+                  className="section7-img"
+                />
               </div>
             </SplideSlide>
             <SplideSlide>
@@ -365,7 +433,12 @@ function Home() {
                     like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
-                <img src={section7} alt="" className="section7-img" />
+                <img
+                  data-splide-lazy={section7}
+                  src={section7}
+                  alt=""
+                  className="section7-img"
+                />
               </div>
             </SplideSlide>
             <SplideSlide>
@@ -387,7 +460,12 @@ function Home() {
                     like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
-                <img src={section7} alt="" className="section7-img" />
+                <img
+                  data-splide-lazy={section7}
+                  src={section7}
+                  alt=""
+                  className="section7-img"
+                />
               </div>
             </SplideSlide>
           </Splide>

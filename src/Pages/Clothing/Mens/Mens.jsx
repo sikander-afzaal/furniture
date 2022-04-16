@@ -1,42 +1,42 @@
 import React from "react";
-import "./LivingRoom.css";
-import img1 from "../../../Assets/Living Room/bg1.png";
-import img2 from "../../../Assets/Living Room/bg2.png";
+import "./Mens.css";
+import img1 from "../../../Assets-furniture/Living Room/bg1.png";
+import img2 from "../../../Assets-furniture/Living Room/bg2.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import circleImg1 from "../../../Assets/Living Room/circle-img1.png";
-import circleImg2 from "../../../Assets/Living Room/circle-img2.png";
-import circleImg3 from "../../../Assets/Living Room/circle-img3.png";
-import circleImg4 from "../../../Assets/Living Room/circle-img4.png";
-import circleImg5 from "../../../Assets/Living Room/circle-img5.png";
+import circleImg1 from "../../../Assets-furniture/Living Room/circle-img1.png";
+import circleImg2 from "../../../Assets-furniture/Living Room/circle-img2.png";
+import circleImg3 from "../../../Assets-furniture/Living Room/circle-img3.png";
+import circleImg4 from "../../../Assets-furniture/Living Room/circle-img4.png";
+import circleImg5 from "../../../Assets-furniture/Living Room/circle-img5.png";
 // popular --------------------------------
-import popular1 from "../../../Assets/Living Room/Popular/1.png";
-import popular2 from "../../../Assets/Living Room/Popular/2.png";
-import popular3 from "../../../Assets/Living Room/Popular/3.png";
-import popular4 from "../../../Assets/Living Room/Popular/4.png";
-import popular5 from "../../../Assets/Living Room/Popular/5.png";
-import popular6 from "../../../Assets/Living Room/Popular/6.png";
-import popular7 from "../../../Assets/Living Room/Popular/7.png";
-import popular8 from "../../../Assets/Living Room/Popular/8.png";
+import popular1 from "../../../Assets-furniture/Living Room/Popular/1.png";
+import popular2 from "../../../Assets-furniture/Living Room/Popular/2.png";
+import popular3 from "../../../Assets-furniture/Living Room/Popular/3.png";
+import popular4 from "../../../Assets-furniture/Living Room/Popular/4.png";
+import popular5 from "../../../Assets-furniture/Living Room/Popular/5.png";
+import popular6 from "../../../Assets-furniture/Living Room/Popular/6.png";
+import popular7 from "../../../Assets-furniture/Living Room/Popular/7.png";
+import popular8 from "../../../Assets-furniture/Living Room/Popular/8.png";
 import Card from "../../../Components/Card/Card.jsx";
-import registerBg from "../../../Assets/Living Room/register-bg.png";
+import registerBg from "../../../Assets-furniture/Living Room/register-bg.png";
 // beds---------------------------
-import bed1 from "../../../Assets/Living Room/beds/bed1.png";
-import bed2 from "../../../Assets/Living Room/beds/bed2.png";
-import bed3 from "../../../Assets/Living Room/beds/bed3.png";
-import bed4 from "../../../Assets/Living Room/beds/bed4.png";
+import bed1 from "../../../Assets-furniture/Living Room/beds/bed1.png";
+import bed2 from "../../../Assets-furniture/Living Room/beds/bed2.png";
+import bed3 from "../../../Assets-furniture/Living Room/beds/bed3.png";
+import bed4 from "../../../Assets-furniture/Living Room/beds/bed4.png";
 // small tables---------------------------
-import table1 from "../../../Assets/Living Room/small tables/table1.png";
-import table2 from "../../../Assets/Living Room/small tables/table2.png";
-import table3 from "../../../Assets/Living Room/small tables/table3.png";
+import table1 from "../../../Assets-furniture/Living Room/small tables/table1.png";
+import table2 from "../../../Assets-furniture/Living Room/small tables/table2.png";
+import table3 from "../../../Assets-furniture/Living Room/small tables/table3.png";
 //popular(week)
-import imgPop1 from "../../../Assets/Living Room/week-popular/left1.png";
-import imgPop2 from "../../../Assets/Living Room/week-popular/left2.png";
-import imgPop3 from "../../../Assets/Living Room/week-popular/left3.png";
-import mainPop from "../../../Assets/Living Room/week-popular/main.png";
+import imgPop1 from "../../../Assets-furniture/Living Room/week-popular/left1.png";
+import imgPop2 from "../../../Assets-furniture/Living Room/week-popular/left2.png";
+import imgPop3 from "../../../Assets-furniture/Living Room/week-popular/left3.png";
+import mainPop from "../../../Assets-furniture/Living Room/week-popular/main.png";
 import { faStar, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-function LivingRoom() {
+function Mens() {
   return (
     <div className="living-room">
       <div className="living-section1">
@@ -47,17 +47,28 @@ function LivingRoom() {
             arrows: false,
             width: "100%",
             gap: "0rem",
+            lazyLoad: "sequential",
             autoplay: true,
           }}
         >
           <SplideSlide>
             <div className="img-wrapper-home">
-              <img src={img1} alt="" className="bg-home" />
+              <img
+                data-splide-lazy={img1}
+                src={img1}
+                alt=""
+                className="bg-home"
+              />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-home">
-              <img src={img2} alt="" className="bg-home" />
+              <img
+                data-splide-lazy={img2}
+                src={img2}
+                alt=""
+                className="bg-home"
+              />
             </div>
           </SplideSlide>
         </Splide>
@@ -114,18 +125,6 @@ function LivingRoom() {
         </div>
       </div>
 
-      {/* <div className="living-section3 padding-top">
-        <div className="heading-section5 left-aligned">
-          <span className="line"></span>
-          <h1>Related Products</h1>
-        </div>
-        <div className="cards-grid">
-          <Card img={bed1} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={bed2} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={bed3} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={bed4} desc={"Best High-End Sofa Brand: Maiden Home"} />
-        </div>
-      </div> */}
       <div className="homepage-section5">
         <div className="heading-section5">
           <span className="line"></span>
@@ -198,4 +197,4 @@ function LivingRoom() {
   );
 }
 
-export default LivingRoom;
+export default Mens;

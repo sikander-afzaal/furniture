@@ -1,7 +1,7 @@
 import React from "react";
 import "./Choice.css";
-import cloth from "../../Assets/choice-vid-cloth.mp4";
-import furn from "../../Assets/choice-vid-furn.mp4";
+import cloth from "../../Assets-furniture/choice-vid-cloth.mp4";
+import furn from "../../Assets-furniture/choice-vid-furn.mp4";
 import { Link } from "react-router-dom";
 function Choice() {
   return (

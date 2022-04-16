@@ -49,11 +49,11 @@ function Header({ cloth }) {
               {cloth ? "Mens" : "Living"}
             </Link>
             <div className="dropdown-nav living-link-drop">
-              <a href="#">Sectionals</a>
-              <a href="#">Chaises</a>
-              <a href="#">Benches</a>
-              <a href="#">Ottomans</a>
-              <a href="#">Stools</a>
+              <a href="#">{cloth ? "T-Shirts" : "Sectionals"}</a>
+              <a href="#"> {cloth ? "Shirts" : "Chaises"}</a>
+              <a href="#">{cloth ? "Jeans" : "Benches"}</a>
+              <a href="#">{cloth ? "Pants" : "Stools"}</a>
+              <a href="#">{cloth ? "Shoes" : "Ottomans"}</a>
             </div>
           </div>
           <div className="nav-link-div">
@@ -65,10 +65,10 @@ function Header({ cloth }) {
               {cloth ? "Womens" : "Dining"}
             </Link>
             <div className="dropdown-nav dining-link-drop">
-              <a href="#">Dining Table</a>
-              <a href="#">Dining Chairs</a>
-              <a href="#">Bar Stools</a>
-              <a href="#">Buffets</a>
+              <a href="#"> {cloth ? "T-Shirts" : "Dining Table"}</a>
+              <a href="#"> {cloth ? "Jeans" : "Dining Chairs"}</a>
+              <a href="#"> {cloth ? "Skirts" : "Bar Stools"}</a>
+              <a href="#"> {cloth ? "Shoes" : "Buffets"}</a>
             </div>
           </div>
           <div className="nav-link-div">
@@ -80,11 +80,11 @@ function Header({ cloth }) {
               {cloth ? "Kids" : "Bedroom"}
             </Link>
             <div className="dropdown-nav bedroom-link-drop">
-              <a href="#">Beds</a>
-              <a href="#">Night Stands</a>
-              <a href="#">Chests and Dressers</a>
-              <a href="#">Headboards</a>
-              <a href="#">Mattresses</a>
+              <a href="#"> {cloth ? "T-Shirts" : "Beds"}</a>
+              <a href="#"> {cloth ? "Shirts" : "Night Stands"}</a>
+              <a href="#"> {cloth ? "Jeans" : "Chests and Dressers"}</a>
+              <a href="#"> {cloth ? "Shoes" : "Headboards"}</a>
+              <a href="#"> {cloth ? "Socks" : "Mattresses"}</a>
             </div>
           </div>
           <div className="nav-link-div">
@@ -96,9 +96,9 @@ function Header({ cloth }) {
               {cloth ? "Jewelry" : "Workspace"}
             </Link>
             <div className="dropdown-nav workspace-link-drop">
-              <a href="#">Desks</a>
-              <a href="#">Office Chairs</a>
-              <a href="#">Book Cases</a>
+              <a href="#">{cloth ? "Rings" : "Desks"}</a>
+              <a href="#">{cloth ? "Necklace" : "Office Chairs"}</a>
+              <a href="#">{cloth ? "Gold" : "Book Cases"}</a>
             </div>
           </div>
 
@@ -196,11 +196,11 @@ function Header({ cloth }) {
               {cloth ? "Mens" : "Living"}
             </Link>
             <div className="dropdown-nav living-link-drop">
-              <a href="#">Sectionals</a>
-              <a href="#">Chaises</a>
-              <a href="#">Benches</a>
-              <a href="#">Ottomans</a>
-              <a href="#">Stools</a>
+              <a href="#">{cloth ? "T-Shirts" : "Sectionals"}</a>
+              <a href="#"> {cloth ? "Shirts" : "Chaises"}</a>
+              <a href="#">{cloth ? "Jeans" : "Benches"}</a>
+              <a href="#">{cloth ? "Pants" : "Stools"}</a>
+              <a href="#">{cloth ? "Shoes" : "Ottomans"}</a>
             </div>
           </div>
           <div className="nav-link-div">
@@ -217,10 +217,10 @@ function Header({ cloth }) {
               {cloth ? "Womens" : "Dining"}
             </Link>
             <div className="dropdown-nav dining-link-drop">
-              <a href="#">Dining Table</a>
-              <a href="#">Dining Chairs</a>
-              <a href="#">Bar Stools</a>
-              <a href="#">Buffets</a>
+              <a href="#"> {cloth ? "T-Shirts" : "Dining Table"}</a>
+              <a href="#"> {cloth ? "Jeans" : "Dining Chairs"}</a>
+              <a href="#"> {cloth ? "Skirts" : "Bar Stools"}</a>
+              <a href="#"> {cloth ? "Shoes" : "Buffets"}</a>
             </div>
           </div>
           <div className="nav-link-div">
@@ -237,11 +237,11 @@ function Header({ cloth }) {
               {cloth ? "Kids" : "Bedroom"}
             </Link>
             <div className="dropdown-nav bedroom-link-drop">
-              <a href="#">Beds</a>
-              <a href="#">Night Stands</a>
-              <a href="#">Chests and Dressers</a>
-              <a href="#">Headboards</a>
-              <a href="#">Mattresses</a>
+              <a href="#"> {cloth ? "T-Shirts" : "Beds"}</a>
+              <a href="#"> {cloth ? "Shirts" : "Night Stands"}</a>
+              <a href="#"> {cloth ? "Jeans" : "Chests and Dressers"}</a>
+              <a href="#"> {cloth ? "Shoes" : "Headboards"}</a>
+              <a href="#"> {cloth ? "Socks" : "Mattresses"}</a>
             </div>
           </div>
           <div className="nav-link-div">
@@ -258,9 +258,9 @@ function Header({ cloth }) {
               {cloth ? "Jewelry" : "Workspace"}
             </Link>
             <div className="dropdown-nav workspace-link-drop">
-              <a href="#">Desks</a>
-              <a href="#">Office Chairs</a>
-              <a href="#">Book Cases</a>
+              <a href="#">{cloth ? "Rings" : "Desks"}</a>
+              <a href="#">{cloth ? "Necklace" : "Office Chairs"}</a>
+              <a href="#">{cloth ? "Gold" : "Book Cases"}</a>
             </div>
           </div>
           <Link

@@ -4,18 +4,18 @@ import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Product.css";
-import main from "../../../Assets/Product/main.png";
-import main2 from "../../../Assets/Product/main2.png";
-import main3 from "../../../Assets/Product/main3.png";
-import page1 from "../../../Assets/Product/page1.png";
-import page2 from "../../../Assets/Product/page2.png";
-import page3 from "../../../Assets/Product/page3.png";
-import QR from "../../../Assets/Product/QR.png";
-import popular5 from "../../../Assets/Living Room/Popular/5.png";
-import popular6 from "../../../Assets/Living Room/Popular/6.png";
-import popular7 from "../../../Assets/Living Room/Popular/7.png";
+import main from "../../../Assets-furniture/Product/main.png";
+import main2 from "../../../Assets-furniture/Product/main2.png";
+import main3 from "../../../Assets-furniture/Product/main3.png";
+import page1 from "../../../Assets-furniture/Product/page1.png";
+import page2 from "../../../Assets-furniture/Product/page2.png";
+import page3 from "../../../Assets-furniture/Product/page3.png";
+import QR from "../../../Assets-furniture/Product/QR.png";
+import popular5 from "../../../Assets-furniture/Living Room/Popular/5.png";
+import popular6 from "../../../Assets-furniture/Living Room/Popular/6.png";
+import popular7 from "../../../Assets-furniture/Living Room/Popular/7.png";
 import Card from "../../../Components/Card/Card.jsx";
-import popular8 from "../../../Assets/Living Room/Popular/8.png";
+import popular8 from "../../../Assets-furniture/Living Room/Popular/8.png";
 
 function Product() {
   const slider1 = useRef();
@@ -40,23 +40,24 @@ function Product() {
             isNavigation: false,
             width: "100%",
             perPage: 1,
+            lazyLoad: "sequential",
             type: "loop",
           }}
         >
           {" "}
           <SplideSlide>
             <div className="img-wrapper-product-gal">
-              <img src={main3} alt="" />
+              <img data-splide-lazy={main3} src={main3} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-gal">
-              <img src={main} alt="" />
+              <img data-splide-lazy={main} src={main} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-gal">
-              <img src={main2} alt="" />
+              <img data-splide-lazy={main2} src={main2} alt="" />
             </div>
           </SplideSlide>
         </Splide>
@@ -104,6 +105,7 @@ function Product() {
             width: "55%",
             // direction: "ltr",
             rewind: true,
+            lazyLoad: "sequential",
             breakpoints: {
               1280: {
                 width: "100%",
@@ -114,17 +116,17 @@ function Product() {
         >
           <SplideSlide>
             <div className="img-wrapper-product-main">
-              <img src={main3} alt="" />
+              <img data-splide-lazy={main3} src={main3} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-main">
-              <img src={main} alt="" />
+              <img data-splide-lazy={main} src={main} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-main">
-              <img src={main2} alt="" />
+              <img data-splide-lazy={main2} src={main2} alt="" />
             </div>
           </SplideSlide>
         </Splide>
