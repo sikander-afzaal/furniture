@@ -137,9 +137,8 @@ function Home() {
             </SplideSlide>
             <SplideSlide>
               <div className="acc-wrapper">
-                <im
+                <img
                   data-splide-lazy={imgacc4}
-                  g
                   src={imgacc4}
                   alt=""
                   className="acc-img"
