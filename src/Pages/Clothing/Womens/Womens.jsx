@@ -1,38 +1,22 @@
 import React from "react";
 import "./Womens.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLongArrowRight,
-  faStar,
-  faCartPlus,
-} from "@fortawesome/free-solid-svg-icons";
-import bg from "../../../Assets-furniture/Dining Room/bg.png";
-import new1 from "../../../Assets-furniture/Dining Room/new/1.png";
-import new2 from "../../../Assets-furniture/Dining Room/new/2.png";
-import circleImg1 from "../../../Assets-furniture/Living Room/circle-img1.png";
-import circleImg2 from "../../../Assets-furniture/Living Room/circle-img2.png";
-import circleImg3 from "../../../Assets-furniture/Living Room/circle-img3.png";
-import circleImg4 from "../../../Assets-furniture/Living Room/circle-img4.png";
-import circleImg5 from "../../../Assets-furniture/Living Room/circle-img5.png";
+import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
+import bg from "../../../Assets-clothing/Women/bg.jpg";
+import new1 from "../../../Assets-clothing/Women/new/1.png";
+import new2 from "../../../Assets-clothing/Women/new/2.png";
+import circleImg1 from "../../../Assets-clothing/Men/circle-img1.png";
+import circleImg2 from "../../../Assets-clothing/Men/circle-img2.png";
+import circleImg3 from "../../../Assets-clothing/Men/circle-img3.png";
+import circleImg4 from "../../../Assets-clothing/Men/circle-img4.png";
+import circleImg5 from "../../../Assets-clothing/Men/circle-img5.png";
 //popular images --------------------------
 import ImageCard from "../../../Components/ImageCard/ImageCard";
-import pop1 from "../../../Assets-furniture/Dining Room/popular/1.png";
-import pop2 from "../../../Assets-furniture/Dining Room/popular/2.png";
-import pop3 from "../../../Assets-furniture/Dining Room/popular/3.png";
-import pop4 from "../../../Assets-furniture/Dining Room/popular/4.png";
-import pop5 from "../../../Assets-furniture/Dining Room/popular/5.png";
-import pop6 from "../../../Assets-furniture/Dining Room/popular/6.png";
-import pop7 from "../../../Assets-furniture/Dining Room/popular/7.png";
-import pop8 from "../../../Assets-furniture/Dining Room/popular/8.png";
-// week -----------------------------------
-import week1 from "../../../Assets-furniture/Dining Room/week/1.png";
-import week2 from "../../../Assets-furniture/Dining Room/week/2.png";
-import week3 from "../../../Assets-furniture/Dining Room/week/3.png";
-import main from "../../../Assets-furniture/Dining Room/week/main.png";
+import pop1 from "../../../Assets-clothing/Women/popular/1.png";
 function Womens() {
   return (
     <div className="dining-room">
-      <div className="dining-section1 dining-bg">
+      <div className="dining-section1 women-bg">
         <img src={bg} alt="" />
         <div className="dining-abs-div">
           <div className="heading-section5">
@@ -48,23 +32,23 @@ function Womens() {
       <div className="living-section2">
         <div className="wrapper-circle">
           <img src={circleImg1} alt="" />
-          <p>sECTIONALS</p>
+          <p>T-Shirts</p>
         </div>
         <div className="wrapper-circle">
           <img src={circleImg2} alt="" />
-          <p>CHAISES</p>
+          <p>Shirts</p>
         </div>
         <div className="wrapper-circle">
           <img src={circleImg3} alt="" />
-          <p>BENCHES</p>
+          <p>Jeans</p>
         </div>
         <div className="wrapper-circle">
           <img src={circleImg4} alt="" />
-          <p>OTTOMANS</p>
+          <p>Pants</p>
         </div>
         <div className="wrapper-circle">
           <img src={circleImg5} alt="" />
-          <p>STOOLS</p>
+          <p>Shoes</p>
         </div>
       </div>
       <div className="dining-section2">
@@ -94,55 +78,16 @@ function Womens() {
         </div>
         <div className="cards-grid">
           <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop2} />
-          <ImageCard show={true} img={pop3} />
-          <ImageCard show={true} img={pop4} />
-          <ImageCard show={false} img={pop5} />
-          <ImageCard show={false} img={pop6} />
-          <ImageCard show={false} img={pop7} />
-          <ImageCard show={false} img={pop8} />
+          <ImageCard show={true} img={pop1} />
+          <ImageCard show={true} img={pop1} />
+          <ImageCard show={true} img={pop1} />
+          <ImageCard show={false} img={pop1} />
+          <ImageCard show={false} img={pop1} />
+          <ImageCard show={false} img={pop1} />
+          <ImageCard show={false} img={pop1} />
         </div>
       </div>
 
-      <div className="homepage-section5">
-        <div className="heading-section5">
-          <span className="line"></span>
-          <h1>Popular This Week</h1>
-        </div>
-        <div className="bottom-section5">
-          <div className="left-section5">
-            <div className="col-images">
-              <img src={week1} alt="" />
-              <img src={week2} alt="" />
-              <img src={week3} alt="" />
-            </div>
-            <img src={main} alt="" className="main-section5" />
-          </div>
-          <div className="right-section5">
-            <h2>Dining Table Stainless Steel</h2>
-            <div className="combine">
-              <div className="star-div">
-                <FontAwesomeIcon icon={faStar} className="yellow" />
-                <FontAwesomeIcon icon={faStar} className="yellow" />
-                <FontAwesomeIcon icon={faStar} className="yellow" />
-                <FontAwesomeIcon icon={faStar} className="yellow" />
-                <FontAwesomeIcon icon={faStar} />
-              </div>
-              <h3>$299</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
-              </p>
-            </div>
-
-            <button className="explore">
-              Add to Cart <FontAwesomeIcon icon={faCartPlus} />
-            </button>
-          </div>
-        </div>
-      </div>
       <div className="living-section3 padding-top">
         <div className="living-heading">
           <div className="line-left"></div>
@@ -151,16 +96,16 @@ function Womens() {
         </div>
         <div className="cards-grid">
           <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop2} />
-          <ImageCard show={true} img={pop3} />
-          <ImageCard show={true} img={pop4} />
-          <ImageCard show={false} img={pop5} />
-          <ImageCard show={false} img={pop6} />
-          <ImageCard show={false} img={pop7} />
-          <ImageCard show={false} img={pop8} />
+          <ImageCard show={true} img={pop1} />
+          <ImageCard show={true} img={pop1} />
+          <ImageCard show={true} img={pop1} />
+          <ImageCard show={false} img={pop1} />
+          <ImageCard show={false} img={pop1} />
+          <ImageCard show={false} img={pop1} />
+          <ImageCard show={false} img={pop1} />
         </div>
       </div>
-      <div className="living-section4 overlay dining-bg">
+      <div className="living-section4 overlay women-bg">
         <img src={bg} alt="" />
         <div className="abs-living-section4">
           <h1>SUMMER CONFORT COLLECTION</h1>
