@@ -23,7 +23,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: rotate(-90deg); */
 }
 .img-wrapper-product-thumb img,
 .img-wrapper-product-main img {
@@ -31,8 +30,6 @@
   object-fit: contain;
 }
 .thumbnail {
-  /* transform: rotate(90deg);
-  margin-top: 170px; */
   display: flex;
   justify-content: center;
   align-items: center;

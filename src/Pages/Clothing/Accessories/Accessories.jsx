@@ -10,6 +10,8 @@ import new1 from "../../../Assets-clothing/Acc-page/new/new1.png";
 import new2 from "../../../Assets-clothing/Acc-page/new/new2.png";
 // popular ----------------------------------
 import pop1 from "../../../Assets-clothing/Acc-page/popular/pop1.png";
+import pop2 from "../../../Assets-clothing/Acc-page/popular/pop2.png";
+import pop3 from "../../../Assets-clothing/Acc-page/popular/pop3.png";
 // choose images ---------------------------------------
 import choose from "../../../Assets-clothing/Acc-page/choose/choose-img.png";
 import icon1 from "../../../Assets-furniture/WorkSpace/choose/icon1.svg";
@@ -18,6 +20,8 @@ import icon3 from "../../../Assets-furniture/WorkSpace/choose/icon3.svg";
 //collection ------------------------------------------------
 import ImageCard from "../../../Components/ImageCard/ImageCard";
 import coll1 from "../../../Assets-clothing/Acc-page/collection/1.png";
+import coll2 from "../../../Assets-clothing/Acc-page/collection/2.png";
+import coll3 from "../../../Assets-clothing/Acc-page/collection/3.png";
 function Accessories() {
   return (
     <div className="workspace">
@@ -117,22 +121,22 @@ function Accessories() {
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop1} src={pop1} alt="" />
+                <img data-splide-lazy={pop2} src={pop2} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop1} src={pop1} alt="" />
+                <img data-splide-lazy={pop3} src={pop3} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop1} src={pop1} alt="" />
+                <img data-splide-lazy={pop2} src={pop2} alt="" />
               </div>
-            </SplideSlide>
+            </SplideSlide>{" "}
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop1} src={pop1} alt="" />
+                <img data-splide-lazy={pop3} src={pop3} alt="" />
               </div>
             </SplideSlide>
           </SplideTrack>
@@ -224,13 +228,13 @@ function Accessories() {
         </div>
         <div className="cards-grid">
           <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={true} img={coll2} />
+          <ImageCard cloth={true} show={true} img={coll3} />
           <ImageCard cloth={true} show={true} img={coll1} />
-          <ImageCard cloth={true} show={true} img={coll1} />
-          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll2} />
+          <ImageCard cloth={true} show={false} img={coll3} />
           <ImageCard cloth={true} show={false} img={coll1} />
-          <ImageCard cloth={true} show={false} img={coll1} />
-          <ImageCard cloth={true} show={false} img={coll1} />
-          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll3} />
         </div>
       </div>
     </div>
