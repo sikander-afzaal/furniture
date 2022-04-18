@@ -138,14 +138,14 @@ function BedRoom() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop2} />
-          <ImageCard show={true} img={pop3} />
-          <ImageCard show={true} img={pop4} />
-          <ImageCard show={false} img={pop5} />
-          <ImageCard show={false} img={pop6} />
-          <ImageCard show={false} img={pop7} />
-          <ImageCard show={false} img={pop8} />
+          <ImageCard cloth={false} show={true} img={pop1} />
+          <ImageCard cloth={false} show={true} img={pop2} />
+          <ImageCard cloth={false} show={true} img={pop3} />
+          <ImageCard cloth={false} show={true} img={pop4} />
+          <ImageCard cloth={false} show={false} img={pop5} />
+          <ImageCard cloth={false} show={false} img={pop6} />
+          <ImageCard cloth={false} show={false} img={pop7} />
+          <ImageCard cloth={false} show={false} img={pop8} />
         </div>
       </div>
       <div className="bedroom-section2">
@@ -202,14 +202,14 @@ function BedRoom() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard show={true} img={pop9} />
-          <ImageCard show={true} img={pop10} />
-          <ImageCard show={true} img={pop11} />
-          <ImageCard show={true} img={pop12} />
-          <ImageCard show={false} img={pop13} />
-          <ImageCard show={false} img={pop14} />
-          <ImageCard show={false} img={pop15} />
-          <ImageCard show={false} img={pop16} />
+          <ImageCard cloth={false} show={true} img={pop9} />
+          <ImageCard cloth={false} show={true} img={pop10} />
+          <ImageCard cloth={false} show={true} img={pop11} />
+          <ImageCard cloth={false} show={true} img={pop12} />
+          <ImageCard cloth={false} show={false} img={pop13} />
+          <ImageCard cloth={false} show={false} img={pop14} />
+          <ImageCard cloth={false} show={false} img={pop15} />
+          <ImageCard cloth={false} show={false} img={pop16} />
         </div>
       </div>{" "}
       <div className="living-section4 overlay bedroom-bg">

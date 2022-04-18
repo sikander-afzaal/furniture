@@ -182,8 +182,16 @@ function Product() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <Card img={popular5} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={popular6} desc={"Best Mid-Range Sofa Brand:Burrow."} />
+          <Card
+            cloth={false}
+            img={popular5}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
+          <Card
+            cloth={false}
+            img={popular6}
+            desc={"Best Mid-Range Sofa Brand:Burrow."}
+          />
           <Card
             img={popular7}
             desc={"Best Affordable Sofa Brand:Albany Park."}

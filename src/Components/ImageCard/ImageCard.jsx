@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ImageCard.css";
-function ImageCard({ img, show }) {
+function ImageCard({ img, show, cloth }) {
   const toTop = () => {
     setTimeout(() => {
       window.scrollTo(0, 0);
@@ -11,11 +11,18 @@ function ImageCard({ img, show }) {
     <div className="card-wrapper card-wrapper2">
       <div className="main-card main-card2">
         {show && <p className="new-item abs">New Item</p>}
-        <Link onClick={toTop} to={"/furniture/Product"}>
+        <Link
+          onClick={toTop}
+          to={cloth ? "/clothing/Product" : "/furniture/Product"}
+        >
           <img src={img} alt="" />
         </Link>
       </div>
-      <Link onClick={toTop} to={"/furniture/Product"} className="card-btn">
+      <Link
+        onClick={toTop}
+        to={cloth ? "/clothing/Product" : "/furniture/Product"}
+        className="card-btn"
+      >
         GET PRICE
       </Link>
     </div>

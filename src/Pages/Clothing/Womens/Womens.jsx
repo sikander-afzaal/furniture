@@ -77,14 +77,14 @@ function Womens() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={false} img={pop1} />
-          <ImageCard show={false} img={pop1} />
-          <ImageCard show={false} img={pop1} />
-          <ImageCard show={false} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
         </div>
       </div>
 
@@ -95,14 +95,14 @@ function Womens() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={true} img={pop1} />
-          <ImageCard show={false} img={pop1} />
-          <ImageCard show={false} img={pop1} />
-          <ImageCard show={false} img={pop1} />
-          <ImageCard show={false} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={true} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard cloth={true} show={false} img={pop1} />
         </div>
       </div>
       <div className="living-section4 overlay women-bg">

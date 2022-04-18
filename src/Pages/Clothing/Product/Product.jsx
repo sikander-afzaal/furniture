@@ -4,18 +4,11 @@ import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Product.css";
-import main from "../../../Assets-furniture/Product/main.png";
-import main2 from "../../../Assets-furniture/Product/main2.png";
-import main3 from "../../../Assets-furniture/Product/main3.png";
-import page1 from "../../../Assets-furniture/Product/page1.png";
-import page2 from "../../../Assets-furniture/Product/page2.png";
-import page3 from "../../../Assets-furniture/Product/page3.png";
-import QR from "../../../Assets-furniture/Product/QR.png";
-import popular5 from "../../../Assets-furniture/Living Room/Popular/5.png";
-import popular6 from "../../../Assets-furniture/Living Room/Popular/6.png";
-import popular7 from "../../../Assets-furniture/Living Room/Popular/7.png";
+import main from "../../../Assets-clothing/Product/main.png";
+import page1 from "../../../Assets-clothing/Product/page1.png";
+import QR from "../../../Assets-clothing/Product/QR.png";
+import popular1 from "../../../Assets-clothing/Men/Popular/1.png";
 import Card from "../../../Components/Card/Card.jsx";
-import popular8 from "../../../Assets-furniture/Living Room/Popular/8.png";
 
 function Product() {
   const slider1 = useRef();
@@ -47,7 +40,7 @@ function Product() {
           {" "}
           <SplideSlide>
             <div className="img-wrapper-product-gal">
-              <img data-splide-lazy={main3} src={main3} alt="" />
+              <img data-splide-lazy={main} src={main} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
@@ -57,7 +50,7 @@ function Product() {
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-gal">
-              <img data-splide-lazy={main2} src={main2} alt="" />
+              <img data-splide-lazy={main} src={main} alt="" />
             </div>
           </SplideSlide>
         </Splide>
@@ -87,12 +80,12 @@ function Product() {
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-thumb">
-              <img src={page2} alt="" />
+              <img src={page1} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-thumb">
-              <img src={page3} alt="" />
+              <img src={page1} alt="" />
             </div>
           </SplideSlide>
         </Splide>
@@ -116,7 +109,7 @@ function Product() {
         >
           <SplideSlide>
             <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main3} src={main3} alt="" />
+              <img data-splide-lazy={main} src={main} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
@@ -126,7 +119,7 @@ function Product() {
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main2} src={main2} alt="" />
+              <img data-splide-lazy={main} src={main} alt="" />
             </div>
           </SplideSlide>
         </Splide>
@@ -134,64 +127,35 @@ function Product() {
           <h1>
             <strong>BC</strong>LUXURY.
           </h1>
-          <h2>Sofa Name:</h2>
+          <h2>Shirt:</h2>
           <p className="desc-prod">
-            Soft, Comfortable And Welcoming: The Main Features Of The Arcadia
-            Collection Are Evident At First Glance. Designed By Poltrona Frau R.
-            & D., Arcadia Is A Perfect Addition To Any Space, Offering
-            Relaxation And Rest. Its Classic Design Is Balanced By The Shape Of
-            The Armrests, Which Gently Slant Towards The Inside Of Each Element
-            To Add Movement And Lightness To The Overall Effect.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            nostrum, odio qui recusandae harum ex maiores quae temporibus quo
+            nemo adipisci impedit quisquam, ipsam quidem quos? Qui vitae, nam
+            perferendis, accusamus fugit eius, magni beatae commodi
+            reprehenderit id sunt doloribus!
           </p>
           <div className="dimensions-div">
-            <h2>Dimensions:</h2>
-            <p>ARMCHAIR</p>
-            <p>2 SEATER SOFA</p>
-            <p>LARGE 2 SEATER SOFA</p>
-            <p>3 SEATER SOFA</p>
+            <h2>Sizing:</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
           </div>
         </div>
       </div>
-      <div className="prod-section2">
-        <img className="left-img-prod" src={main} alt="" />
-        <p className="sofa-p">
-          Soft, Comfortable And Welcoming: The Main Features Of The Arcadia
-          Collection Are Evident At First Glance. Designed By Poltrona Frau R. &
-          D., Arcadia Is A Perfect Addition To Any Space, Offering Relaxation
-          And Rest. Its Classic Design Is Balanced By The Shape Of The Armrests,
-          Which Gently Slant Towards The Inside Of Each Element To Add Movement
-          And Lightness To The Overall Effect.
-        </p>
-        <div className="sofa-desc">
-          <div className="desc-sect">
-            <h2>Luxury Sofa</h2>
-            <p>
-              Wooden Material plus luxury clothing make it perfect match for
-              your collection.
-            </p>
-            <FontAwesomeIcon icon={faHeart} />
-          </div>
-          <img src={main} alt="" />
-          <p className="info">Request Info {">"}</p>
-        </div>
-      </div>
-      <div className="living-section3 padding-top">
+
+      <div className="living-section3 padding-top margin-top2">
         <div className="living-heading">
           <div className="line-left"></div>
           <h1>Related Products</h1>
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <Card img={popular5} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={popular6} desc={"Best Mid-Range Sofa Brand:Burrow."} />
-          <Card
-            img={popular7}
-            desc={"Best Affordable Sofa Brand:Albany Park."}
-          />
-          <Card
-            img={popular8}
-            desc={"Best for Customization:Inside Weather."}
-          />
+          <Card cloth={true} img={popular1} desc={"Jeans"} />
+          <Card cloth={true} img={popular1} desc={"Jeans"} />
+          <Card cloth={true} img={popular1} desc={"Jeans"} />
+          <Card cloth={true} img={popular1} desc={"Jeans"} />
         </div>
       </div>
       <div className="prod-section3">

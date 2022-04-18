@@ -1,33 +1,22 @@
 import React from "react";
 import "./Jewelry.css";
-import slide1 from "../../../Assets-furniture/WorkSpace/slider/slide1.png";
-import slide2 from "../../../Assets-furniture/WorkSpace/slider/slide2.png";
+import slide1 from "../../../Assets-clothing/Jewelry/slider/slide1.png";
+import slide2 from "../../../Assets-clothing/Jewelry/slider/slide2.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
-import new1 from "../../../Assets-furniture/WorkSpace/new/new1.png";
-import new2 from "../../../Assets-furniture/WorkSpace/new/new2.png";
+import new1 from "../../../Assets-clothing/Jewelry/new/new1.png";
 // popular ----------------------------------
-import pop1 from "../../../Assets-furniture/WorkSpace/popular/pop1.png";
-import pop2 from "../../../Assets-furniture/WorkSpace/popular/pop2.png";
-import pop3 from "../../../Assets-furniture/WorkSpace/popular/pop3.png";
-import pop4 from "../../../Assets-furniture/WorkSpace/popular/pop4.png";
+import pop1 from "../../../Assets-clothing/Jewelry/popular/pop1.png";
 // choose images ---------------------------------------
-import choose from "../../../Assets-furniture/WorkSpace/choose/choose-img.png";
+import choose from "../../../Assets-clothing/Jewelry/choose/choose-img.png";
 import icon1 from "../../../Assets-furniture/WorkSpace/choose/icon1.svg";
 import icon2 from "../../../Assets-furniture/WorkSpace/choose/icon2.svg";
 import icon3 from "../../../Assets-furniture/WorkSpace/choose/icon3.svg";
 //collection ------------------------------------------------
 import ImageCard from "../../../Components/ImageCard/ImageCard";
-import coll1 from "../../../Assets-furniture/WorkSpace/collection/1.png";
-import coll2 from "../../../Assets-furniture/WorkSpace/collection/2.png";
-import coll3 from "../../../Assets-furniture/WorkSpace/collection/3.png";
-import coll4 from "../../../Assets-furniture/WorkSpace/collection/4.png";
-import coll5 from "../../../Assets-furniture/WorkSpace/collection/5.png";
-import coll6 from "../../../Assets-furniture/WorkSpace/collection/6.png";
-import coll7 from "../../../Assets-furniture/WorkSpace/collection/7.png";
-import coll8 from "../../../Assets-furniture/WorkSpace/collection/8.png";
+import coll1 from "../../../Assets-clothing/Jewelry/collection/1.png";
 function Jewelry() {
   return (
     <div className="workspace">
@@ -77,7 +66,7 @@ function Jewelry() {
           </div>
         </Splide>
         <div className="abs-work">
-          <h1>Luxury Workspace</h1>
+          <h1>Lorem ipsum</h1>
           <div className="line work-line"></div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -104,7 +93,7 @@ function Jewelry() {
         </div>
         <div className="row-img">
           <img src={new1} alt="" />
-          <img src={new2} alt="" />
+          <img src={new1} alt="" />
         </div>
       </div>
       <div className="work-section2">
@@ -145,17 +134,17 @@ function Jewelry() {
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop2} src={pop2} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop3} src={pop3} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop4} src={pop4} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
@@ -231,14 +220,14 @@ function Jewelry() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard show={true} img={coll1} />
-          <ImageCard show={true} img={coll2} />
-          <ImageCard show={true} img={coll3} />
-          <ImageCard show={true} img={coll4} />
-          <ImageCard show={false} img={coll5} />
-          <ImageCard show={false} img={coll6} />
-          <ImageCard show={false} img={coll7} />
-          <ImageCard show={false} img={coll8} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
         </div>
       </div>
     </div>

@@ -235,14 +235,14 @@ function OutDoor() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard show={true} img={coll1} />
-          <ImageCard show={true} img={coll2} />
-          <ImageCard show={true} img={coll3} />
-          <ImageCard show={true} img={coll4} />
-          <ImageCard show={false} img={coll5} />
-          <ImageCard show={false} img={coll6} />
-          <ImageCard show={false} img={coll7} />
-          <ImageCard show={false} img={coll8} />
+          <ImageCard cloth={false} show={true} img={coll1} />
+          <ImageCard cloth={false} show={true} img={coll2} />
+          <ImageCard cloth={false} show={true} img={coll3} />
+          <ImageCard cloth={false} show={true} img={coll4} />
+          <ImageCard cloth={false} show={false} img={coll5} />
+          <ImageCard cloth={false} show={false} img={coll6} />
+          <ImageCard cloth={false} show={false} img={coll7} />
+          <ImageCard cloth={false} show={false} img={coll8} />
         </div>
       </div>
     </div>

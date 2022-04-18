@@ -108,8 +108,16 @@ function LivingRoom() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <Card img={popular5} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={popular6} desc={"Best Mid-Range Sofa Brand:Burrow."} />
+          <Card
+            cloth={false}
+            img={popular5}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
+          <Card
+            cloth={false}
+            img={popular6}
+            desc={"Best Mid-Range Sofa Brand:Burrow."}
+          />
           <Card
             img={popular7}
             desc={"Best Affordable Sofa Brand:Albany Park."}
@@ -118,10 +126,10 @@ function LivingRoom() {
             img={popular8}
             desc={"Best for Customization:Inside Weather."}
           />
-          <Card img={popular1} desc={"Wingback Chair"} />
-          <Card img={popular2} desc={"Windsor Chair"} />
-          <Card img={popular3} desc={"Egg Chair"} />
-          <Card img={popular4} desc={"Wishbone Chair"} />
+          <Card cloth={false} img={popular1} desc={"Wingback Chair"} />
+          <Card cloth={false} img={popular2} desc={"Windsor Chair"} />
+          <Card cloth={false} img={popular3} desc={"Egg Chair"} />
+          <Card cloth={false} img={popular4} desc={"Wishbone Chair"} />
         </div>
       </div>
 
@@ -172,10 +180,26 @@ function LivingRoom() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <Card img={table1} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={table2} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={table3} desc={"Best High-End Sofa Brand: Maiden Home"} />
-          <Card img={table3} desc={"Best High-End Sofa Brand: Maiden Home"} />
+          <Card
+            cloth={false}
+            img={table1}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
+          <Card
+            cloth={false}
+            img={table2}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
+          <Card
+            cloth={false}
+            img={table3}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
+          <Card
+            cloth={false}
+            img={table3}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
         </div>
       </div>
       <div className="living-section4 overlay">

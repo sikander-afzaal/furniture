@@ -1,33 +1,23 @@
 import React from "react";
 import "./Accessories.css";
-import slide1 from "../../../Assets-furniture/OutDoor/slider/slide1.png";
-import slide2 from "../../../Assets-furniture/OutDoor/slider/slide2.png";
+import slide1 from "../../../Assets-clothing/Acc-page/slider/slide1.png";
+import slide2 from "../../../Assets-clothing/Acc-page/slider/slide2.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
-import new1 from "../../../Assets-furniture/OutDoor/new/new1.png";
-import new2 from "../../../Assets-furniture/OutDoor/new/new2.png";
+import new1 from "../../../Assets-clothing/Acc-page/new/new1.png";
+import new2 from "../../../Assets-clothing/Acc-page/new/new2.png";
 // popular ----------------------------------
-import pop1 from "../../../Assets-furniture/OutDoor/popular/pop1.png";
-import pop2 from "../../../Assets-furniture/OutDoor/popular/pop2.png";
-import pop3 from "../../../Assets-furniture/OutDoor/popular/pop3.png";
-import pop4 from "../../../Assets-furniture/OutDoor/popular/pop4.png";
+import pop1 from "../../../Assets-clothing/Acc-page/popular/pop1.png";
 // choose images ---------------------------------------
-import choose from "../../../Assets-furniture/OutDoor/choose/choose-img.png";
+import choose from "../../../Assets-clothing/Acc-page/choose/choose-img.png";
 import icon1 from "../../../Assets-furniture/WorkSpace/choose/icon1.svg";
 import icon2 from "../../../Assets-furniture/WorkSpace/choose/icon2.svg";
 import icon3 from "../../../Assets-furniture/WorkSpace/choose/icon3.svg";
 //collection ------------------------------------------------
 import ImageCard from "../../../Components/ImageCard/ImageCard";
-import coll1 from "../../../Assets-furniture/OutDoor/collection/1.png";
-import coll2 from "../../../Assets-furniture/OutDoor/collection/2.png";
-import coll3 from "../../../Assets-furniture/OutDoor/collection/3.png";
-import coll4 from "../../../Assets-furniture/OutDoor/collection/4.png";
-import coll5 from "../../../Assets-furniture/OutDoor/collection/5.png";
-import coll6 from "../../../Assets-furniture/OutDoor/collection/6.png";
-import coll7 from "../../../Assets-furniture/OutDoor/collection/7.png";
-import coll8 from "../../../Assets-furniture/OutDoor/collection/8.png";
+import coll1 from "../../../Assets-clothing/Acc-page/collection/1.png";
 function Accessories() {
   return (
     <div className="workspace">
@@ -77,7 +67,7 @@ function Accessories() {
           </div>
         </Splide>
         <div className="abs-work">
-          <h1>Luxury Outdoor</h1>
+          <h1>Lorem Ipsum</h1>
           <div className="line work-line"></div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -127,17 +117,17 @@ function Accessories() {
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop2} src={pop2} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop3} src={pop3} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="work-img-wrapper">
-                <img data-splide-lazy={pop4} src={pop4} alt="" />
+                <img data-splide-lazy={pop1} src={pop1} alt="" />
               </div>
             </SplideSlide>
             <SplideSlide>
@@ -233,14 +223,14 @@ function Accessories() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard show={true} img={coll1} />
-          <ImageCard show={true} img={coll2} />
-          <ImageCard show={true} img={coll3} />
-          <ImageCard show={true} img={coll4} />
-          <ImageCard show={false} img={coll5} />
-          <ImageCard show={false} img={coll6} />
-          <ImageCard show={false} img={coll7} />
-          <ImageCard show={false} img={coll8} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={true} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard cloth={true} show={false} img={coll1} />
         </div>
       </div>
     </div>
