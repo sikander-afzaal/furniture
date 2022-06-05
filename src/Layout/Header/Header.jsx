@@ -21,9 +21,14 @@ function Header({ cloth }) {
           >
             Home
           </Link>
-          <Link onClick={toTop} to="#" className="nav-links">
-            Brands
-          </Link>
+          {cloth ? (
+            ""
+          ) : (
+            <Link onClick={toTop} to="/furniture/Brands" className="nav-links">
+              Brands
+            </Link>
+          )}
+
           <Link onClick={toTop} to="#" className="nav-links">
             Team
           </Link>
@@ -118,6 +123,7 @@ function Header({ cloth }) {
           </Link>
         </div>
       </div>
+      {/* mobile navbar ----------------------- */}
       <div className="navbar-mobile">
         <Link
           to={`${cloth ? "/clothing" : "/furniture"}`}
@@ -146,18 +152,22 @@ function Header({ cloth }) {
           >
             Home
           </Link>
-          <Link
-            onClick={() => {
-              setOpen((prev) => !prev);
-              setTimeout(() => {
-                window.scrollTo(0, 0);
-              }, 200);
-            }}
-            to="#"
-            className="nav-links"
-          >
-            Products
-          </Link>
+          {cloth ? (
+            ""
+          ) : (
+            <Link
+              onClick={() => {
+                setOpen((prev) => !prev);
+                setTimeout(() => {
+                  window.scrollTo(0, 0);
+                }, 200);
+              }}
+              to="/furniture/Brands"
+              className="nav-links"
+            >
+              Brands
+            </Link>
+          )}
           <Link
             onClick={() => {
               setOpen((prev) => !prev);

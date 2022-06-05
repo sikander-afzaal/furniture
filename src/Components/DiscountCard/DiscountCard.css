@@ -1,0 +1,30 @@
+.main-card-discounted {
+  width: 310px;
+  background-color: white;
+  display: grid;
+  height: 380px;
+  padding-bottom: 20px;
+  gap: 30px;
+  grid-template-columns: 1fr;
+  position: relative;
+  grid-template-rows: 30px 150px auto 50px;
+}
+.price-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  border-top: 1px solid rgba(211, 211, 211, 0.377);
+  padding-top: 10px;
+}
+.original-price {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 15px;
+}
+.discounted-price {
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+}

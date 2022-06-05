@@ -10,6 +10,7 @@ import WorkSpace from "./Workspace/WorkSpace";
 import OutDoor from "./OutDoor/OutDoor";
 import Product from "./Product/Product";
 import { Route, Routes } from "react-router-dom";
+import Brands from "../Brands/Brands";
 function Furniture() {
   return (
     <div className="furniture">
@@ -22,6 +23,7 @@ function Furniture() {
         <Route path="WorkSpace" element={<WorkSpace />}></Route>
         <Route path="OutDoor" element={<OutDoor />}></Route>
         <Route path="Product" element={<Product />}></Route>
+        <Route path="Brands" element={<Brands />}></Route>
       </Routes>
       <Footer />
     </div>
