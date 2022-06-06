@@ -1,0 +1,47 @@
+.filter-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 20px;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+}
+.top-filter-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.top-filter-col h4 {
+  color: black;
+  font-size: 14px;
+}
+.top-filter-col svg {
+  font-size: 1rem;
+}
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.filter-row input {
+  height: 15px;
+  width: 15px;
+}
+.filter-title {
+  margin-left: 10px;
+  color: grey;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.stock {
+  font-weight: bold;
+}
+.red-stock {
+  color: red;
+}

@@ -1,0 +1,195 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 170px;
+  padding-bottom: 2rem;
+  background-color: #f9f9f9;
+}
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  padding-right: 40px;
+  gap: 30px;
+}
+
+.right-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.top-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.top-filter_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.top-filter_left svg {
+  color: black;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 8px;
+}
+.top-filter_right {
+  width: 150px;
+  height: auto;
+  position: relative;
+}
+.top-filter_right .drop-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.filter-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  width: 100%;
+  gap: 30px;
+}
+.left-filter {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 40px;
+  gap: 20px;
+  padding-top: 30px;
+}
+.left-filter h1 {
+  width: 100%;
+  font-size: 1.6rem;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+.left-filter h1 svg {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+.left-filter h2 {
+  width: 100%;
+  color: grey;
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+  font-weight: 400;
+}
+.left-filter h2 svg {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: grey;
+}
+.filter-row-price {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  width: 100%;
+  column-gap: 20px;
+}
+.filter-row-price .filter-title {
+  margin-left: 0px;
+}
+.filter-row-price input {
+  width: 100px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+}
+.desktop-fil {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-fil {
+  display: none;
+}
+@media screen and (max-width: 1674px) {
+  .filter-cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1392px) {
+  .filter-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 960px) {
+  .filter-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 664px) {
+  .filter {
+    position: relative;
+  }
+  .left-filter {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+    left: -100vw;
+    overflow-y: scroll;
+  }
+  .filter-grid {
+    align-self: center;
+    padding-right: 0px;
+    grid-template-columns: 1fr;
+    padding-inline: 20px;
+  }
+  .top-filter {
+    grid-column: 1/2;
+  }
+  .filter-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .right-filter {
+    grid-column: 1/2;
+    place-items: center;
+  }
+  .desktop-fil {
+    display: none;
+  }
+  .mobile-fil {
+    display: block;
+  }
+  .open-left {
+    left: 0;
+  }
+  .cross-fil {
+    position: absolute;
+    color: black;
+    font-size: 1.7rem;
+    top: 10px;
+    right: 10px;
+  }
+}
