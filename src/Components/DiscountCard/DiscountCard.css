@@ -1,3 +1,6 @@
+.card-wrapper {
+  text-decoration: none;
+}
 .main-card-discounted {
   width: 310px;
   background-color: white;

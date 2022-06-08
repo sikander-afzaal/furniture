@@ -14,7 +14,7 @@ function Card({ img, desc, cloth }) {
         <Link
           className="flex"
           onClick={toTop}
-          to={cloth ? "/clothing/Product" : "/furniture/Product"}
+          to={cloth ? "/clothing/Product" : "/furniture/Filter"}
         >
           <img src={img} alt="" />
         </Link>
@@ -22,7 +22,7 @@ function Card({ img, desc, cloth }) {
       </div>
       <Link
         onClick={toTop}
-        to={cloth ? "/clothing/Product" : "/furniture/Product"}
+        to={cloth ? "/clothing/Product" : "/furniture/Filter"}
         className="card-btn"
       >
         GET PRICE

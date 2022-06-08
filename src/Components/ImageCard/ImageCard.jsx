@@ -13,14 +13,14 @@ function ImageCard({ img, show, cloth }) {
         {show && <p className="new-item abs">New Item</p>}
         <Link
           onClick={toTop}
-          to={cloth ? "/clothing/Product" : "/furniture/Product"}
+          to={cloth ? "/clothing/Product" : "/furniture/Filter"}
         >
           <img src={img} alt="" />
         </Link>
       </div>
       <Link
         onClick={toTop}
-        to={cloth ? "/clothing/Product" : "/furniture/Product"}
+        to={cloth ? "/clothing/Product" : "/furniture/Filter"}
         className="card-btn"
       >
         GET PRICE

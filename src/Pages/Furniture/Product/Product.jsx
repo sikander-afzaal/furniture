@@ -2,7 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCartShopping,
+  faHeart,
+  faMaximize,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Product.css";
 import main from "../../../Assets-furniture/Product/main.png";
 import main2 from "../../../Assets-furniture/Product/main2.png";
@@ -18,12 +23,49 @@ import Card from "../../../Components/Card/Card.jsx";
 import popular8 from "../../../Assets-furniture/Living Room/Popular/8.png";
 
 function Product() {
+  const details = [
+    {
+      head: "Busey Ipsum Dolor Sit Amet",
+      desc: `Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci
+            dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac
+            odio. Velit euismod in pellentesque massa placerat duis ultricies
+            lacus. Scelerisque purus semper eget duis at tellus at urna
+            condimentum. Eu facilisis sed odio morbi quis commodo odio aenean
+            urpis massa sed elemen.`,
+    },
+    {
+      head: "Busey  Dolor Sit Amet",
+      desc: `Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci
+            dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac
+            odio. Velit euismod in pellentesque massa placerat duis ultricies
+            lacus. Sceleris`,
+    },
+    {
+      head: "Busey Ipsum Dolor t",
+      desc: `Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci
+            dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac
+            odio. Velit euisd odio morbi quis commodo odio aenean
+            urpis massa sed elemen.`,
+    },
+  ];
   const slider1 = useRef();
   const slider2 = useRef();
   useEffect(() => {
     slider1.current.sync(slider2.current.splide);
   }, [slider1, slider2]);
   const [gallery, openGallery] = useState(false);
+  const [head, setHead] = useState(details[0].head);
+  const [desc, setDesc] = useState(details[0].desc);
+
+  const clickHandler = (e) => {
+    const num = e.target.dataset.num;
+    const active = document.querySelector(".tab.active");
+    const target = e.target;
+    setDesc(details[num].desc);
+    setHead(details[num].head);
+    active.classList.remove("active");
+    target.classList.add("active");
+  };
   return (
     <div className="product">
       <div className={`gallery ${gallery ? "gal-flex" : ""}`}>
@@ -44,7 +86,6 @@ function Product() {
             type: "loop",
           }}
         >
-          {" "}
           <SplideSlide>
             <div className="img-wrapper-product-gal">
               <img data-splide-lazy={main3} src={main3} alt="" />
@@ -63,116 +104,110 @@ function Product() {
         </Splide>
       </div>
       <div className="prod-section1">
-        <Splide
-          className="thumbnail"
-          ref={(slider) => (slider2.current = slider)}
-          options={{
-            pagination: false,
-            arrows: false,
-            isNavigation: true,
-            width: "15%",
-            perPage: 3,
-            // direction: "ttb",
-            breakpoints: {
-              1280: {
-                width: "100%",
+        <div className="slider-div">
+          <Splide
+            className="main-slider"
+            ref={(slider) => (slider1.current = slider)}
+            options={{
+              pagination: false,
+              arrows: true,
+              width: "100%",
+              // direction: "ltr",
+              rewind: true,
+              lazyLoad: "sequential",
+              breakpoints: {
+                1280: {
+                  width: "100%",
+                },
               },
-            },
-          }}
-        >
-          <SplideSlide>
-            <div className="img-wrapper-product-thumb">
-              <img src={page1} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-thumb">
-              <img src={page2} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-thumb">
-              <img src={page3} alt="" />
-            </div>
-          </SplideSlide>
-        </Splide>
-        <Splide
-          className="main-slider"
-          ref={(slider) => (slider1.current = slider)}
-          options={{
-            pagination: true,
-            arrows: true,
-            width: "55%",
-            // direction: "ltr",
-            rewind: true,
-            lazyLoad: "sequential",
-            breakpoints: {
-              1280: {
-                width: "100%",
+            }}
+            onClick={() => openGallery(true)}
+          >
+            <SplideSlide>
+              <div className="img-wrapper-product-main">
+                <img data-splide-lazy={main3} src={main3} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-main">
+                <img data-splide-lazy={main} src={main} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-main">
+                <img data-splide-lazy={main2} src={main2} alt="" />
+              </div>
+            </SplideSlide>
+          </Splide>
+          <Splide
+            className="thumbnail"
+            ref={(slider) => (slider2.current = slider)}
+            options={{
+              pagination: false,
+              arrows: false,
+              isNavigation: true,
+              width: "100%",
+              perPage: 3,
+              // direction: "ttb",
+              breakpoints: {
+                1280: {
+                  width: "100%",
+                },
               },
-            },
-          }}
-          onClick={() => openGallery(true)}
-        >
-          <SplideSlide>
-            <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main3} src={main3} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main} src={main} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main2} src={main2} alt="" />
-            </div>
-          </SplideSlide>
-        </Splide>
+            }}
+          >
+            <SplideSlide>
+              <div className="img-wrapper-product-thumb">
+                <img src={page1} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-thumb">
+                <img src={page2} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-thumb">
+                <img src={page3} alt="" />
+              </div>
+            </SplideSlide>
+          </Splide>
+        </div>
+
         <div className="desc-product">
-          <h1>
-            <strong>BC</strong>LUXURY.
-          </h1>
-          <h2>Sofa Name:</h2>
-          <p className="desc-prod">
-            Soft, Comfortable And Welcoming: The Main Features Of The Arcadia
-            Collection Are Evident At First Glance. Designed By Poltrona Frau R.
-            & D., Arcadia Is A Perfect Addition To Any Space, Offering
-            Relaxation And Rest. Its Classic Design Is Balanced By The Shape Of
-            The Armrests, Which Gently Slant Towards The Inside Of Each Element
-            To Add Movement And Lightness To The Overall Effect.
+          <h2>
+            American Leather Transitional Pearson Living Room Upholstered Sleep
+            Sofa
+          </h2>
+          <p className="price">$6,529.00</p>
+          <p className="prod-desc">
+            PEA-SO2-QS Vintage Belg Grey(1) Pearson queen size sleep sofa with
+            Premier mattress and Espresso leg finish
           </p>
-          <div className="dimensions-div">
-            <h2>Dimensions:</h2>
-            <p>ARMCHAIR</p>
-            <p>2 SEATER SOFA</p>
-            <p>LARGE 2 SEATER SOFA</p>
-            <p>3 SEATER SOFA</p>
-          </div>
+          <p className="dimensions">
+            <FontAwesomeIcon icon={faMaximize} /> 71"w x 39"d (85" Open) x 36"h
+          </p>
+          <button className="add-to-cart">
+            ADD TO CART <FontAwesomeIcon icon={faCartShopping} />
+          </button>
+          <button className="buy-prod">BUY IT NOW</button>
         </div>
       </div>
       <div className="prod-section2">
-        <img className="left-img-prod" src={main} alt="" />
-        <p className="sofa-p">
-          Soft, Comfortable And Welcoming: The Main Features Of The Arcadia
-          Collection Are Evident At First Glance. Designed By Poltrona Frau R. &
-          D., Arcadia Is A Perfect Addition To Any Space, Offering Relaxation
-          And Rest. Its Classic Design Is Balanced By The Shape Of The Armrests,
-          Which Gently Slant Towards The Inside Of Each Element To Add Movement
-          And Lightness To The Overall Effect.
-        </p>
-        <div className="sofa-desc">
-          <div className="desc-sect">
-            <h2>Luxury Sofa</h2>
-            <p>
-              Wooden Material plus luxury clothing make it perfect match for
-              your collection.
-            </p>
-            <FontAwesomeIcon icon={faHeart} />
-          </div>
-          <img src={main} alt="" />
-          <p className="info">Request Info {">"}</p>
+        <div className="tabs-div">
+          <p data-num={0} onClick={clickHandler} className="tab active">
+            Product Description
+          </p>
+          <p data-num={1} onClick={clickHandler} className="tab">
+            Shipping Details
+          </p>
+          <p data-num={2} onClick={clickHandler} className="tab">
+            Reviews
+          </p>
+        </div>
+        <div className="tab-desc">
+          <h2>{head}</h2>
+          <p>{desc}</p>
         </div>
       </div>
       <div className="living-section3 padding-top">
