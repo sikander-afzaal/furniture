@@ -4,6 +4,7 @@ import Landing from "./Pages/LandingPage/Landing.jsx";
 import Furniture from "./Pages/Furniture/Furniture.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Clothing from "./Pages/Clothing/Clothing";
+import Check from "./Pages/Checkout/Check";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
           <Route path="/Choice" element={<Choice />}></Route>
           <Route path="/furniture/*" element={<Furniture />}></Route>
           <Route path="/clothing/*" element={<Clothing />}></Route>
+          <Route path="/checkout/*" element={<Check />}></Route>
         </Routes>
       </Router>
     </div>

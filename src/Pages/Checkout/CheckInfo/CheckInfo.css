@@ -1,0 +1,122 @@
+.check-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: column;
+  width: 100%;
+}
+.check-info h1 {
+  color: #1b2125;
+}
+.input-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.input-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.input-div label {
+  color: #1b2125;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.input-div input,
+.input-div span input {
+  width: 100%;
+  padding: 16px 0px;
+  border: 1px solid #dde3e8;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+.input-div .css-1s2u09g-control {
+  border: 1px solid #dde3e8 !important;
+  border-radius: 5px;
+  min-height: 50px;
+}
+.input-div .css-b62m3t-container {
+  width: 100%;
+}
+.input-div span h3 {
+  color: #0095f8;
+  padding-right: 10px;
+  font-size: 1rem;
+  position: relative;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.input-div span h3::after {
+  content: "";
+  height: 50px;
+  width: 1px;
+  background-color: #dde3e8;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  transform: translateY(-32%);
+}
+.input-div span input {
+  border: none !important;
+}
+.input-div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #dde3e8;
+  border-radius: 5px;
+}
+.check-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.return-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  gap: 10px;
+  color: #788995;
+}
+.continue-link {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  width: 250px;
+  height: 50px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.continue-link:hover {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+@media screen and (max-width: 454px) {
+  .input-row {
+    flex-direction: column;
+  }
+  .check-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
