@@ -5,6 +5,10 @@ import "@splidejs/react-splide/css";
 import "./Brands.css";
 import BrandCard from "../../Components/BrandCard/BrandCard";
 import img from "../../Assets-furniture/Living Room/beds/bed1.png";
+import icon1 from "../../Assets-furniture/brands-icon/icon1.png";
+import icon2 from "../../Assets-furniture/brands-icon/icon2.png";
+import icon3 from "../../Assets-furniture/brands-icon/icon3.png";
+import icon4 from "../../Assets-furniture/brands-icon/icon4.png";
 import DiscountCard from "../../Components/DiscountCard/DiscountCard";
 function Brands() {
   return (
@@ -49,12 +53,13 @@ function Brands() {
       >
         <SplideSlide>
           <BrandCard
-            name={"ART Furniture"}
+            name={"American Leather Comfort Sleeper®"}
             category={{
               cat1: "Bedroom",
               cat2: "Dining Room",
               cat3: "Home Office",
             }}
+            img={icon1}
           />
         </SplideSlide>
         <SplideSlide>
@@ -65,6 +70,40 @@ function Brands() {
               cat2: "Dining Room",
               cat3: "Home Office",
             }}
+            img={icon2}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <BrandCard
+            name={"Bassett Mirror"}
+            category={{
+              cat1: "Bedroom",
+              cat2: "Dining Room",
+              cat3: "Home Office",
+            }}
+            img={icon3}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <BrandCard
+            name={"Bradington-Young"}
+            category={{
+              cat1: "Bedroom",
+              cat2: "Dining Room",
+              cat3: "Home Office",
+            }}
+            img={icon4}
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <BrandCard
+            name={"American Leather Comfort Sleeper®"}
+            category={{
+              cat1: "Bedroom",
+              cat2: "Dining Room",
+              cat3: "Home Office",
+            }}
+            img={icon1}
           />
         </SplideSlide>
         <SplideSlide>
@@ -75,76 +114,29 @@ function Brands() {
               cat2: "Dining Room",
               cat3: "Home Office",
             }}
+            img={icon2}
           />
         </SplideSlide>
         <SplideSlide>
           <BrandCard
-            name={"ART Furniture"}
+            name={"Bassett Mirror"}
             category={{
               cat1: "Bedroom",
               cat2: "Dining Room",
               cat3: "Home Office",
             }}
+            img={icon3}
           />
         </SplideSlide>
         <SplideSlide>
           <BrandCard
-            name={"ART Furniture"}
+            name={"Bradington-Young"}
             category={{
               cat1: "Bedroom",
               cat2: "Dining Room",
               cat3: "Home Office",
             }}
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <BrandCard
-            name={"ART Furniture"}
-            category={{
-              cat1: "Bedroom",
-              cat2: "Dining Room",
-              cat3: "Home Office",
-            }}
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <BrandCard
-            name={"ART Furniture"}
-            category={{
-              cat1: "Bedroom",
-              cat2: "Dining Room",
-              cat3: "Home Office",
-            }}
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <BrandCard
-            name={"ART Furniture"}
-            category={{
-              cat1: "Bedroom",
-              cat2: "Dining Room",
-              cat3: "Home Office",
-            }}
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <BrandCard
-            name={"ART Furniture"}
-            category={{
-              cat1: "Bedroom",
-              cat2: "Dining Room",
-              cat3: "Home Office",
-            }}
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <BrandCard
-            name={"ART Furniture"}
-            category={{
-              cat1: "Bedroom",
-              cat2: "Dining Room",
-              cat3: "Home Office",
-            }}
+            img={icon4}
           />
         </SplideSlide>
       </Splide>

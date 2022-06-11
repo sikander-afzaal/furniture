@@ -11,6 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./FilterPage.css";
 import img from "../../Assets-furniture/Living Room/beds/bed1.png";
+import top from "../../Assets-furniture/filter-top.png";
+import grid from "../../Assets-furniture/grid.png";
+import bars from "../../Assets-furniture/bars.png";
 import DiscountCard from "../../Components/DiscountCard/DiscountCard";
 import FilterRow from "../../Components/FilterRow/FilterRow";
 function FilterPage() {
@@ -79,6 +82,7 @@ function FilterPage() {
   ];
   return (
     <div className="filter">
+      <img src={top} alt="" className="filter-top" />
       <div className="filter-grid">
         <div className="top-filter">
           <div className="top-filter_left">
@@ -89,8 +93,8 @@ function FilterPage() {
             />
 
             <div className="desktop-fil">
-              <FontAwesomeIcon icon={faBars} />
-              <FontAwesomeIcon icon={faBars} />
+              <img src={grid} alt="" className="grid-icon" />
+              <img src={bars} alt="" className="bars-icon" />
             </div>
           </div>
           <div className="top-filter_right">

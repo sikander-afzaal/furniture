@@ -2,10 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   padding-top: 170px;
   padding-bottom: 2rem;
   background-color: #f9f9f9;
+}
+.filter-top {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 3rem;
 }
 .filter-grid {
   display: grid;
@@ -48,6 +55,7 @@
   border-radius: 6px;
   padding: 8px;
 }
+
 .top-filter_right {
   width: 150px;
   height: auto;
