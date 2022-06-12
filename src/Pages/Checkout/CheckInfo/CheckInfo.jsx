@@ -56,11 +56,11 @@ function CheckInfo() {
         </div>
       </div>
       <div className="check-btn">
-        <Link to={"/"} className="return-link">
+        <Link to={"/Choice"} className="return-link">
           <FontAwesomeIcon icon={faArrowLeft} />
           <p>Return to Shop</p>
         </Link>
-        <Link to={"/"} className="continue-link">
+        <Link to={"/checkout/Shipping"} className="continue-link">
           Continue to shipping
         </Link>
       </div>

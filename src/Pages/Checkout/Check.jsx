@@ -1,19 +1,40 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./Check.css";
 import CheckInfo from "./CheckInfo/CheckInfo";
 import sofa from "../../Assets-furniture/Living Room/Popular/6.png";
+import Shipping from "./Shipping/Shipping";
 function Check() {
+  const location = useLocation();
   return (
     <div className="check">
       <div className="left-check">
         <div className="top-check">
-          <p className="active-check">01 CUSTOMER INFO</p>
-          <p>02 SHIPPING INFO</p>
-          <p>03 PAYMENT SELECTION</p>
+          <p
+            className={`${
+              location.pathname === "/checkout" ? "active-check" : ""
+            } `}
+          >
+            01 CUSTOMER INFO
+          </p>
+          <p
+            className={`${
+              location.pathname === "/checkout/Shipping" ? "active-check" : ""
+            } `}
+          >
+            02 SHIPPING INFO
+          </p>
+          <p
+            className={`${
+              location.pathname === "/checkout/Payment" ? "active-check" : ""
+            } `}
+          >
+            03 PAYMENT SELECTION
+          </p>
         </div>
         <Routes>
           <Route path="" element={<CheckInfo />}></Route>
+          <Route path="Shipping" element={<Shipping />}></Route>
         </Routes>
       </div>
       <div className="right-check">

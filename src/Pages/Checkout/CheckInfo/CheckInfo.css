@@ -1,4 +1,5 @@
-.check-info {
+.check-info,
+.shipping {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -6,7 +7,8 @@
   flex-direction: column;
   width: 100%;
 }
-.check-info h1 {
+.check-info h1,
+.shipping h1 {
   color: #1b2125;
 }
 .input-row {
@@ -109,7 +111,7 @@
   color: black;
   border-color: black;
 }
-@media screen and (max-width: 454px) {
+@media screen and (max-width: 490px) {
   .input-row {
     flex-direction: column;
   }
