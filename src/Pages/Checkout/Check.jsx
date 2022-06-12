@@ -4,6 +4,7 @@ import "./Check.css";
 import CheckInfo from "./CheckInfo/CheckInfo";
 import sofa from "../../Assets-furniture/Living Room/Popular/6.png";
 import Shipping from "./Shipping/Shipping";
+import Payment from "./Payment/Payment";
 function Check() {
   const location = useLocation();
   return (
@@ -35,6 +36,7 @@ function Check() {
         <Routes>
           <Route path="" element={<CheckInfo />}></Route>
           <Route path="Shipping" element={<Shipping />}></Route>
+          <Route path="Payment" element={<Payment />}></Route>
         </Routes>
       </div>
       <div className="right-check">

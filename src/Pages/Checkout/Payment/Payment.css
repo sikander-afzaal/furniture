@@ -1,0 +1,40 @@
+.payment-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid #dde3e8;
+  width: 100%;
+}
+.card-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.row .method-box {
+  border: none;
+}
+.row .method-box p {
+  margin-top: -2px;
+}
+.card-input {
+  width: 100%;
+  position: relative;
+}
+.card-input img {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 528px) {
+  .payment-box br {
+    display: none;
+  }
+  .payment-box .row {
+    flex-direction: column;
+  }
+}

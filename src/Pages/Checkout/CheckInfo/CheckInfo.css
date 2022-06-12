@@ -1,5 +1,6 @@
 .check-info,
-.shipping {
+.shipping,
+.payment {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -8,7 +9,8 @@
   width: 100%;
 }
 .check-info h1,
-.shipping h1 {
+.shipping h1,
+.payment h1 {
   color: #1b2125;
 }
 .input-row {

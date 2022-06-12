@@ -4,7 +4,6 @@ import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
-  faHeart,
   faMaximize,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +20,7 @@ import popular6 from "../../../Assets-furniture/Living Room/Popular/6.png";
 import popular7 from "../../../Assets-furniture/Living Room/Popular/7.png";
 import Card from "../../../Components/Card/Card.jsx";
 import popular8 from "../../../Assets-furniture/Living Room/Popular/8.png";
+import { Link } from "react-router-dom";
 
 function Product() {
   const details = [
@@ -190,7 +190,9 @@ function Product() {
           <button className="add-to-cart">
             ADD TO CART <FontAwesomeIcon icon={faCartShopping} />
           </button>
-          <button className="buy-prod">BUY IT NOW</button>
+          <Link to={"/checkout"} className="buy-prod">
+            BUY IT NOW
+          </Link>
         </div>
       </div>
       <div className="prod-section2">

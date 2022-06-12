@@ -60,7 +60,7 @@ function Shipping() {
           <FontAwesomeIcon icon={faArrowLeft} />
           <p>Back to Customer Info</p>
         </Link>
-        <Link to={"/checkout"} className="continue-link">
+        <Link to={"/checkout/Payment"} className="continue-link">
           Continue to Payment
         </Link>
       </div>

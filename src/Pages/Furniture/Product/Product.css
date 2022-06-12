@@ -105,7 +105,8 @@
 .desc-product .dimensions {
   font-size: 1.4rem;
 }
-.desc-product button {
+.desc-product button,
+.buy-prod {
   width: 90%;
   height: 70px;
   display: flex;
@@ -120,6 +121,7 @@
 .buy-prod {
   background-color: black;
   color: white;
+  text-decoration: none;
   border: 1px solid transparent;
 }
 .buy-prod:hover {
