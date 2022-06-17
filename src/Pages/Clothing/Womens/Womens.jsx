@@ -1,5 +1,6 @@
 import React from "react";
 import "./Womens.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import bg from "../../../Assets-clothing/Women/bg.jpg";
@@ -30,26 +31,36 @@ function Womens() {
         </div>
       </div>
       <div className="living-section2">
-        <div className="wrapper-circle">
-          <img src={circleImg1} alt="" />
-          <p>T-Shirts</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg2} alt="" />
-          <p>Shirts</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg3} alt="" />
-          <p>Jeans</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg4} alt="" />
-          <p>Pants</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg5} alt="" />
-          <p>Shoes</p>
-        </div>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg1} alt="" />
+            <p>T-Shirts</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg2} alt="" />
+            <p>Shirts</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg3} alt="" />
+            <p>Jeans</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg4} alt="" />
+            <p>Pants</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg5} alt="" />
+            <p>Shoes</p>
+          </div>
+        </Link>
       </div>
       <div className="dining-section2">
         <div className="text-part">

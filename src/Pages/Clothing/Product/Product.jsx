@@ -2,21 +2,70 @@ import React, { useEffect, useRef, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCartShopping,
+  faMaximize,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Product.css";
-import main from "../../../Assets-clothing/Product/main.png";
-import page1 from "../../../Assets-clothing/Product/page1.png";
-import QR from "../../../Assets-clothing/Product/QR.png";
-import popular1 from "../../../Assets-clothing/Men/Popular/1.png";
+import main from "../../../Assets-furniture/Product/main.png";
+import main2 from "../../../Assets-furniture/Product/main2.png";
+import main3 from "../../../Assets-furniture/Product/main3.png";
+import page1 from "../../../Assets-furniture/Product/page1.png";
+import page2 from "../../../Assets-furniture/Product/page2.png";
+import page3 from "../../../Assets-furniture/Product/page3.png";
+import QR from "../../../Assets-furniture/Product/QR.png";
+import popular5 from "../../../Assets-furniture/Living Room/Popular/5.png";
+import popular6 from "../../../Assets-furniture/Living Room/Popular/6.png";
+import popular7 from "../../../Assets-furniture/Living Room/Popular/7.png";
 import Card from "../../../Components/Card/Card.jsx";
+import popular8 from "../../../Assets-furniture/Living Room/Popular/8.png";
+import { Link } from "react-router-dom";
 
 function Product() {
+  const details = [
+    {
+      head: "Busey Ipsum Dolor Sit Amet",
+      desc: `Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci
+            dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac
+            odio. Velit euismod in pellentesque massa placerat duis ultricies
+            lacus. Scelerisque purus semper eget duis at tellus at urna
+            condimentum. Eu facilisis sed odio morbi quis commodo odio aenean
+            urpis massa sed elemen.`,
+    },
+    {
+      head: "Busey  Dolor Sit Amet",
+      desc: `Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci
+            dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac
+            odio. Velit euismod in pellentesque massa placerat duis ultricies
+            lacus. Sceleris`,
+    },
+    {
+      head: "Busey Ipsum Dolor t",
+      desc: `Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci
+            dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac
+            odio. Velit euisd odio morbi quis commodo odio aenean
+            urpis massa sed elemen.`,
+    },
+  ];
   const slider1 = useRef();
   const slider2 = useRef();
   useEffect(() => {
     slider1.current.sync(slider2.current.splide);
   }, [slider1, slider2]);
   const [gallery, openGallery] = useState(false);
+  const [head, setHead] = useState(details[0].head);
+  const [desc, setDesc] = useState(details[0].desc);
+
+  const clickHandler = (e) => {
+    const num = e.target.dataset.num;
+    const active = document.querySelector(".tab.active");
+    const target = e.target;
+    setDesc(details[num].desc);
+    setHead(details[num].head);
+    active.classList.remove("active");
+    target.classList.add("active");
+  };
   return (
     <div className="product">
       <div className={`gallery ${gallery ? "gal-flex" : ""}`}>
@@ -33,14 +82,13 @@ function Product() {
             isNavigation: false,
             width: "100%",
             perPage: 1,
-            type: "loop",
             lazyLoad: "sequential",
+            type: "loop",
           }}
         >
-          {" "}
           <SplideSlide>
             <div className="img-wrapper-product-gal">
-              <img data-splide-lazy={main} src={main} alt="" />
+              <img data-splide-lazy={main3} src={main3} alt="" />
             </div>
           </SplideSlide>
           <SplideSlide>
@@ -50,112 +98,145 @@ function Product() {
           </SplideSlide>
           <SplideSlide>
             <div className="img-wrapper-product-gal">
-              <img data-splide-lazy={main} src={main} alt="" />
+              <img data-splide-lazy={main2} src={main2} alt="" />
             </div>
           </SplideSlide>
         </Splide>
       </div>
       <div className="prod-section1">
-        <Splide
-          className="thumbnail"
-          ref={(slider) => (slider2.current = slider)}
-          options={{
-            pagination: false,
-            arrows: false,
-            isNavigation: true,
-            width: "15%",
-            perPage: 3,
-            // direction: "ttb",
-            breakpoints: {
-              1280: {
-                width: "100%",
+        <div className="slider-div">
+          <Splide
+            className="main-slider"
+            ref={(slider) => (slider1.current = slider)}
+            options={{
+              pagination: false,
+              arrows: true,
+              width: "100%",
+              // direction: "ltr",
+              rewind: true,
+              lazyLoad: "sequential",
+              breakpoints: {
+                1280: {
+                  width: "100%",
+                },
               },
-            },
-          }}
-        >
-          <SplideSlide>
-            <div className="img-wrapper-product-thumb">
-              <img src={page1} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-thumb">
-              <img src={page1} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-thumb">
-              <img src={page1} alt="" />
-            </div>
-          </SplideSlide>
-        </Splide>
-        <Splide
-          className="main-slider"
-          ref={(slider) => (slider1.current = slider)}
-          options={{
-            pagination: true,
-            arrows: true,
-            width: "55%",
-            // direction: "ltr",
-            rewind: true,
-            lazyLoad: "sequential",
-            breakpoints: {
-              1280: {
-                width: "100%",
+            }}
+            onClick={() => openGallery(true)}
+          >
+            <SplideSlide>
+              <div className="img-wrapper-product-main">
+                <img data-splide-lazy={main3} src={main3} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-main">
+                <img data-splide-lazy={main} src={main} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-main">
+                <img data-splide-lazy={main2} src={main2} alt="" />
+              </div>
+            </SplideSlide>
+          </Splide>
+          <Splide
+            className="thumbnail"
+            ref={(slider) => (slider2.current = slider)}
+            options={{
+              pagination: false,
+              arrows: false,
+              isNavigation: true,
+              width: "100%",
+              perPage: 3,
+              // direction: "ttb",
+              breakpoints: {
+                1280: {
+                  width: "100%",
+                },
               },
-            },
-          }}
-          onClick={() => openGallery(true)}
-        >
-          <SplideSlide>
-            <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main} src={main} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main} src={main} alt="" />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-product-main">
-              <img data-splide-lazy={main} src={main} alt="" />
-            </div>
-          </SplideSlide>
-        </Splide>
+            }}
+          >
+            <SplideSlide>
+              <div className="img-wrapper-product-thumb">
+                <img src={page1} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-thumb">
+                <img src={page2} alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="img-wrapper-product-thumb">
+                <img src={page3} alt="" />
+              </div>
+            </SplideSlide>
+          </Splide>
+        </div>
+
         <div className="desc-product">
-          <h1>
-            <strong>BC</strong>LUXURY.
-          </h1>
-          <h2>Shirt:</h2>
-          <p className="desc-prod">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            nostrum, odio qui recusandae harum ex maiores quae temporibus quo
-            nemo adipisci impedit quisquam, ipsam quidem quos? Qui vitae, nam
-            perferendis, accusamus fugit eius, magni beatae commodi
-            reprehenderit id sunt doloribus!
+          <h2>
+            American Leather Transitional Pearson Living Room Upholstered Sleep
+            Sofa
+          </h2>
+          <p className="price">$6,529.00</p>
+          <p className="prod-desc">
+            PEA-SO2-QS Vintage Belg Grey(1) Pearson queen size sleep sofa with
+            Premier mattress and Espresso leg finish
           </p>
-          <div className="dimensions-div">
-            <h2>Sizing:</h2>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum dolor sit.</p>
-          </div>
+          <p className="dimensions">
+            <FontAwesomeIcon icon={faMaximize} /> 71"w x 39"d (85" Open) x 36"h
+          </p>
+          <button className="add-to-cart">
+            ADD TO CART <FontAwesomeIcon icon={faCartShopping} />
+          </button>
+          <Link to={"/checkout"} className="buy-prod">
+            BUY IT NOW
+          </Link>
         </div>
       </div>
-
-      <div className="living-section3 padding-top margin-top2">
+      <div className="prod-section2">
+        <div className="tabs-div">
+          <p data-num={0} onClick={clickHandler} className="tab active">
+            Product Description
+          </p>
+          <p data-num={1} onClick={clickHandler} className="tab">
+            Shipping Details
+          </p>
+          <p data-num={2} onClick={clickHandler} className="tab">
+            Reviews
+          </p>
+        </div>
+        <div className="tab-desc">
+          <h2>{head}</h2>
+          <p>{desc}</p>
+        </div>
+      </div>
+      <div className="living-section3 padding-top">
         <div className="living-heading">
           <div className="line-left"></div>
           <h1>Related Products</h1>
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
+          <Card
+            cloth={false}
+            img={popular5}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
+          <Card
+            cloth={false}
+            img={popular6}
+            desc={"Best Mid-Range Sofa Brand:Burrow."}
+          />
+          <Card
+            img={popular7}
+            desc={"Best Affordable Sofa Brand:Albany Park."}
+          />
+          <Card
+            img={popular8}
+            desc={"Best for Customization:Inside Weather."}
+          />
         </div>
       </div>
       <div className="prod-section3">

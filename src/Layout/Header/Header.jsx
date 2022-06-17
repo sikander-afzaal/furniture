@@ -5,125 +5,9 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 function Header({ cloth }) {
   const [open, setOpen] = useState(false);
-  const toTop = () => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 200);
-  };
+
   return (
     <div className="header">
-      {/* <div className="navbar-desktop">
-        <div className="left-header">
-          <Link
-            onClick={toTop}
-            to={`${cloth ? "/clothing" : "/furniture"}`}
-            className="nav-links"
-          >
-            Home
-          </Link>
-          {cloth ? (
-            ""
-          ) : (
-            <Link onClick={toTop} to="/furniture/Brands" className="nav-links">
-              Brands
-            </Link>
-          )}
-
-          <Link onClick={toTop} to="#" className="nav-links">
-            Team
-          </Link>
-          <Link onClick={toTop} to="#" className="nav-links">
-            Contact
-          </Link>
-        </div>
-        <Link
-          to={`${cloth ? "/clothing" : "/furniture"}`}
-          className="central-header"
-        >
-          <h1>
-            <strong>BC</strong>LUXURY.
-          </h1>
-        </Link>
-        <div className="right-header">
-          <div className="nav-link-div">
-            <Link
-              onClick={toTop}
-              to={`${cloth ? "/clothing/Mens" : "/furniture/LivingRoom"}`}
-              className="nav-links living-link"
-            >
-              {cloth ? "Mens" : "Living"}
-            </Link>
-            <div className="dropdown-nav living-link-drop">
-              <a href="#">{cloth ? "T-Shirts" : "Sectionals"}</a>
-              <a href="#"> {cloth ? "Shirts" : "Chaises"}</a>
-              <a href="#">{cloth ? "Jeans" : "Benches"}</a>
-              <a href="#">{cloth ? "Pants" : "Stools"}</a>
-              <a href="#">{cloth ? "Shoes" : "Ottomans"}</a>
-            </div>
-          </div>
-          <div className="nav-link-div">
-            <Link
-              onClick={toTop}
-              to={`${cloth ? "/clothing/Womens" : "/furniture/DiningRoom"}`}
-              className="nav-links dining-link"
-            >
-              {cloth ? "Womens" : "Dining"}
-            </Link>
-            <div className="dropdown-nav dining-link-drop">
-              <a href="#"> {cloth ? "T-Shirts" : "Dining Table"}</a>
-              <a href="#"> {cloth ? "Jeans" : "Dining Chairs"}</a>
-              <a href="#"> {cloth ? "Skirts" : "Bar Stools"}</a>
-              <a href="#"> {cloth ? "Shoes" : "Buffets"}</a>
-            </div>
-          </div>
-          <div className="nav-link-div">
-            <Link
-              onClick={toTop}
-              to={`${cloth ? "/clothing/Kids" : "/furniture/BedRoom"}`}
-              className="nav-links bedroom-link"
-            >
-              {cloth ? "Kids" : "Bedroom"}
-            </Link>
-            <div className="dropdown-nav bedroom-link-drop">
-              <a href="#"> {cloth ? "T-Shirts" : "Beds"}</a>
-              <a href="#"> {cloth ? "Shirts" : "Night Stands"}</a>
-              <a href="#"> {cloth ? "Jeans" : "Chests and Dressers"}</a>
-              <a href="#"> {cloth ? "Shoes" : "Headboards"}</a>
-              <a href="#"> {cloth ? "Socks" : "Mattresses"}</a>
-            </div>
-          </div>
-          <div className="nav-link-div">
-            <Link
-              onClick={toTop}
-              to={`${cloth ? "/clothing/Jewelry" : "/furniture/WorkSpace"}`}
-              className="nav-links workspace-link"
-            >
-              {cloth ? "Jewelry" : "Workspace"}
-            </Link>
-            <div className="dropdown-nav workspace-link-drop">
-              <a href="#">{cloth ? "Rings" : "Desks"}</a>
-              <a href="#">{cloth ? "Necklace" : "Office Chairs"}</a>
-              <a href="#">{cloth ? "Gold" : "Book Cases"}</a>
-            </div>
-          </div>
-
-          <Link
-            onClick={toTop}
-            to={`${cloth ? "/clothing/Accessories" : "/furniture/OutDoor"}`}
-            className="nav-links"
-          >
-            {cloth ? "Accessories" : "OutDoor"}
-          </Link>
-          <Link
-            onClick={toTop}
-            to={`${cloth ? "/furniture" : "/clothing"}`}
-            className="nav-links"
-          >
-            {cloth ? "Furniture" : "Clothing"}
-          </Link>
-        </div>
-      </div> */}
-      {/* mobile navbar ----------------------- */}
       <div className="navbar-mobile">
         <Link
           to={`${cloth ? "/clothing" : "/furniture"}`}
@@ -205,74 +89,139 @@ function Header({ cloth }) {
             >
               {cloth ? "Mens" : "Living"}
             </Link>
-            <div className="dropdown-nav living-link-drop">
-              <div className="drop-col">
-                <h1>Outdoor Lounge Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            {cloth ? (
+              <div className="dropdown-nav living-link-drop">
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            ) : (
+              <div className="dropdown-nav living-link-drop">
+                <div className="drop-col">
+                  <h1>Outdoor Lounge Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Decor & Accessories</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Decor & Accessories</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-            </div>
+            )}
           </div>
           <div className="nav-link-div">
             <Link
@@ -287,85 +236,130 @@ function Header({ cloth }) {
             >
               {cloth ? "Womens" : "Dining"}
             </Link>
-            <div className="dropdown-nav dining-link-drop">
-              <div className="drop-col">
-                <h1>Outdoor Lounge Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            {cloth ? (
+              <div className="dropdown-nav dining-link-drop">
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Lounge Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            ) : (
+              <div className="dropdown-nav dining-link-drop">
+                <div className="drop-col">
+                  <h1>Outdoor Lounge Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Lounge Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Decor & Accessories</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Decor & Accessories</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-            </div>
+            )}
           </div>
           <div className="nav-link-div">
             <Link
@@ -380,30 +374,75 @@ function Header({ cloth }) {
             >
               {cloth ? "Kids" : "Bedroom"}
             </Link>
-            <div className="dropdown-nav bedroom-link-drop">
-              <div className="drop-col">
-                <h1>Outdoor Lounge Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            {cloth ? (
+              <div className="dropdown-nav bedroom-link-drop">
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            ) : (
+              <div className="dropdown-nav bedroom-link-drop">
+                <div className="drop-col">
+                  <h1>Outdoor Lounge Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="nav-link-div">
             <Link
@@ -418,41 +457,75 @@ function Header({ cloth }) {
             >
               {cloth ? "Jewelry" : "Workspace"}
             </Link>
-            <div className="dropdown-nav workspace-link-drop">
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            {cloth ? (
+              <div className="dropdown-nav workspace-link-drop">
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            ) : (
+              <div className="dropdown-nav workspace-link-drop">
+                <div className="drop-col">
+                  <h1>Outdoor Lounge Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-            </div>
+            )}
           </div>
           <div className="nav-link-div">
             <Link
@@ -467,74 +540,75 @@ function Header({ cloth }) {
             >
               {cloth ? "Accessories" : "Out Door"}
             </Link>
-            <div className="dropdown-nav outdoor-link-drop">
-              <div className="drop-col">
-                <h1>Outdoor Lounge Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            {cloth ? (
+              <div className="dropdown-nav outdoor-link-drop">
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Shirts</h1>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                  <a href="...">T-Shirts</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
+            ) : (
+              <div className="dropdown-nav outdoor-link-drop">
+                <div className="drop-col">
+                  <h1>Outdoor Lounge Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
+                <div className="drop-col">
+                  <h1>Outdoor Dining & Bar Furniture</h1>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                  <a href="...">Outdoor Sofas</a>
+                </div>
               </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Dining & Bar Furniture</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-              <div className="drop-col">
-                <h1>Outdoor Decor & Accessories</h1>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-                <a href="#">Outdoor Sofas</a>
-              </div>
-            </div>
+            )}
           </div>
           <Link
             onClick={() => {

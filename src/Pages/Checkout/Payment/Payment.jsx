@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Payment.css";
 import card1 from "../../../Assets-furniture/card1.png";
 import card2 from "../../../Assets-furniture/card2.png";
@@ -10,8 +10,17 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 function Payment() {
+  const [modal, setModal] = useState(false);
   return (
     <div className="payment">
+      {modal && (
+        <div className="modal-payment">
+          <h1>Thank You For Buying From Us</h1>
+          <Link to={"/Choice"} className="continue-link">
+            <p>Back to Choice</p>
+          </Link>
+        </div>
+      )}
       <h1>Payment Selection</h1>
       <div className="payment-box">
         <div className="row">
@@ -81,9 +90,9 @@ function Payment() {
           <FontAwesomeIcon icon={faArrowLeft} />
           <p>Back to Shipping Info</p>
         </Link>
-        <Link to={"/"} className="continue-link">
+        <button onClick={() => setModal(true)} className="continue-link">
           PayNow
-        </Link>
+        </button>
       </div>
     </div>
   );

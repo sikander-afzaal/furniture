@@ -15,7 +15,7 @@ function DiscountCard({ img, price: { discounted, original }, desc, filter }) {
     >
       <div className="main-card-discounted">
         <p className="new-item">New Item</p>
-        <a className="flex" href="#">
+        <a className="flex" href="...">
           <img src={img} alt="" />
         </a>
         <p className="card-desc">{desc}</p>

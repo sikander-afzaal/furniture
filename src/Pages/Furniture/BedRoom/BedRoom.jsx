@@ -2,6 +2,7 @@ import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "./BedRoom.css";
+import { Link } from "react-router-dom";
 import slide1 from "../../../Assets-furniture/BedRoom/slide1.png";
 import slide2 from "../../../Assets-furniture/BedRoom/slide2.png";
 import slide3 from "../../../Assets-furniture/BedRoom/slide3.png";
@@ -91,26 +92,36 @@ function BedRoom() {
         </div>
       </div>
       <div className="living-section2">
-        <div className="wrapper-circle">
-          <img src={circleImg1} alt="" />
-          <p>sECTIONALS</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg2} alt="" />
-          <p>CHAISES</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg3} alt="" />
-          <p>BENCHES</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg4} alt="" />
-          <p>OTTOMANS</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg5} alt="" />
-          <p>STOOLS</p>
-        </div>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg1} alt="" />
+            <p>sECTIONALS</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg2} alt="" />
+            <p>CHAISES</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg3} alt="" />
+            <p>BENCHES</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg4} alt="" />
+            <p>OTTOMANS</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg5} alt="" />
+            <p>STOOLS</p>
+          </div>
+        </Link>
       </div>
       <div className="dining-section2">
         <div className="text-part">

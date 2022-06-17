@@ -1,5 +1,6 @@
 import React from "react";
 import "./LivingRoom.css";
+import { Link } from "react-router-dom";
 import img1 from "../../../Assets-furniture/Living Room/bg1.png";
 import img2 from "../../../Assets-furniture/Living Room/bg2.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -20,11 +21,7 @@ import popular7 from "../../../Assets-furniture/Living Room/Popular/7.png";
 import popular8 from "../../../Assets-furniture/Living Room/Popular/8.png";
 import Card from "../../../Components/Card/Card.jsx";
 import registerBg from "../../../Assets-furniture/Living Room/register-bg.png";
-// beds---------------------------
-import bed1 from "../../../Assets-furniture/Living Room/beds/bed1.png";
-import bed2 from "../../../Assets-furniture/Living Room/beds/bed2.png";
-import bed3 from "../../../Assets-furniture/Living Room/beds/bed3.png";
-import bed4 from "../../../Assets-furniture/Living Room/beds/bed4.png";
+
 // small tables---------------------------
 import table1 from "../../../Assets-furniture/Living Room/small tables/table1.png";
 import table2 from "../../../Assets-furniture/Living Room/small tables/table2.png";
@@ -80,26 +77,36 @@ function LivingRoom() {
         </div>
       </div>
       <div className="living-section2">
-        <div className="wrapper-circle">
-          <img src={circleImg1} alt="" />
-          <p>sECTIONALS</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg2} alt="" />
-          <p>CHAISES</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg3} alt="" />
-          <p>BENCHES</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg4} alt="" />
-          <p>OTTOMANS</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg5} alt="" />
-          <p>STOOLS</p>
-        </div>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg1} alt="" />
+            <p>sECTIONALS</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg2} alt="" />
+            <p>CHAISES</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg3} alt="" />
+            <p>BENCHES</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg4} alt="" />
+            <p>OTTOMANS</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg5} alt="" />
+            <p>STOOLS</p>
+          </div>
+        </Link>
       </div>
       <div className="living-section3">
         <div className="living-heading">

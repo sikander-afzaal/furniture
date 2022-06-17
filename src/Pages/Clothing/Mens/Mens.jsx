@@ -1,5 +1,6 @@
 import React from "react";
 import "./Mens.css";
+import { Link } from "react-router-dom";
 import img1 from "../../../Assets-clothing/Men/bg1.jpg";
 import img2 from "../../../Assets-clothing/Men/bg2.jpg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -63,26 +64,36 @@ function Mens() {
         </div>
       </div>
       <div className="living-section2">
-        <div className="wrapper-circle">
-          <img src={circleImg1} alt="" />
-          <p>T-Shirts</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg2} alt="" />
-          <p>Shirts</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg3} alt="" />
-          <p>Jeans</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg4} alt="" />
-          <p>Pants</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg5} alt="" />
-          <p>Shoes</p>
-        </div>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg1} alt="" />
+            <p>T-Shirts</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg2} alt="" />
+            <p>Shirts</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg3} alt="" />
+            <p>Jeans</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg4} alt="" />
+            <p>Pants</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg5} alt="" />
+            <p>Shoes</p>
+          </div>
+        </Link>
       </div>
       <div className="living-section3">
         <div className="living-heading">

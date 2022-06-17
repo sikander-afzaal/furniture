@@ -10,6 +10,9 @@ import Jewelry from "./Jewelry/Jewelry";
 import Accessories from "./Accessories/Accessories";
 import Product from "./Product/Product";
 import { Route, Routes } from "react-router-dom";
+import Brands from "../Brands/Brands";
+import FilterPage from "../FilterPage/FilterPage";
+import Category from "../Category/Category";
 function Clothing() {
   return (
     <div className="clothing">
@@ -22,6 +25,9 @@ function Clothing() {
         <Route path="Jewelry" element={<Jewelry />}></Route>
         <Route path="Accessories" element={<Accessories />}></Route>
         <Route path="Product" element={<Product />}></Route>
+        <Route path="Brands" element={<Brands />}></Route>
+        <Route path="Filter" element={<FilterPage />}></Route>
+        <Route path="Category" element={<Category />}></Route>
       </Routes>
       <Footer />
     </div>

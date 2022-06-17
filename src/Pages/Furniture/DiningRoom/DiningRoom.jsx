@@ -6,6 +6,8 @@ import {
   faStar,
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 import bg from "../../../Assets-furniture/Dining Room/bg.png";
 import new1 from "../../../Assets-furniture/Dining Room/new/1.png";
 import new2 from "../../../Assets-furniture/Dining Room/new/2.png";
@@ -46,26 +48,36 @@ function DiningRoom() {
         </div>
       </div>
       <div className="living-section2">
-        <div className="wrapper-circle">
-          <img src={circleImg1} alt="" />
-          <p>sECTIONALS</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg2} alt="" />
-          <p>CHAISES</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg3} alt="" />
-          <p>BENCHES</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg4} alt="" />
-          <p>OTTOMANS</p>
-        </div>
-        <div className="wrapper-circle">
-          <img src={circleImg5} alt="" />
-          <p>STOOLS</p>
-        </div>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg1} alt="" />
+            <p>sECTIONALS</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg2} alt="" />
+            <p>CHAISES</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg3} alt="" />
+            <p>BENCHES</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg4} alt="" />
+            <p>OTTOMANS</p>
+          </div>
+        </Link>
+        <Link to={"/clothing/Category"}>
+          <div className="wrapper-circle">
+            <img src={circleImg5} alt="" />
+            <p>STOOLS</p>
+          </div>
+        </Link>
       </div>
       <div className="dining-section2">
         <div className="text-part">

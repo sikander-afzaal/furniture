@@ -49,6 +49,10 @@
   margin: auto;
   flex-wrap: wrap;
 }
+.living-section2 a {
+  text-decoration: none;
+  color: black;
+}
 .wrapper-circle {
   display: flex;
   justify-content: center;
