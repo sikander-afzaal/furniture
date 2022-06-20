@@ -3,6 +3,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import logo from "../../Assets-furniture/logo.png";
 function Header({ cloth }) {
   const [open, setOpen] = useState(false);
 
@@ -13,9 +14,7 @@ function Header({ cloth }) {
           to={`${cloth ? "/clothing" : "/furniture"}`}
           className="central-header"
         >
-          <h1>
-            <strong>BC</strong>LUXURY.
-          </h1>
+          <img src={logo} alt="" className="logo" />
         </Link>
         <FontAwesomeIcon
           onClick={() => {
@@ -71,7 +70,7 @@ function Header({ cloth }) {
                 window.scrollTo(0, 0);
               }, 200);
             }}
-            to="#"
+            to={cloth ? "/clothing/Contact" : "/furniture/Contact"}
             className="nav-links"
           >
             Contact

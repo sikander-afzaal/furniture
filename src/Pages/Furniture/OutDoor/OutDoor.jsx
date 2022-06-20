@@ -178,7 +178,23 @@ function OutDoor() {
           <img src={new2} alt="" />
         </div>
       </div>
-
+      <div className="living-section3 margin-top">
+        <div className="living-heading">
+          <div className="line-left"></div>
+          <h1>Luxury Collection</h1>
+          <div className="line-right"></div>
+        </div>
+        <div className="cards-grid">
+          <ImageCard cloth={false} show={true} img={coll1} />
+          <ImageCard cloth={false} show={true} img={coll2} />
+          <ImageCard cloth={false} show={true} img={coll3} />
+          <ImageCard cloth={false} show={true} img={coll4} />
+          <ImageCard cloth={false} show={false} img={coll5} />
+          <ImageCard cloth={false} show={false} img={coll6} />
+          <ImageCard cloth={false} show={false} img={coll7} />
+          <ImageCard cloth={false} show={false} img={coll8} />
+        </div>
+      </div>
       <div className="work-section3">
         <div className="left-choose">
           <div className="img-wrapper-choose">
@@ -226,23 +242,6 @@ function OutDoor() {
               </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="living-section3 margin-top">
-        <div className="living-heading">
-          <div className="line-left"></div>
-          <h1>Luxury Collection</h1>
-          <div className="line-right"></div>
-        </div>
-        <div className="cards-grid">
-          <ImageCard cloth={false} show={true} img={coll1} />
-          <ImageCard cloth={false} show={true} img={coll2} />
-          <ImageCard cloth={false} show={true} img={coll3} />
-          <ImageCard cloth={false} show={true} img={coll4} />
-          <ImageCard cloth={false} show={false} img={coll5} />
-          <ImageCard cloth={false} show={false} img={coll6} />
-          <ImageCard cloth={false} show={false} img={coll7} />
-          <ImageCard cloth={false} show={false} img={coll8} />
         </div>
       </div>
     </div>

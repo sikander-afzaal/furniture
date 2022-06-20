@@ -23,16 +23,14 @@
 .central-header {
   text-decoration: none;
   flex: 0.2;
-}
-.central-header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  font-weight: 300;
-  color: white;
-  text-decoration: none;
-  font-size: 3rem;
+  width: 100%;
+}
+.central-header .logo {
+  max-width: 250px;
+  object-fit: contain;
 }
 .right-header {
   /* margin-left: 3rem; */

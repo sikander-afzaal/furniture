@@ -12,6 +12,7 @@ import Product from "./Product/Product";
 import { Route, Routes } from "react-router-dom";
 import Brands from "../Brands/Brands";
 import FilterPage from "../FilterPage/FilterPage";
+import Contact from "../Contact/Contact";
 function Furniture() {
   return (
     <div className="furniture">
@@ -26,6 +27,7 @@ function Furniture() {
         <Route path="Product" element={<Product />}></Route>
         <Route path="Brands" element={<Brands />}></Route>
         <Route path="Filter" element={<FilterPage />}></Route>
+        <Route path="Contact" element={<Contact />}></Route>
       </Routes>
       <Footer />
     </div>
