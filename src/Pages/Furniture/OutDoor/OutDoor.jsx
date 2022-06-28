@@ -28,6 +28,7 @@ import coll5 from "../../../Assets-furniture/OutDoor/collection/5.png";
 import coll6 from "../../../Assets-furniture/OutDoor/collection/6.png";
 import coll7 from "../../../Assets-furniture/OutDoor/collection/7.png";
 import coll8 from "../../../Assets-furniture/OutDoor/collection/8.png";
+import { Link } from "react-router-dom";
 function OutDoor() {
   return (
     <div className="workspace">
@@ -84,9 +85,9 @@ function OutDoor() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore inverted">
+          <Link to={"/furniture/Product"} className="explore inverted">
             Shop <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
       </div>
       {/* </div> */}

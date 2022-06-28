@@ -128,6 +128,9 @@
 .left-sumbox .explore {
   padding: 15px;
   width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .right-sumbox {
   flex: 0.7;

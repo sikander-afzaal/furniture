@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LivingRoom.css";
 import { Link } from "react-router-dom";
 import img1 from "../../../Assets-furniture/Living Room/bg1.png";
@@ -34,6 +34,7 @@ import mainPop from "../../../Assets-furniture/Living Room/week-popular/main.png
 import { faStar, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function LivingRoom() {
+  const [img, setImg] = useState(mainPop);
   return (
     <div className="living-room">
       <div className="living-section1">
@@ -77,31 +78,31 @@ function LivingRoom() {
         </div>
       </div>
       <div className="living-section2">
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg1} alt="" />
             <p>sECTIONALS</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg2} alt="" />
             <p>CHAISES</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg3} alt="" />
             <p>BENCHES</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg4} alt="" />
             <p>OTTOMANS</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg5} alt="" />
             <p>STOOLS</p>
@@ -111,7 +112,7 @@ function LivingRoom() {
       <div className="living-section3">
         <div className="living-heading">
           <div className="line-left"></div>
-          <h1>Most Popular</h1>
+          <h1>Living Collection</h1>
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
@@ -148,14 +149,32 @@ function LivingRoom() {
         <div className="bottom-section5">
           <div className="left-section5">
             <div className="col-images">
-              <img src={imgPop1} alt="" />
-              <img src={imgPop2} alt="" />
-              <img src={imgPop3} alt="" />
+              <img
+                onClick={() => {
+                  setImg(imgPop1);
+                }}
+                src={imgPop1}
+                alt=""
+              />
+              <img
+                onClick={() => {
+                  setImg(imgPop2);
+                }}
+                src={imgPop2}
+                alt=""
+              />
+              <img
+                onClick={() => {
+                  setImg(imgPop3);
+                }}
+                src={imgPop3}
+                alt=""
+              />
             </div>
-            <img src={mainPop} alt="" className="main-section5" />
+            <img src={img} alt="" className="main-section5" />
           </div>
           <div className="right-section5">
-            <h2>Bunk Sofa Stainless Steel</h2>
+            <h2>Bunk Bed Stainless Steel</h2>
             <div className="combine">
               <div className="star-div">
                 <FontAwesomeIcon icon={faStar} className="yellow" />
@@ -179,7 +198,37 @@ function LivingRoom() {
           </div>
         </div>
       </div>
-
+      <div className="living-section3">
+        <div className="living-heading">
+          <div className="line-left"></div>
+          <h1>Living Collection</h1>
+          <div className="line-right"></div>
+        </div>
+        <div className="cards-grid">
+          <Card
+            cloth={false}
+            img={popular5}
+            desc={"Best High-End Sofa Brand: Maiden Home"}
+          />
+          <Card
+            cloth={false}
+            img={popular6}
+            desc={"Best Mid-Range Sofa Brand:Burrow."}
+          />
+          <Card
+            img={popular7}
+            desc={"Best Affordable Sofa Brand:Albany Park."}
+          />
+          <Card
+            img={popular8}
+            desc={"Best for Customization:Inside Weather."}
+          />
+          <Card cloth={false} img={popular1} desc={"Wingback Chair"} />
+          <Card cloth={false} img={popular2} desc={"Windsor Chair"} />
+          <Card cloth={false} img={popular3} desc={"Egg Chair"} />
+          <Card cloth={false} img={popular4} desc={"Wishbone Chair"} />
+        </div>
+      </div>
       <div className="living-section3 padding-top">
         <div className="living-heading">
           <div className="line-left"></div>

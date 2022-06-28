@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DiningRoom.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,6 +32,7 @@ import week2 from "../../../Assets-furniture/Dining Room/week/2.png";
 import week3 from "../../../Assets-furniture/Dining Room/week/3.png";
 import main from "../../../Assets-furniture/Dining Room/week/main.png";
 function DiningRoom() {
+  const [img, setImg] = useState(main);
   return (
     <div className="dining-room">
       <div className="dining-section1 dining-bg">
@@ -48,31 +49,31 @@ function DiningRoom() {
         </div>
       </div>
       <div className="living-section2">
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg1} alt="" />
             <p>sECTIONALS</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg2} alt="" />
             <p>CHAISES</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg3} alt="" />
             <p>BENCHES</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg4} alt="" />
             <p>OTTOMANS</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg5} alt="" />
             <p>STOOLS</p>
@@ -101,7 +102,7 @@ function DiningRoom() {
       <div className="living-section3">
         <div className="living-heading">
           <div className="line-left"></div>
-          <h1>Most Popular</h1>
+          <h1>Dining Collection</h1>
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
@@ -124,14 +125,32 @@ function DiningRoom() {
         <div className="bottom-section5">
           <div className="left-section5">
             <div className="col-images">
-              <img src={week1} alt="" />
-              <img src={week2} alt="" />
-              <img src={week3} alt="" />
+              <img
+                onClick={() => {
+                  setImg(week1);
+                }}
+                src={week1}
+                alt=""
+              />
+              <img
+                onClick={() => {
+                  setImg(week2);
+                }}
+                src={week2}
+                alt=""
+              />
+              <img
+                onClick={() => {
+                  setImg(week3);
+                }}
+                src={week3}
+                alt=""
+              />
             </div>
-            <img src={main} alt="" className="main-section5" />
+            <img src={img} alt="" className="main-section5" />
           </div>
           <div className="right-section5">
-            <h2>Dining Table Stainless Steel</h2>
+            <h2>Bunk Bed Stainless Steel</h2>
             <div className="combine">
               <div className="star-div">
                 <FontAwesomeIcon icon={faStar} className="yellow" />
@@ -155,6 +174,24 @@ function DiningRoom() {
           </div>
         </div>
       </div>
+      <div className="living-section3">
+        <div className="living-heading">
+          <div className="line-left"></div>
+          <h1>Dining Collection</h1>
+          <div className="line-right"></div>
+        </div>
+        <div className="cards-grid">
+          <ImageCard cloth={false} show={true} img={pop1} />
+          <ImageCard cloth={false} show={true} img={pop2} />
+          <ImageCard cloth={false} show={true} img={pop3} />
+          <ImageCard cloth={false} show={true} img={pop4} />
+          <ImageCard cloth={false} show={false} img={pop5} />
+          <ImageCard cloth={false} show={false} img={pop6} />
+          <ImageCard cloth={false} show={false} img={pop7} />
+          <ImageCard cloth={false} show={false} img={pop8} />
+        </div>
+      </div>
+
       <div className="living-section3 padding-top">
         <div className="living-heading">
           <div className="line-left"></div>

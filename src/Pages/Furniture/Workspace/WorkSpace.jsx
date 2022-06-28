@@ -5,10 +5,7 @@ import slide2 from "../../../Assets-furniture/WorkSpace/slider/slide2.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLongArrowRight,
-  faLongArrowLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import new1 from "../../../Assets-furniture/WorkSpace/new/new1.png";
 import new2 from "../../../Assets-furniture/WorkSpace/new/new2.png";
 // popular ----------------------------------
@@ -31,6 +28,7 @@ import coll5 from "../../../Assets-furniture/WorkSpace/collection/5.png";
 import coll6 from "../../../Assets-furniture/WorkSpace/collection/6.png";
 import coll7 from "../../../Assets-furniture/WorkSpace/collection/7.png";
 import coll8 from "../../../Assets-furniture/WorkSpace/collection/8.png";
+import { Link } from "react-router-dom";
 function WorkSpace() {
   return (
     <div className="workspace">
@@ -86,9 +84,9 @@ function WorkSpace() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore inverted">
+          <Link to={"/furniture/Product"} className="explore inverted">
             Shop <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
       </div>
       <div className="dining-section2 margin-top">

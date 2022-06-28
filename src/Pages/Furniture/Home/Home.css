@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 .bg-home {
   max-width: 100%;
@@ -313,10 +314,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin-top: 3rem;
   background-color: #f8f8f8;
-  padding: 4rem 0rem;
+  padding: 4rem 20px;
+  width: 100%;
 }
 .img-wrapper-collection {
   width: 100%;

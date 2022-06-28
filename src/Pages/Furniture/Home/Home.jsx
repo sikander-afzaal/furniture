@@ -16,9 +16,6 @@ import {
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import img1 from "../../../Assets-furniture/collection/s1.png";
-import img2 from "../../../Assets-furniture/collection/s2.png";
-import img3 from "../../../Assets-furniture/collection/s3.png";
 import section7 from "../../../Assets-furniture/section7.png";
 //popular
 import imgPop1 from "../../../Assets-furniture/popular/img1.png";
@@ -263,12 +260,13 @@ function Home() {
             rewind: true,
             pagination: true,
             arrows: false,
-            width: "100%",
-            gap: "0px",
-            type: "loop",
+            width: "90%",
+            gap: "10px",
             perPage: 4,
+            perMove: 1,
+            type: "loop",
             breakpoints: {
-              1576: {
+              1568: {
                 width: "100%",
               },
               1348: {

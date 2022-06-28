@@ -51,8 +51,12 @@ function BedRoom() {
             design.
           </p>
           <div className="btn-div">
-            <button className="explore hover-invert">Shop Now</button>
-            <button className="explore inverted">Learn More</button>
+            <Link to={"/furniture/Product"} className="explore hover-invert">
+              Shop Now
+            </Link>
+            <Link to={"/furniture/Product"} className="explore inverted">
+              Learn More
+            </Link>
           </div>
         </div>
         <div className="right-bedroom-section1">
@@ -92,31 +96,31 @@ function BedRoom() {
         </div>
       </div>
       <div className="living-section2">
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg1} alt="" />
             <p>sECTIONALS</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg2} alt="" />
             <p>CHAISES</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg3} alt="" />
             <p>BENCHES</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg4} alt="" />
             <p>OTTOMANS</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/furniture/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg5} alt="" />
             <p>STOOLS</p>
@@ -145,7 +149,7 @@ function BedRoom() {
       <div className="living-section3">
         <div className="living-heading">
           <div className="line-left"></div>
-          <h1>Most Popular</h1>
+          <h1>BedRoom Collection</h1>
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
@@ -172,7 +176,9 @@ function BedRoom() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.{" "}
               </p>
-              <button className="explore hover-invert">Shop</button>
+              <Link to={"/furniture/Product"} className="explore hover-invert">
+                Shop
+              </Link>
             </div>
             <div className="right-sumbox">
               <img src={sum2} alt="" />
@@ -185,7 +191,9 @@ function BedRoom() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.{" "}
               </p>
-              <button className="explore hover-invert">Shop</button>
+              <Link to={"/furniture/Product"} className="explore hover-invert">
+                Shop
+              </Link>
             </div>
             <div className="right-sumbox">
               <img src={sum3} alt="" />
@@ -198,7 +206,9 @@ function BedRoom() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.{" "}
               </p>
-              <button className="explore hover-invert">Shop</button>
+              <Link to={"/furniture/Product"} className="explore hover-invert">
+                Shop
+              </Link>
             </div>
             <div className="right-sumbox">
               <img src={sum1} alt="" />
