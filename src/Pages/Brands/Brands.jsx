@@ -142,48 +142,56 @@ function Brands() {
       </Splide>
       <div className="cards-grid">
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}
           filter={true}
         />
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}
           filter={true}
         />
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}
           filter={true}
         />
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}
           filter={true}
         />
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}
           filter={true}
         />
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}
           filter={true}
         />
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}
           filter={true}
         />
         <DiscountCard
+          brand={"Bassett Mirror"}
           img={img}
           desc={"Best Mid-Range Sofa Brand:Burrow"}
           price={{ original: "$550", discounted: "$452" }}

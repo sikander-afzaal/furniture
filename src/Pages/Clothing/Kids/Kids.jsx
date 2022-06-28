@@ -119,9 +119,9 @@ function Kids() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore">
+          <Link to={"/clothing/Product"} className="explore">
             View More <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
         <div className="row-img">
           <img src={new1} alt="" />
@@ -135,14 +135,54 @@ function Kids() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
         </div>
       </div>
       <div className="living-section3 padding-top">
@@ -152,14 +192,54 @@ function Kids() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={true} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
-          <ImageCard cloth={true} show={false} img={pop1} />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={pop1}
+          />
         </div>
       </div>{" "}
       <div className="living-section4 overlay kids-bg">

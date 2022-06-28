@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./DiscountCard.css";
-function DiscountCard({ img, price: { discounted, original }, desc, filter }) {
+function DiscountCard({
+  img,
+  price: { discounted, original },
+  desc,
+  filter,
+  brand,
+}) {
   const toTop = () => {
     setTimeout(() => {
       window.scrollTo(0, 0);
@@ -14,7 +20,7 @@ function DiscountCard({ img, price: { discounted, original }, desc, filter }) {
       onClick={toTop}
     >
       <div className="main-card-discounted">
-        <p className="new-item">New Item</p>
+        <p className="new-item">{brand}</p>
         <a className="flex" href="...">
           <img src={img} alt="" />
         </a>

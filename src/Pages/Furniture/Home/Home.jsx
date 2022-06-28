@@ -32,6 +32,7 @@ import icon1 from "../../../Assets-furniture/brands-icon/icon1.png";
 import icon2 from "../../../Assets-furniture/brands-icon/icon2.png";
 import icon3 from "../../../Assets-furniture/brands-icon/icon3.png";
 import icon4 from "../../../Assets-furniture/brands-icon/icon4.png";
+import { Link } from "react-router-dom";
 function Home() {
   const [img, setImg] = useState(mainPop);
   return (
@@ -109,9 +110,9 @@ function Home() {
             comfortable. Where you can gather your loved ones, best reads
             experiences, treasures.
           </p>
-          <button className="discover">
+          <Link to={"/furniture/LivingRoom"} className="discover">
             Dicover More <FontAwesomeIcon icon={faArrowRight} />
-          </button>
+          </Link>
         </div>
         <div className="right-section2">
           <div className="heading-circle">
@@ -132,9 +133,9 @@ function Home() {
                 else must fall into line. Its function has changed a lot over
                 the years: ...
               </p>
-              <button className="discover">
+              <Link to={"/furniture/Filter"} className="discover">
                 Dicover More <FontAwesomeIcon icon={faArrowRight} />
-              </button>
+              </Link>
             </div>
             <div className="right-desc">
               <img src={sofa} alt="" />
@@ -152,9 +153,9 @@ function Home() {
                 of the designer features and comfort with which the Tolentino
                 brand is synonymous...
               </p>
-              <button className="discover">
+              <Link to={"/furniture/Filter"} className="discover">
                 Dicover More <FontAwesomeIcon icon={faArrowRight} />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="right-desc-div">
@@ -166,9 +167,9 @@ function Home() {
                 seats that sit atop slender stems with rich upholstery,
                 welcoming
               </p>
-              <button className="discover">
+              <Link to={"/furniture/Filter"} className="discover">
                 Dicover More <FontAwesomeIcon icon={faArrowRight} />
-              </button>
+              </Link>
             </div>
             <div className="right-desc">
               <img src={stool} alt="" />
@@ -208,7 +209,7 @@ function Home() {
             }}
           >
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/furniture/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc1}
                   src={imgacc1}
@@ -216,10 +217,10 @@ function Home() {
                   className="acc-img"
                 />
                 <p>SOFA ARM</p>
-              </div>
+              </Link>
             </SplideSlide>
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/furniture/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc2}
                   src={imgacc2}
@@ -227,10 +228,10 @@ function Home() {
                   className="acc-img"
                 />
                 <p>table top</p>
-              </div>
+              </Link>
             </SplideSlide>
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/furniture/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc3}
                   src={imgacc3}
@@ -238,10 +239,10 @@ function Home() {
                   className="acc-img"
                 />
                 <p>MIRROR</p>
-              </div>
+              </Link>
             </SplideSlide>
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/furniture/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc4}
                   src={imgacc4}
@@ -249,7 +250,7 @@ function Home() {
                   className="acc-img"
                 />
                 <p>SOFA ARM</p>
-              </div>
+              </Link>
             </SplideSlide>
           </Splide>
         </div>

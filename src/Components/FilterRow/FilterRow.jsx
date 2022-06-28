@@ -12,7 +12,7 @@ function FilterRow({ title, row }) {
       </div>
       {row.map((elem, key) => {
         return (
-          <div className="filter-row">
+          <div key={"row" + key + new Date()} className="filter-row">
             <div className="flex">
               <input type="checkbox" />
               <p className="filter-title">{elem.name}</p>

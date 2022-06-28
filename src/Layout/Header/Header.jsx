@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faXmark,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import logo from "../../Assets-furniture/logo.png";
 function Header({ cloth }) {
@@ -621,6 +625,7 @@ function Header({ cloth }) {
           >
             {cloth ? "Furniture" : "Clothing"}
           </Link>
+          <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
         </div>
       </div>
     </div>

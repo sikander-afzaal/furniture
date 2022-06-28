@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
-function Card({ img, desc, cloth }) {
+function Card({ img, desc, cloth, brand }) {
   const toTop = () => {
     setTimeout(() => {
       window.scrollTo(0, 0);
@@ -10,7 +10,7 @@ function Card({ img, desc, cloth }) {
   return (
     <div className="card-wrapper">
       <div className="main-card">
-        <p className="new-item">New Item</p>
+        <p className="new-item">{brand}</p>
         <Link
           className="flex"
           onClick={toTop}

@@ -88,9 +88,9 @@ function Jewelry() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore">
+          <Link to={"/clothing/Product"} className="explore">
             View More <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
         <div className="row-img">
           <img src={new1} alt="" />
@@ -221,14 +221,54 @@ function Jewelry() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard cloth={true} show={true} img={coll1} />
-          <ImageCard cloth={true} show={true} img={coll1} />
-          <ImageCard cloth={true} show={true} img={coll1} />
-          <ImageCard cloth={true} show={true} img={coll1} />
-          <ImageCard cloth={true} show={false} img={coll1} />
-          <ImageCard cloth={true} show={false} img={coll1} />
-          <ImageCard cloth={true} show={false} img={coll1} />
-          <ImageCard cloth={true} show={false} img={coll1} />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={true}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={true}
+            show={false}
+            img={coll1}
+          />
         </div>
       </div>
     </div>

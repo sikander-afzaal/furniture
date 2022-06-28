@@ -109,36 +109,53 @@ function LivingRoom() {
           </div>
         </Link>
       </div>
-      <div className="living-section3">
-        <div className="living-heading">
-          <div className="line-left"></div>
-          <h1>Living Collection</h1>
-          <div className="line-right"></div>
-        </div>
-        <div className="cards-grid">
-          <Card
-            cloth={false}
-            img={popular5}
-            desc={"Best High-End Sofa Brand: Maiden Home"}
-          />
-          <Card
-            cloth={false}
-            img={popular6}
-            desc={"Best Mid-Range Sofa Brand:Burrow."}
-          />
-          <Card
-            img={popular7}
-            desc={"Best Affordable Sofa Brand:Albany Park."}
-          />
-          <Card
-            img={popular8}
-            desc={"Best for Customization:Inside Weather."}
-          />
-          <Card cloth={false} img={popular1} desc={"Wingback Chair"} />
-          <Card cloth={false} img={popular2} desc={"Windsor Chair"} />
-          <Card cloth={false} img={popular3} desc={"Egg Chair"} />
-          <Card cloth={false} img={popular4} desc={"Wishbone Chair"} />
-        </div>
+      <div className="cards-grid">
+        <Card
+          cloth={false}
+          brand={"Bassett Mirror"}
+          img={popular5}
+          desc={"Best High-End Sofa Brand: Maiden Home"}
+        />
+        <Card
+          cloth={false}
+          img={popular6}
+          brand={"Bassett Mirror"}
+          desc={"Best Mid-Range Sofa Brand:Burrow."}
+        />
+        <Card
+          img={popular7}
+          brand={"Bassett Mirror"}
+          desc={"Best Affordable Sofa Brand:Albany Park."}
+        />
+        <Card
+          img={popular8}
+          brand={"Bassett Mirror"}
+          desc={"Best for Customization:Inside Weather."}
+        />
+        <Card
+          brand={"Bassett Mirror"}
+          cloth={false}
+          img={popular1}
+          desc={"Wingback Chair"}
+        />
+        <Card
+          brand={"Bassett Mirror"}
+          cloth={false}
+          img={popular2}
+          desc={"Windsor Chair"}
+        />
+        <Card
+          brand={"Bassett Mirror"}
+          cloth={false}
+          img={popular3}
+          desc={"Egg Chair"}
+        />
+        <Card
+          brand={"Bassett Mirror"}
+          cloth={false}
+          img={popular4}
+          desc={"Wishbone Chair"}
+        />
       </div>
 
       <div className="homepage-section5">
@@ -207,26 +224,50 @@ function LivingRoom() {
         <div className="cards-grid">
           <Card
             cloth={false}
+            brand={"Bassett Mirror"}
             img={popular5}
             desc={"Best High-End Sofa Brand: Maiden Home"}
           />
           <Card
             cloth={false}
             img={popular6}
+            brand={"Bassett Mirror"}
             desc={"Best Mid-Range Sofa Brand:Burrow."}
           />
           <Card
             img={popular7}
+            brand={"Bassett Mirror"}
             desc={"Best Affordable Sofa Brand:Albany Park."}
           />
           <Card
             img={popular8}
+            brand={"Bassett Mirror"}
             desc={"Best for Customization:Inside Weather."}
           />
-          <Card cloth={false} img={popular1} desc={"Wingback Chair"} />
-          <Card cloth={false} img={popular2} desc={"Windsor Chair"} />
-          <Card cloth={false} img={popular3} desc={"Egg Chair"} />
-          <Card cloth={false} img={popular4} desc={"Wishbone Chair"} />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={false}
+            img={popular1}
+            desc={"Wingback Chair"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={false}
+            img={popular2}
+            desc={"Windsor Chair"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={false}
+            img={popular3}
+            desc={"Egg Chair"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={false}
+            img={popular4}
+            desc={"Wishbone Chair"}
+          />
         </div>
       </div>
       <div className="living-section3 padding-top">
@@ -239,21 +280,25 @@ function LivingRoom() {
           <Card
             cloth={false}
             img={table1}
+            brand={"Bassett Mirror"}
             desc={"Best High-End Sofa Brand: Maiden Home"}
           />
           <Card
             cloth={false}
             img={table2}
+            brand={"Bassett Mirror"}
             desc={"Best High-End Sofa Brand: Maiden Home"}
           />
           <Card
             cloth={false}
             img={table3}
+            brand={"Bassett Mirror"}
             desc={"Best High-End Sofa Brand: Maiden Home"}
           />
           <Card
             cloth={false}
             img={table3}
+            brand={"Bassett Mirror"}
             desc={"Best High-End Sofa Brand: Maiden Home"}
           />
         </div>

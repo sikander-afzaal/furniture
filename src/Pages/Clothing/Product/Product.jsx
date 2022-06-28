@@ -56,7 +56,9 @@ function Product() {
   const [gallery, openGallery] = useState(false);
   const [head, setHead] = useState(details[0].head);
   const [desc, setDesc] = useState(details[0].desc);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const clickHandler = (e) => {
     const num = e.target.dataset.num;
     const active = document.querySelector(".tab.active");

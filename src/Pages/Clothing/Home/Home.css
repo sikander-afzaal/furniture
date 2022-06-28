@@ -113,7 +113,7 @@
   width: 50%;
   left: 0;
   top: 0;
-  background: #1d1d1d40;
+  background: #1d1d1d70;
   height: 99.5%;
   display: flex;
   justify-content: center;
@@ -167,7 +167,7 @@
   .sale-div {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../../../Assets-clothing/sale.png");
+    background-image: url("../../../Assets-clothing/sale.webp");
     height: 300px;
   }
   .sale-div img {

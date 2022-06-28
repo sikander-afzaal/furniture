@@ -102,14 +102,54 @@ function Mens() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
-          <Card cloth={true} img={popular1} desc={"Jeans"} />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={popular1}
+            desc={"Jeans"}
+          />
         </div>
       </div>
 
@@ -120,10 +160,30 @@ function Mens() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <Card cloth={true} img={table1} desc={"Lorem Ipsum"} />
-          <Card cloth={true} img={table2} desc={"Lorem Ipsum"} />
-          <Card cloth={true} img={table1} desc={"Lorem Ipsum"} />
-          <Card cloth={true} img={table2} desc={"Lorem Ipsum"} />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={table1}
+            desc={"Lorem Ipsum"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={table2}
+            desc={"Lorem Ipsum"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={table1}
+            desc={"Lorem Ipsum"}
+          />
+          <Card
+            brand={"Bassett Mirror"}
+            cloth={true}
+            img={table2}
+            desc={"Lorem Ipsum"}
+          />
         </div>
       </div>
       <div className="living-section4 overlay men-register">

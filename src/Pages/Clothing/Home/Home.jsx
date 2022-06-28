@@ -17,7 +17,7 @@ import cat1 from "../../../Assets-clothing/cat1.png";
 import cat2 from "../../../Assets-clothing/cat2.png";
 import cat3 from "../../../Assets-clothing/cat3.png";
 import cat4 from "../../../Assets-clothing/cat4.png";
-import sale from "../../../Assets-clothing/sale.png";
+import sale from "../../../Assets-clothing/sale.webp";
 
 //acc
 import imgacc1 from "../../../Assets-clothing/accessories/img1.png";
@@ -209,16 +209,20 @@ function Home() {
           <img src={cat4} alt="" />
           <div className="cat-text">
             <h1 style={{ textTransform: "uppercase" }}>Jewelry Fashions</h1>
-            <button className="shop inverse-shop">Shop Now</button>
+            <Link to={"/clothing/Product"} className="shop inverse-shop">
+              Shop Now
+            </Link>
           </div>
         </div>
       </div>
       <div className="sale-div">
         <img src={sale} alt="" className="sale-img" />
         <div className="sale-text">
-          <h2>pets colltection</h2>
+          <h2>Women's Colltection</h2>
           <h1>SALE OFF 50%</h1>
-          <button className="shop inverse">Shop Now</button>
+          <Link to={"/clothing/Product"} className="shop inverse">
+            Shop Now
+          </Link>
         </div>
       </div>
       <div className="homepage-section3">

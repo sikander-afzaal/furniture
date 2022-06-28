@@ -90,9 +90,9 @@ function DiningRoom() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore">
+          <Link to={"/furniture/Product"} className="explore">
             View More <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
         <div className="row-img">
           <img src={new1} alt="" />
@@ -106,14 +106,54 @@ function DiningRoom() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard cloth={false} show={true} img={pop1} />
-          <ImageCard cloth={false} show={true} img={pop2} />
-          <ImageCard cloth={false} show={true} img={pop3} />
-          <ImageCard cloth={false} show={true} img={pop4} />
-          <ImageCard cloth={false} show={false} img={pop5} />
-          <ImageCard cloth={false} show={false} img={pop6} />
-          <ImageCard cloth={false} show={false} img={pop7} />
-          <ImageCard cloth={false} show={false} img={pop8} />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop1}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop2}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop3}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop4}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop5}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop6}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop7}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop8}
+            brand={"Bassett Mirror"}
+          />
         </div>
       </div>
 
@@ -181,14 +221,54 @@ function DiningRoom() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard cloth={false} show={true} img={pop1} />
-          <ImageCard cloth={false} show={true} img={pop2} />
-          <ImageCard cloth={false} show={true} img={pop3} />
-          <ImageCard cloth={false} show={true} img={pop4} />
-          <ImageCard cloth={false} show={false} img={pop5} />
-          <ImageCard cloth={false} show={false} img={pop6} />
-          <ImageCard cloth={false} show={false} img={pop7} />
-          <ImageCard cloth={false} show={false} img={pop8} />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop1}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop2}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop3}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop4}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop5}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop6}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop7}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop8}
+            brand={"Bassett Mirror"}
+          />
         </div>
       </div>
 
@@ -199,14 +279,54 @@ function DiningRoom() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard cloth={false} show={true} img={pop1} />
-          <ImageCard cloth={false} show={true} img={pop2} />
-          <ImageCard cloth={false} show={true} img={pop3} />
-          <ImageCard cloth={false} show={true} img={pop4} />
-          <ImageCard cloth={false} show={false} img={pop5} />
-          <ImageCard cloth={false} show={false} img={pop6} />
-          <ImageCard cloth={false} show={false} img={pop7} />
-          <ImageCard cloth={false} show={false} img={pop8} />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop1}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop2}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop3}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={true}
+            img={pop4}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop5}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop6}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop7}
+            brand={"Bassett Mirror"}
+          />
+          <ImageCard
+            cloth={false}
+            show={false}
+            img={pop8}
+            brand={"Bassett Mirror"}
+          />
         </div>
       </div>
       <div className="living-section4 overlay dining-bg">

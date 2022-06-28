@@ -53,6 +53,10 @@ function Product() {
   useEffect(() => {
     slider1.current.sync(slider2.current.splide);
   }, [slider1, slider2]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [gallery, openGallery] = useState(false);
   const [head, setHead] = useState(details[0].head);
   const [desc, setDesc] = useState(details[0].desc);

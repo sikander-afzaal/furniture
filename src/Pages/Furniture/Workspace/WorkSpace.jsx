@@ -99,9 +99,9 @@ function WorkSpace() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore">
+          <Link to={"/furniture/Product"} className="explore">
             View More <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
         <div className="row-img">
           <img src={new1} alt="" />
@@ -183,14 +183,54 @@ function WorkSpace() {
           <div className="line-right"></div>
         </div>
         <div className="cards-grid">
-          <ImageCard cloth={false} show={true} img={coll1} />
-          <ImageCard cloth={false} show={true} img={coll2} />
-          <ImageCard cloth={false} show={true} img={coll3} />
-          <ImageCard cloth={false} show={true} img={coll4} />
-          <ImageCard cloth={false} show={false} img={coll5} />
-          <ImageCard cloth={false} show={false} img={coll6} />
-          <ImageCard cloth={false} show={false} img={coll7} />
-          <ImageCard cloth={false} show={false} img={coll8} />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={true}
+            img={coll1}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={true}
+            img={coll2}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={true}
+            img={coll3}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={true}
+            img={coll4}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={false}
+            img={coll5}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={false}
+            img={coll6}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={false}
+            img={coll7}
+          />
+          <ImageCard
+            brand={"Bassett Mirror"}
+            cloth={false}
+            show={false}
+            img={coll8}
+          />
         </div>
       </div>
       <div className="work-section3">

@@ -133,6 +133,7 @@
   font-weight: 500;
   transition: all 0.4s ease-in-out;
   border: 2px solid grey;
+  text-decoration: none;
 }
 .discover:hover {
   background-color: black;

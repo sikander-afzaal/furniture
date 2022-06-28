@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   faBars,
   faChevronDown,
@@ -18,6 +18,9 @@ import DiscountCard from "../../Components/DiscountCard/DiscountCard";
 import FilterRow from "../../Components/FilterRow/FilterRow";
 function FilterPage() {
   const [openFilter, setopenFilter] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const cards = [
     {
       img: img,
