@@ -6,6 +6,7 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import new1 from "../../../Assets-clothing/Jewelry/new/new1.png";
 // popular ----------------------------------
 import pop1 from "../../../Assets-clothing/Jewelry/popular/pop1.png";
@@ -72,9 +73,9 @@ function Jewelry() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore inverted">
+          <Link to={"/clothing/Product"} className="explore inverted">
             Shop <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
       </div>
       <div className="dining-section2 margin-top">

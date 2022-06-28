@@ -32,6 +32,11 @@
   align-items: center;
   gap: 20px;
 }
+.btn-div a {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
 .hover-invert {
   border: 2px solid transparent;
 }

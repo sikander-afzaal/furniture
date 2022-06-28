@@ -32,8 +32,12 @@ function Kids() {
             suscipit aspernatur porro
           </p>
           <div className="btn-div">
-            <button className="explore hover-invert">Shop Now</button>
-            <button className="explore inverted">Learn More</button>
+            <Link to={"/clothing/Product"} className="explore hover-invert">
+              Shop Now
+            </Link>
+            <Link to={"/clothing/Product"} className="explore inverted">
+              Learn More
+            </Link>
           </div>
         </div>
         <div className="right-bedroom-section1">
@@ -74,31 +78,31 @@ function Kids() {
         </div>
       </div>
       <div className="living-section2">
-        <Link to={"/clothing/Category"}>
+        <Link to={"/clothing/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg1} alt="" />
             <p>T-Shirts</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/clothing/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg2} alt="" />
             <p>Shirts</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/clothing/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg3} alt="" />
             <p>Jeans</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/clothing/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg4} alt="" />
             <p>Pants</p>
           </div>
         </Link>
-        <Link to={"/clothing/Category"}>
+        <Link to={"/clothing/Filter"}>
           <div className="wrapper-circle">
             <img src={circleImg5} alt="" />
             <p>Shoes</p>

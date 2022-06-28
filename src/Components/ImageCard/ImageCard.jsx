@@ -23,7 +23,7 @@ function ImageCard({ img, show, cloth }) {
         to={cloth ? "/clothing/Filter" : "/furniture/Filter"}
         className="card-btn"
       >
-        GET PRICE
+        PRICE
       </Link>
     </div>
   );

@@ -4,6 +4,7 @@ import slide1 from "../../../Assets-clothing/Acc-page/slider/slide1.png";
 import slide2 from "../../../Assets-clothing/Acc-page/slider/slide2.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import new1 from "../../../Assets-clothing/Acc-page/new/new1.png";
@@ -77,9 +78,9 @@ function Accessories() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <button className="explore inverted">
+          <Link to={"/clothing/Product"} className="explore inverted">
             Shop <FontAwesomeIcon icon={faLongArrowRight} />
-          </button>
+          </Link>
         </div>
       </div>
 

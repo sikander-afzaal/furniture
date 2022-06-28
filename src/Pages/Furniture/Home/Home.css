@@ -78,6 +78,7 @@
   border: none;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 .explore:hover {
   background-color: white;
@@ -314,7 +315,7 @@
   align-items: center;
   width: 100%;
   margin-top: 3rem;
-  background-color: #6b6b6b;
+  background-color: #f8f8f8;
   padding: 4rem 0rem;
 }
 .img-wrapper-collection {
@@ -394,6 +395,16 @@
   flex-direction: column;
   height: 100%;
   gap: 32px;
+}
+.col-images img {
+  width: 138px;
+  height: 138px;
+  object-fit: cover;
+}
+.main-section5 {
+  width: 624px;
+  height: 478px;
+  object-fit: cover;
 }
 .right-section5 {
   display: flex;

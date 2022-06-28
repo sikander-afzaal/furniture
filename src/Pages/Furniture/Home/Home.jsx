@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import bg1 from "../../../Assets-furniture/homepage/homepage-bg1.png";
 import bg2 from "../../../Assets-furniture/homepage/homepage-bg2.png";
@@ -30,7 +30,13 @@ import imgacc1 from "../../../Assets-furniture/accessories/img1.png";
 import imgacc2 from "../../../Assets-furniture/accessories/img2.png";
 import imgacc3 from "../../../Assets-furniture/accessories/img3.png";
 import imgacc4 from "../../../Assets-furniture/accessories/img4.png";
+import BrandCard from "../../../Components/BrandCard/BrandCard";
+import icon1 from "../../../Assets-furniture/brands-icon/icon1.png";
+import icon2 from "../../../Assets-furniture/brands-icon/icon2.png";
+import icon3 from "../../../Assets-furniture/brands-icon/icon3.png";
+import icon4 from "../../../Assets-furniture/brands-icon/icon4.png";
 function Home() {
+  const [img, setImg] = useState(mainPop);
   return (
     <div className="furniture">
       <div className="homepage-section1">
@@ -255,57 +261,117 @@ function Home() {
         <Splide
           options={{
             rewind: true,
-            pagination: false,
-            arrows: true,
+            pagination: true,
+            arrows: false,
             width: "100%",
-            gap: "0rem",
-            autoplay: true,
-            perPage: 3,
-            perMove: 1,
+            gap: "0px",
             type: "loop",
-            lazyLoad: "sequential",
+            perPage: 4,
             breakpoints: {
-              1318: {
+              1576: {
+                width: "100%",
+              },
+              1348: {
+                perPage: 3,
+              },
+              1010: {
                 perPage: 2,
               },
-              800: {
+              668: {
                 perPage: 1,
+                width: "95%",
               },
             },
           }}
+          className="brands-slide"
         >
           <SplideSlide>
-            <div className="img-wrapper-collection">
-              <img
-                data-splide-lazy={img1}
-                data-num={0}
-                src={img1}
-                alt=""
-                className="collection-img"
-              />
-            </div>
+            <BrandCard
+              name={"American Leather Comfort Sleeper®"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon1}
+            />
           </SplideSlide>
           <SplideSlide>
-            <div className="img-wrapper-collection">
-              <img
-                data-splide-lazy={img2}
-                data-num={1}
-                src={img2}
-                alt=""
-                className="collection-img"
-              />
-            </div>
+            <BrandCard
+              name={"ART Furniture"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon2}
+            />
           </SplideSlide>
           <SplideSlide>
-            <div className="img-wrapper-collection">
-              <img
-                data-splide-lazy={img3}
-                data-num={2}
-                src={img3}
-                alt=""
-                className="collection-img"
-              />
-            </div>
+            <BrandCard
+              name={"Bassett Mirror"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon3}
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <BrandCard
+              name={"Bradington-Young"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon4}
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <BrandCard
+              name={"American Leather Comfort Sleeper®"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon1}
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <BrandCard
+              name={"ART Furniture"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon2}
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <BrandCard
+              name={"Bassett Mirror"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon3}
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <BrandCard
+              name={"Bradington-Young"}
+              category={{
+                cat1: "Bedroom",
+                cat2: "Dining Room",
+                cat3: "Home Office",
+              }}
+              img={icon4}
+            />
           </SplideSlide>
         </Splide>
       </div>
@@ -318,11 +384,29 @@ function Home() {
         <div className="bottom-section5">
           <div className="left-section5">
             <div className="col-images">
-              <img src={imgPop1} alt="" />
-              <img src={imgPop2} alt="" />
-              <img src={imgPop3} alt="" />
+              <img
+                onClick={() => {
+                  setImg(imgPop1);
+                }}
+                src={imgPop1}
+                alt=""
+              />
+              <img
+                onClick={() => {
+                  setImg(imgPop2);
+                }}
+                src={imgPop2}
+                alt=""
+              />
+              <img
+                onClick={() => {
+                  setImg(imgPop3);
+                }}
+                src={imgPop3}
+                alt=""
+              />
             </div>
-            <img src={mainPop} alt="" className="main-section5" />
+            <img src={img} alt="" className="main-section5" />
           </div>
           <div className="right-section5">
             <h2>Bunk Bed Stainless Steel</h2>

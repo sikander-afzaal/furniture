@@ -12,7 +12,6 @@ import Product from "./Product/Product";
 import { Route, Routes } from "react-router-dom";
 import Brands from "../Brands/Brands";
 import FilterPage from "../FilterPage/FilterPage";
-import Category from "../Category/Category";
 import Contact from "../Contact/Contact";
 function Clothing() {
   return (
@@ -28,7 +27,6 @@ function Clothing() {
         <Route path="Product" element={<Product />}></Route>
         <Route path="Brands" element={<Brands />}></Route>
         <Route path="Filter" element={<FilterPage />}></Route>
-        <Route path="Category" element={<Category />}></Route>
         <Route path="Contact" element={<Contact />}></Route>
       </Routes>
       <Footer />

@@ -4,6 +4,7 @@ import bg1 from "../../../Assets-clothing/homepage/homepage-bg1.jpg";
 import bg2 from "../../../Assets-clothing/homepage/homepage-bg2.jpg";
 import section3 from "../../../Assets-clothing/section3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Link } from "react-router-dom";
 import "@splidejs/react-splide/css";
 import LongCard from "../../../Components/LongCard/LongCard";
 
@@ -112,7 +113,7 @@ function Home() {
             }}
           >
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/clothing/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc1}
                   src={imgacc1}
@@ -120,10 +121,10 @@ function Home() {
                   className="acc-img"
                 />
                 <p>Watches</p>
-              </div>
+              </Link>
             </SplideSlide>
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/clothing/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc2}
                   src={imgacc2}
@@ -131,10 +132,10 @@ function Home() {
                   className="acc-img"
                 />
                 <p>Belts</p>
-              </div>
+              </Link>
             </SplideSlide>
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/clothing/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc3}
                   src={imgacc3}
@@ -142,10 +143,10 @@ function Home() {
                   className="acc-img"
                 />
                 <p>Purses</p>
-              </div>
+              </Link>
             </SplideSlide>
             <SplideSlide>
-              <div className="acc-wrapper">
+              <Link to={"/clothing/Filter"} className="acc-wrapper">
                 <img
                   data-splide-lazy={imgacc4}
                   src={imgacc4}
@@ -153,7 +154,7 @@ function Home() {
                   className="acc-img"
                 />
                 <p>Wallets</p>
-              </div>
+              </Link>
             </SplideSlide>
           </Splide>
         </div>

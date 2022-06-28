@@ -1,3 +1,7 @@
+.acc-wrapper {
+  text-decoration: none;
+  color: black;
+}
 .home .cards-grid {
   place-items: center;
 }
