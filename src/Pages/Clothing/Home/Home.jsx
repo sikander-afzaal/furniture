@@ -5,9 +5,18 @@ import bg2 from "../../../Assets-clothing/homepage/homepage-bg2.jpg";
 import section3 from "../../../Assets-clothing/section3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import LongCard from "../../../Components/LongCard/LongCard";
 
-import img1 from "../../../Assets-clothing/collection/s1.png";
+import home1 from "../../../Assets-clothing/home1.png";
+import home2 from "../../../Assets-clothing/home2.png";
+import home3 from "../../../Assets-clothing/home3.png";
+import home4 from "../../../Assets-clothing/home4.png";
 import section7 from "../../../Assets-clothing/section7.png";
+import cat1 from "../../../Assets-clothing/cat1.png";
+import cat2 from "../../../Assets-clothing/cat2.png";
+import cat3 from "../../../Assets-clothing/cat3.png";
+import cat4 from "../../../Assets-clothing/cat4.png";
+import sale from "../../../Assets-clothing/sale.png";
 
 //acc
 import imgacc1 from "../../../Assets-clothing/accessories/img1.png";
@@ -16,7 +25,7 @@ import imgacc3 from "../../../Assets-clothing/accessories/img3.png";
 import imgacc4 from "../../../Assets-clothing/accessories/img4.png";
 function Home() {
   return (
-    <div className="furniture">
+    <div className="furniture home">
       <div className="homepage-section1">
         <Splide
           options={{
@@ -149,63 +158,67 @@ function Home() {
           </Splide>
         </div>
       </div>
-      <div className="homepage-section4">
-        <Splide
-          options={{
-            rewind: true,
-            pagination: false,
-            arrows: true,
-            width: "100%",
-            gap: "0rem",
-            autoplay: true,
-            perPage: 3,
-            perMove: 1,
-            type: "loop",
-            lazyLoad: "sequential",
-            breakpoints: {
-              1318: {
-                perPage: 2,
-              },
-              800: {
-                perPage: 1,
-              },
-            },
-          }}
-        >
-          <SplideSlide>
-            <div className="img-wrapper-collection">
-              <img
-                data-splide-lazy={img1}
-                data-num={0}
-                src={img1}
-                alt=""
-                className="collection-img"
-              />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-collection">
-              <img
-                data-splide-lazy={img1}
-                data-num={1}
-                src={img1}
-                alt=""
-                className="collection-img"
-              />
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="img-wrapper-collection">
-              <img
-                data-splide-lazy={img1}
-                data-num={2}
-                src={img1}
-                alt=""
-                className="collection-img"
-              />
-            </div>
-          </SplideSlide>
-        </Splide>
+      <div className="living-section3">
+        <div className="living-heading">
+          <div className="line-left"></div>
+          <h1>Most Popular</h1>
+          <div className="line-right"></div>
+        </div>
+        <div className="cards-grid">
+          <LongCard
+            img={home1}
+            title={"kids Floral Print Wrap Dress"}
+            price={"$20.2"}
+          />
+          <LongCard
+            img={home2}
+            title={"Floral Print Wrap Dress"}
+            price={"$20.2"}
+          />
+          <LongCard img={home3} title={"mens stylish Dress"} price={"$20.2"} />
+          <LongCard img={home4} title={"ajlo woman Dress"} price={"$20.2"} />
+        </div>
+      </div>
+      <div className="home-cat">
+        <div className="home-cat-div">
+          <img src={cat1} alt="" />
+          <div className="cat-text">
+            <h1>
+              Kids <span>Collection</span>
+            </h1>
+          </div>
+        </div>
+        <div className="home-cat-div">
+          <img src={cat2} alt="" />
+          <div className="cat-text">
+            <h1>
+              Mens <span>Collection</span>
+            </h1>
+          </div>
+        </div>
+        <div className="home-cat-div">
+          <img src={cat3} alt="" />
+          <div className="cat-text">
+            <h1>
+              Women <span>Collection</span>
+            </h1>
+          </div>
+        </div>
+        <div className="home-cat-div">
+          <img src={cat4} alt="" />
+          <div className="cat-text">
+            <h1 style={{ textTransform: "uppercase" }}>Jewelry Fashions</h1>
+            <button className="shop inverse-shop">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div className="sale-div">
+        <img src={sale} alt="" className="sale-img" />
+        <div className="sale-text">
+          <h2>pets colltection</h2>
+          <h1>SALE OFF 50%</h1>
+          <button className="shop inverse">Shop Now</button>
+        </div>
       </div>
       <div className="homepage-section3">
         <div className="left-section3">
