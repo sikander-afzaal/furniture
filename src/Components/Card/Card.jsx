@@ -20,10 +20,20 @@ function Card({ img, desc, cloth, brand }) {
         </Link>
         <p className="card-desc">{desc}</p>
       </div>
+      <div className="more-details">
+        <p>Price: $209</p>
+        <Link
+          onClick={toTop}
+          to={cloth ? "/clothing/Product" : "/furniture/Product"}
+          className="card-btn"
+        >
+          Shop Now
+        </Link>
+      </div>
       <Link
         onClick={toTop}
         to={cloth ? "/clothing/Product" : "/furniture/Product"}
-        className="card-btn"
+        className="card-btn main-card-btn"
       >
         PRICE
       </Link>

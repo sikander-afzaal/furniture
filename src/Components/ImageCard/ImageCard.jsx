@@ -18,6 +18,16 @@ function ImageCard({ img, show, cloth, brand }) {
           <img src={img} alt="" />
         </Link>
       </div>
+      <div className="more-details">
+        <p>Price: $209</p>
+        <Link
+          onClick={toTop}
+          to={cloth ? "/clothing/Product" : "/furniture/Product"}
+          className="card-btn"
+        >
+          Shop Now
+        </Link>
+      </div>
       <Link
         onClick={toTop}
         to={cloth ? "/clothing/Filter" : "/furniture/Filter"}
